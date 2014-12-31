@@ -1,0 +1,1078 @@
+2014/12/25 15:14:52 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:14:52 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:14:52 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:14:52 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:14:52 [service.go:56] [I] 发送agent3 register service失败 
+2014/12/25 15:14:52 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:14:52 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:14:52 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:14:52 [kv.go:42] [I] 读取create kv 返回值成功 true 
+2014/12/25 15:14:52 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:14:52 [kv.go:62] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:29:07 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:29:07 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:29:07 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:29:07 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:29:07 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:29:07 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:29:07 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:29:07 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:29:07 [kv.go:42] [I] 读取create kv 返回值成功 true 
+2014/12/25 15:29:07 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:29:07 [kv.go:65] [I] 发送session create请求成功 
+2014/12/25 15:29:07 [kv.go:71] [I] 读取session create 返回值成功 
+2014/12/25 15:29:07 [kv.go:78] [I] 解析session create返回值成功 c0566903-aa51-3061-7eed-b739750286c4 
+2014/12/25 15:29:07 [kv.go:92] [I] acquire请求创建成功 
+2014/12/25 15:29:07 [kv.go:96] [E] 发送acquire失败 <nil> 
+2014/12/25 15:29:19 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:29:19 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:29:19 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:29:19 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:29:19 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:29:19 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:29:19 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:29:19 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:29:19 [kv.go:42] [I] 读取create kv 返回值成功 true 
+2014/12/25 15:29:19 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:29:19 [kv.go:62] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:29:22 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:29:22 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:29:22 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:29:22 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:29:22 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:29:22 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:29:22 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:29:22 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:29:22 [kv.go:42] [I] 读取create kv 返回值成功 true 
+2014/12/25 15:29:22 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:29:22 [kv.go:65] [I] 发送session create请求成功 
+2014/12/25 15:29:22 [kv.go:71] [I] 读取session create 返回值成功 
+2014/12/25 15:29:22 [kv.go:78] [I] 解析session create返回值成功 9596bbb8-284d-325a-c9f4-dec99456e4b6 
+2014/12/25 15:29:22 [kv.go:92] [I] acquire请求创建成功 
+2014/12/25 15:29:22 [kv.go:96] [E] 发送acquire失败 <nil> 
+2014/12/25 15:29:23 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:29:23 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:29:23 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:29:23 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:29:23 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:29:23 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:29:23 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:29:24 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:29:24 [kv.go:42] [I] 读取create kv 返回值成功 true 
+2014/12/25 15:29:24 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:29:24 [kv.go:62] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:29:25 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:29:25 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:29:25 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:29:25 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:29:25 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:29:25 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:29:25 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:29:25 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:29:25 [kv.go:42] [I] 读取create kv 返回值成功 true 
+2014/12/25 15:29:25 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:29:25 [kv.go:62] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:29:26 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:29:26 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:29:26 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:29:26 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:29:26 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:29:26 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:29:26 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:29:26 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:29:26 [kv.go:42] [I] 读取create kv 返回值成功 true 
+2014/12/25 15:29:26 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:29:27 [kv.go:62] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:33:27 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:33:27 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:33:27 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:33:27 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:33:27 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:33:27 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:33:27 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:33:27 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:33:27 [kv.go:42] [I] 读取create kv 返回值成功 true 
+2014/12/25 15:33:27 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:33:27 [kv.go:62] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:35:10 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:35:10 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:35:10 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:35:10 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:35:10 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:35:10 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:35:10 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:35:10 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:35:10 [kv.go:42] [I] 读取create kv 返回值成功 true 
+2014/12/25 15:35:10 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:35:10 [kv.go:62] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:35:18 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:35:18 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:35:18 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:35:18 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:35:18 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:35:18 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:35:18 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:35:18 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:35:18 [kv.go:42] [I] 读取create kv 返回值成功 true 
+2014/12/25 15:35:18 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:35:18 [kv.go:62] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:45:00 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:45:00 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:45:00 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:45:00 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:45:00 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:45:00 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:45:00 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:45:00 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:45:00 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:45:00 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:45:01 [kv.go:61] [I] 500 
+2014/12/25 15:45:01 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:46:54 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:46:54 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:46:54 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:46:54 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:46:54 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:46:54 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:46:54 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:46:54 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:46:54 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:46:54 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:46:54 [kv.go:61] [I] 500 
+2014/12/25 15:46:54 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:51:30 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:51:30 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:51:30 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:51:30 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:51:30 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:51:30 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:51:30 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:51:30 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:51:30 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:51:30 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:51:31 [kv.go:61] [I] 200 
+2014/12/25 15:51:31 [kv.go:66] [I] 发送session create请求成功 
+2014/12/25 15:51:31 [kv.go:72] [I] 读取session create 返回值成功 
+2014/12/25 15:51:31 [kv.go:79] [I] 解析session create返回值成功 892ceb5b-c622-1e23-5890-9b8c349cb825 
+2014/12/25 15:51:31 [kv.go:93] [I] acquire请求创建成功 
+2014/12/25 15:51:31 [kv.go:97] [E] 发送acquire失败 <nil> 
+2014/12/25 15:52:02 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:52:02 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:52:02 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:52:02 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:52:02 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:52:02 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:52:02 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:52:03 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:52:03 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:52:03 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:52:03 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:52:03 [kv.go:61] [I] 500 
+2014/12/25 15:52:13 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:52:13 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:52:13 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:52:13 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:52:13 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:52:13 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:52:13 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:52:13 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:52:13 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:52:13 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:52:13 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:52:13 [kv.go:61] [I] 500 
+2014/12/25 15:53:48 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:53:48 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:53:48 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:53:48 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:53:48 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:53:48 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:53:48 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:53:48 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:53:48 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:53:48 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:53:48 [kv.go:61] [I] 200 
+2014/12/25 15:53:48 [kv.go:66] [I] 发送session create请求成功 
+2014/12/25 15:53:48 [kv.go:72] [I] 读取session create 返回值成功 
+2014/12/25 15:53:48 [kv.go:79] [I] 解析session create返回值成功 2dbf88a1-7e93-68a4-3cec-4ed94378e2df 
+2014/12/25 15:53:48 [kv.go:93] [I] acquire请求创建成功 
+2014/12/25 15:53:48 [kv.go:97] [E] 发送acquire失败 <nil> 
+2014/12/25 15:55:03 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:03 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:03 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:03 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:03 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:03 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:03 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:03 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:03 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:03 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:03 [kv.go:61] [I] 500 
+2014/12/25 15:55:03 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:05 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:05 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:05 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:05 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:05 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:05 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:05 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:06 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:06 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:06 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:06 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:06 [kv.go:61] [I] 500 
+2014/12/25 15:55:07 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:07 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:07 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:07 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:07 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:07 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:07 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:07 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:07 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:07 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:07 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:07 [kv.go:61] [I] 500 
+2014/12/25 15:55:08 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:08 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:08 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:08 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:08 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:08 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:08 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:08 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:08 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:08 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:08 [kv.go:61] [I] 500 
+2014/12/25 15:55:08 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:09 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:09 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:09 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:09 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:09 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:09 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:09 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:09 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:09 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:09 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:09 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:09 [kv.go:61] [I] 500 
+2014/12/25 15:55:10 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:10 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:10 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:10 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:10 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:10 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:10 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:10 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:10 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:10 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:10 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:10 [kv.go:61] [I] 500 
+2014/12/25 15:55:11 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:11 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:11 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:11 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:11 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:11 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:11 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:11 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:11 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:11 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:11 [kv.go:61] [I] 500 
+2014/12/25 15:55:11 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:11 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:11 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:11 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:11 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:11 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:11 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:11 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:12 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:12 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:12 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:12 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:12 [kv.go:61] [I] 500 
+2014/12/25 15:55:12 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:12 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:12 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:12 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:12 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:12 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:12 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:12 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:12 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:12 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:12 [kv.go:61] [I] 500 
+2014/12/25 15:55:12 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:13 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:13 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:13 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:13 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:13 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:13 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:13 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:13 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:13 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:13 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:13 [kv.go:61] [I] 500 
+2014/12/25 15:55:13 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:13 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:13 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:13 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:13 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:13 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:13 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:13 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:14 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:14 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:14 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:14 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:14 [kv.go:61] [I] 500 
+2014/12/25 15:55:14 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:14 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:14 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:14 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:14 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:14 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:14 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:14 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:14 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:14 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:14 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:14 [kv.go:61] [I] 500 
+2014/12/25 15:55:14 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:15 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:15 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:15 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:15 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:15 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:15 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:15 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:15 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:15 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:15 [kv.go:61] [I] 500 
+2014/12/25 15:55:15 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:15 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:15 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:15 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:15 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:15 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:15 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:15 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:15 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:15 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:15 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:15 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:15 [kv.go:61] [I] 500 
+2014/12/25 15:55:15 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:15 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:15 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:15 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:15 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:15 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:15 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:16 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:16 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:16 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:16 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:16 [kv.go:61] [I] 500 
+2014/12/25 15:55:16 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:16 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:16 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:16 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:16 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:16 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:16 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:16 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:16 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:16 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:16 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:16 [kv.go:61] [I] 500 
+2014/12/25 15:55:16 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:16 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:16 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:16 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:16 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:16 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:16 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:17 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:17 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:17 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:17 [kv.go:61] [I] 500 
+2014/12/25 15:55:17 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 15:55:17 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 15:55:17 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 15:55:17 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 15:55:17 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 15:55:17 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 15:55:17 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 15:55:17 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 15:55:17 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 15:55:17 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 15:55:17 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 15:55:17 [kv.go:61] [I] 500 
+2014/12/25 15:55:17 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 16:05:44 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:05:44 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:05:44 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:05:44 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 16:05:44 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 16:05:44 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 16:05:44 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:05:44 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:05:44 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:05:44 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 16:05:44 [kv.go:61] [I] 200 
+2014/12/25 16:05:44 [kv.go:66] [I] 发送session create请求成功 
+2014/12/25 16:05:44 [kv.go:72] [I] 读取session create 返回值成功 
+2014/12/25 16:05:44 [kv.go:79] [I] 解析session create返回值成功 e1e90d0f-319e-2298-7fe7-115135fef40d 
+2014/12/25 16:05:44 [kv.go:93] [I] acquire请求创建成功 
+2014/12/25 16:05:44 [kv.go:98] [E] 发送acquire失败 <nil> 
+2014/12/25 16:05:44 [kv.go:96] [I] 500 
+2014/12/25 16:05:56 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:05:56 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:05:56 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:05:56 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 16:05:56 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 16:05:56 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 16:05:56 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:05:56 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:05:56 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:05:56 [kv.go:58] [I] session create请求创建成功 
+2014/12/25 16:05:56 [kv.go:61] [I] 500 
+2014/12/25 16:05:56 [kv.go:63] [E] 发送session create请求失败 <nil> 
+2014/12/25 16:35:21 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:35:21 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:35:21 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:35:21 [service.go:49] [I] agent3 register service 创建请求成功 
+2014/12/25 16:35:21 [service.go:56] [I] 发送agent3 register service成功 
+2014/12/25 16:35:21 [service.go:62] [I] 读取agent3 register service 返回值成功 [] 
+2014/12/25 16:35:21 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:35:21 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:35:21 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:35:21 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:35:22 [kv.go:62] [I] 200 
+2014/12/25 16:35:22 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:35:22 [kv.go:73] [I] 读取session create 返回值成功 
+2014/12/25 16:35:22 [kv.go:80] [I] 解析session create返回值成功 81bedfe2-4412-9ced-fa17-12e12f9c33e3 
+2014/12/25 16:35:22 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 16:35:22 [kv.go:97] [I] 200 
+2014/12/25 16:35:22 [kv.go:102] [I] 发送acquire成功 
+2014/12/25 16:35:22 [kv.go:109] [I] 读取acquire操作返回值成功 
+2014/12/25 16:35:22 [kv.go:113] [I] 添加锁成功 
+2014/12/25 16:35:22 [kv.go:125] [I] release请求创建成功 
+2014/12/25 16:35:22 [kv.go:132] [I] 发送release请求成功 
+2014/12/25 16:35:22 [kv.go:139] [I] 读取release 操作返回值成功 
+2014/12/25 16:35:22 [kv.go:144] [I] 释放锁成功 
+2014/12/25 16:36:56 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:36:56 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:36:56 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:36:56 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:36:56 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:36:56 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:36:56 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:36:56 [kv.go:62] [I] 200 
+2014/12/25 16:36:56 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:36:56 [kv.go:73] [I] 读取session create 返回值成功 
+2014/12/25 16:36:56 [kv.go:80] [I] 解析session create返回值成功 b6d1112b-9a19-ea6c-b51d-13d0b022d0aa 
+2014/12/25 16:36:56 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 16:36:56 [kv.go:97] [I] 200 
+2014/12/25 16:36:56 [kv.go:102] [I] 发送acquire成功 
+2014/12/25 16:36:56 [kv.go:109] [I] 读取acquire操作返回值成功 
+2014/12/25 16:36:56 [kv.go:113] [I] 添加锁成功 
+2014/12/25 16:36:56 [kv.go:125] [I] release请求创建成功 
+2014/12/25 16:36:57 [kv.go:132] [I] 发送release请求成功 
+2014/12/25 16:36:57 [kv.go:139] [I] 读取release 操作返回值成功 
+2014/12/25 16:36:57 [kv.go:144] [I] 释放锁成功 
+2014/12/25 16:37:41 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:37:41 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:37:41 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:37:41 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:37:41 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:37:41 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:37:41 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:37:41 [kv.go:62] [I] 200 
+2014/12/25 16:37:41 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:37:41 [kv.go:73] [I] 读取session create 返回值成功 
+2014/12/25 16:37:41 [kv.go:80] [I] 解析session create返回值成功 443f6853-8019-35fa-dbb7-da95215b552a 
+2014/12/25 16:37:41 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 16:37:41 [kv.go:97] [I] 200 
+2014/12/25 16:37:41 [kv.go:102] [I] 发送acquire成功 
+2014/12/25 16:37:41 [kv.go:109] [I] 读取acquire操作返回值成功 
+2014/12/25 16:37:41 [kv.go:113] [I] 添加锁成功 
+2014/12/25 16:37:41 [kv.go:125] [I] release请求创建成功 
+2014/12/25 16:37:41 [kv.go:132] [I] 发送release请求成功 
+2014/12/25 16:37:41 [kv.go:139] [I] 读取release 操作返回值成功 
+2014/12/25 16:37:41 [kv.go:144] [I] 释放锁成功 
+2014/12/25 16:45:16 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:45:16 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:45:16 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:45:16 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:45:16 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:45:16 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:45:16 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:45:16 [kv.go:62] [I] 500 
+2014/12/25 16:45:16 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 16:55:19 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:55:19 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:55:19 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:55:19 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:55:19 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:55:19 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:55:19 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:55:19 [kv.go:62] [I] 500 
+2014/12/25 16:55:19 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:55:19 [kv.go:77] [E] 解析session create 返回值失败 invalid character 'r' looking for beginning of value 
+2014/12/25 16:55:19 [kv.go:73] [I] 读取session create 返回值成功 rpc error: Check 'service:mysql-1' is in critical state 
+2014/12/25 16:57:48 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:57:48 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:57:48 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:57:48 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:57:48 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:57:48 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:57:48 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:57:49 [kv.go:62] [I] 200 
+2014/12/25 16:57:49 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:57:49 [kv.go:73] [I] 读取session create 返回值成功 {"ID":"7871aa3b-aadc-1c21-112a-1a9f1457b4e4"} 
+2014/12/25 16:57:49 [kv.go:80] [I] 解析session create返回值成功 7871aa3b-aadc-1c21-112a-1a9f1457b4e4 
+2014/12/25 16:57:49 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 16:57:49 [kv.go:97] [I] 200 
+2014/12/25 16:57:49 [kv.go:102] [I] 发送acquire成功 
+2014/12/25 16:57:49 [kv.go:109] [I] 读取acquire操作返回值成功 
+2014/12/25 16:57:49 [kv.go:113] [I] 添加锁成功 
+2014/12/25 16:57:49 [kv.go:125] [I] release请求创建成功 
+2014/12/25 16:57:49 [kv.go:132] [I] 发送release请求成功 
+2014/12/25 16:57:49 [kv.go:139] [I] 读取release 操作返回值成功 
+2014/12/25 16:57:49 [kv.go:141] [E] 释放锁失败 <nil> 
+2014/12/25 16:57:54 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:57:54 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:57:54 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:57:54 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:57:54 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:57:54 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:57:54 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:57:54 [kv.go:62] [I] 500 
+2014/12/25 16:57:54 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:57:54 [kv.go:77] [E] 解析session create 返回值失败 invalid character 'r' looking for beginning of value 
+2014/12/25 16:57:54 [kv.go:73] [I] 读取session create 返回值成功 rpc error: Check 'service:mysql-1' is in critical state 
+2014/12/25 16:58:07 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:58:07 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:58:07 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:58:07 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:58:07 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:58:07 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:58:07 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:58:07 [kv.go:62] [I] 500 
+2014/12/25 16:58:07 [kv.go:73] [I] 读取session create 返回值成功 rpc error: Check 'service:mysql-1' is in critical state 
+2014/12/25 16:58:07 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:58:07 [kv.go:77] [E] 解析session create 返回值失败 invalid character 'r' looking for beginning of value 
+2014/12/25 16:58:09 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:58:09 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:58:09 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:58:09 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:58:09 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:58:09 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:58:09 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:58:09 [kv.go:62] [I] 500 
+2014/12/25 16:58:09 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:58:09 [kv.go:77] [E] 解析session create 返回值失败 invalid character 'r' looking for beginning of value 
+2014/12/25 16:58:09 [kv.go:73] [I] 读取session create 返回值成功 rpc error: Check 'service:mysql-1' is in critical state 
+2014/12/25 16:58:10 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:58:10 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:58:10 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:58:10 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:58:10 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:58:10 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:58:10 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:58:10 [kv.go:62] [I] 500 
+2014/12/25 16:58:10 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:58:10 [kv.go:73] [I] 读取session create 返回值成功 rpc error: Check 'service:mysql-1' is in critical state 
+2014/12/25 16:58:10 [kv.go:77] [E] 解析session create 返回值失败 invalid character 'r' looking for beginning of value 
+2014/12/25 16:58:12 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:58:12 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:58:12 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:58:12 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:58:12 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:58:12 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:58:12 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:58:12 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:58:12 [kv.go:73] [I] 读取session create 返回值成功 rpc error: Check 'service:mysql-1' is in critical state 
+2014/12/25 16:58:12 [kv.go:62] [I] 500 
+2014/12/25 16:58:12 [kv.go:77] [E] 解析session create 返回值失败 invalid character 'r' looking for beginning of value 
+2014/12/25 16:58:28 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 16:58:28 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 16:58:28 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 16:58:28 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 16:58:28 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 16:58:28 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 16:58:28 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 16:58:28 [kv.go:62] [I] 500 
+2014/12/25 16:58:28 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 16:58:28 [kv.go:73] [I] 读取session create 返回值成功 rpc error: Check 'service:mysql-1' is in critical state 
+2014/12/25 16:58:28 [kv.go:77] [E] 解析session create 返回值失败 invalid character 'r' looking for beginning of value 
+2014/12/25 17:00:18 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:00:18 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:00:18 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:00:18 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:00:18 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:00:18 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:00:18 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:00:18 [kv.go:62] [I] 200 
+2014/12/25 17:00:18 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 17:00:18 [kv.go:73] [I] 读取session create 返回值成功 {"ID":"f10875b2-2c70-11c4-81b2-d1c8f41d32ba"} 
+2014/12/25 17:00:18 [kv.go:80] [I] 解析session create返回值成功 f10875b2-2c70-11c4-81b2-d1c8f41d32ba 
+2014/12/25 17:00:18 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 17:00:19 [kv.go:97] [I] 500 
+2014/12/25 17:00:19 [kv.go:99] [E] 发送acquire失败 <nil> 
+2014/12/25 17:26:10 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:26:10 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:26:10 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:26:10 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:26:10 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:26:10 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:26:10 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:26:10 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:26:10 [kv.go:62] [I] 500 
+2014/12/25 17:28:12 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:28:12 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:28:12 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:28:12 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:28:12 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:28:12 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:28:12 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:28:12 [kv.go:62] [I] 200 
+2014/12/25 17:28:12 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 17:28:12 [kv.go:73] [I] 读取session create 返回值成功 {"ID":"3025bcdc-14dc-8fe4-3a51-492adb99344f"} 
+2014/12/25 17:28:12 [kv.go:80] [I] 解析session create返回值成功 3025bcdc-14dc-8fe4-3a51-492adb99344f 
+2014/12/25 17:28:12 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 17:28:12 [kv.go:99] [E] 发送acquire失败 <nil> 
+2014/12/25 17:28:12 [kv.go:97] [I] 500 
+2014/12/25 17:28:18 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:28:18 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:28:18 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:28:18 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:28:18 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:28:18 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:28:18 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:28:19 [kv.go:62] [I] 500 
+2014/12/25 17:28:19 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:28:50 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:28:50 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:28:50 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:28:50 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:28:50 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:28:50 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:28:50 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:28:50 [kv.go:62] [I] 500 
+2014/12/25 17:28:50 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:29:02 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:29:02 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:29:02 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:29:02 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:29:02 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:29:02 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:29:02 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:29:02 [kv.go:62] [I] 500 
+2014/12/25 17:29:02 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:29:15 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:29:15 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:29:15 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:29:15 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:29:15 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:29:15 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:29:15 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:29:15 [kv.go:62] [I] 200 
+2014/12/25 17:29:15 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 17:29:15 [kv.go:73] [I] 读取session create 返回值成功 {"ID":"c7a80cd6-b192-32ad-3284-deffa2b78344"} 
+2014/12/25 17:29:15 [kv.go:80] [I] 解析session create返回值成功 c7a80cd6-b192-32ad-3284-deffa2b78344 
+2014/12/25 17:29:15 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 17:29:15 [kv.go:99] [E] 发送acquire失败 <nil> 
+2014/12/25 17:29:15 [kv.go:97] [I] 500 
+2014/12/25 17:29:21 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:29:21 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:29:21 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:29:21 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:29:21 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:29:21 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:29:21 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:29:21 [kv.go:62] [I] 500 
+2014/12/25 17:29:21 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:29:32 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:29:32 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:29:32 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:29:32 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:29:32 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:29:32 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:29:32 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:29:32 [kv.go:62] [I] 500 
+2014/12/25 17:29:32 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:30:10 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:30:10 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:30:10 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:30:10 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:30:10 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:30:10 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:30:10 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:30:11 [kv.go:62] [I] 200 
+2014/12/25 17:30:11 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 17:30:11 [kv.go:73] [I] 读取session create 返回值成功 {"ID":"59babf46-ead8-b343-c5ce-8cf356a81ffd"} 
+2014/12/25 17:30:11 [kv.go:80] [I] 解析session create返回值成功 59babf46-ead8-b343-c5ce-8cf356a81ffd 
+2014/12/25 17:30:11 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 17:30:11 [kv.go:99] [E] 发送acquire失败 <nil> 
+2014/12/25 17:30:11 [kv.go:97] [I] 500 
+2014/12/25 17:30:20 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:30:20 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:30:20 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:30:20 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:30:20 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:30:20 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:30:20 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:30:21 [kv.go:62] [I] 500 
+2014/12/25 17:30:21 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:30:25 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:30:25 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:30:25 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:30:25 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:30:25 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:30:25 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:30:25 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:30:25 [kv.go:62] [I] 500 
+2014/12/25 17:30:25 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:31:07 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:31:07 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:31:07 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:31:07 [kv.go:29] [I] create kv 请求创建成功 
+2014/12/25 17:31:07 [kv.go:36] [I] 发送create kv请求成功 
+2014/12/25 17:31:07 [kv.go:42] [I] 读取create kv请求成功 true 
+2014/12/25 17:31:07 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:31:07 [kv.go:62] [I] 500 
+2014/12/25 17:31:07 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:59:23 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:59:23 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:59:23 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:59:23 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 17:59:23 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 17:59:23 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 17:59:23 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:59:23 [kv.go:62] [I] 200 
+2014/12/25 17:59:23 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 17:59:23 [kv.go:73] [I] 读取session create 返回值成功 {"ID":"c0b1ee7a-e1e1-09dd-e2d0-7554cd7a3f4c"} 
+2014/12/25 17:59:23 [kv.go:80] [I] 解析session create返回值成功 c0b1ee7a-e1e1-09dd-e2d0-7554cd7a3f4c 
+2014/12/25 17:59:23 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 17:59:23 [kv.go:97] [I] 500 
+2014/12/25 17:59:23 [kv.go:99] [E] 发送acquire失败 <nil> 
+2014/12/25 17:59:38 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:59:38 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:59:38 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:59:38 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 17:59:38 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 17:59:38 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 17:59:38 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:59:38 [kv.go:62] [I] 500 
+2014/12/25 17:59:38 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:59:40 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 17:59:40 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 17:59:40 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 17:59:40 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 17:59:40 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 17:59:40 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 17:59:40 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 17:59:40 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 17:59:40 [kv.go:62] [I] 500 
+2014/12/25 18:01:06 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:01:06 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:01:06 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:01:06 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:01:06 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:01:06 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:01:06 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 18:01:06 [kv.go:62] [I] 500 
+2014/12/25 18:01:06 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 18:01:08 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:01:08 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:01:08 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:01:08 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:01:08 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:01:08 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:01:08 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 18:01:09 [kv.go:62] [I] 500 
+2014/12/25 18:01:09 [kv.go:64] [E] 发送session create请求失败 <nil> 
+2014/12/25 18:01:38 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 18:01:38 [kv.go:62] [I] 200 
+2014/12/25 18:01:38 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 18:01:38 [kv.go:73] [I] 读取session create 返回值成功 {"ID":"50ea47df-c09a-62b7-de41-ddac54f8c4a5"} 
+2014/12/25 18:01:38 [kv.go:80] [I] 解析session create返回值成功 50ea47df-c09a-62b7-de41-ddac54f8c4a5 
+2014/12/25 18:06:13 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:06:13 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:06:13 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:06:23 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:06:23 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:06:23 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:06:26 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 18:06:27 [kv.go:62] [I] 200 
+2014/12/25 18:06:27 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 18:06:27 [kv.go:73] [I] 读取session create 返回值成功 {"ID":"89b26d55-708f-6192-342a-cb853ca3474f"} 
+2014/12/25 18:06:27 [kv.go:80] [I] 解析session create返回值成功 89b26d55-708f-6192-342a-cb853ca3474f 
+2014/12/25 18:06:27 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 18:06:27 [kv.go:97] [I] 200 
+2014/12/25 18:06:27 [kv.go:102] [I] 发送acquire成功 
+2014/12/25 18:06:27 [kv.go:109] [I] 读取acquire操作返回值成功 
+2014/12/25 18:06:27 [kv.go:113] [I] 添加锁成功 
+2014/12/25 18:06:27 [kv.go:125] [I] release请求创建成功 
+2014/12/25 18:06:27 [kv.go:132] [I] 发送release请求成功 
+2014/12/25 18:06:27 [kv.go:139] [I] 读取release 操作返回值成功 
+2014/12/25 18:06:27 [kv.go:144] [I] 释放锁成功 
+2014/12/25 18:07:01 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:07:01 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:07:01 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:07:11 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:07:11 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:07:11 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:07:14 [kv.go:59] [I] session create请求创建成功 
+2014/12/25 18:07:14 [kv.go:62] [I] 200 
+2014/12/25 18:07:14 [kv.go:67] [I] 发送session create请求成功 
+2014/12/25 18:07:14 [kv.go:73] [I] 读取session create 返回值成功 {"ID":"dc0ccf9f-1682-071d-0f0e-a7083f7798d7"} 
+2014/12/25 18:07:14 [kv.go:80] [I] 解析session create返回值成功 dc0ccf9f-1682-071d-0f0e-a7083f7798d7 
+2014/12/25 18:07:14 [kv.go:94] [I] acquire请求创建成功 
+2014/12/25 18:07:14 [kv.go:97] [I] 200 
+2014/12/25 18:07:14 [kv.go:102] [I] 发送acquire成功 
+2014/12/25 18:07:14 [kv.go:109] [I] 读取acquire操作返回值成功 
+2014/12/25 18:07:14 [kv.go:113] [I] 添加锁成功 
+2014/12/25 18:07:14 [kv.go:125] [I] release请求创建成功 
+2014/12/25 18:07:14 [kv.go:132] [I] 发送release请求成功 
+2014/12/25 18:07:14 [kv.go:139] [I] 读取release 操作返回值成功 
+2014/12/25 18:07:14 [kv.go:144] [I] 释放锁成功 
+2014/12/25 18:09:18 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:09:18 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:09:18 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:09:28 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:09:28 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:09:28 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:09:31 [kv.go:60] [I] session create请求创建成功 
+2014/12/25 18:09:31 [kv.go:63] [I] 200 
+2014/12/25 18:09:31 [kv.go:68] [I] 发送session create请求成功 
+2014/12/25 18:09:31 [kv.go:74] [I] 读取session create 返回值成功 {"ID":"31d60923-9b57-9034-a090-b0cef4af72f3"} 
+2014/12/25 18:09:31 [kv.go:81] [I] 解析session create返回值成功 31d60923-9b57-9034-a090-b0cef4af72f3 
+2014/12/25 18:09:41 [kv.go:96] [I] acquire请求创建成功 
+2014/12/25 18:09:41 [kv.go:99] [I] 200 
+2014/12/25 18:09:41 [kv.go:104] [I] 发送acquire成功 
+2014/12/25 18:09:41 [kv.go:111] [I] 读取acquire操作返回值成功 
+2014/12/25 18:09:41 [kv.go:115] [I] 添加锁成功 
+2014/12/25 18:09:51 [kv.go:128] [I] release请求创建成功 
+2014/12/25 18:09:51 [kv.go:135] [I] 发送release请求成功 
+2014/12/25 18:09:51 [kv.go:147] [I] 释放锁成功 
+2014/12/25 18:09:51 [kv.go:142] [I] 读取release 操作返回值成功 
+2014/12/25 18:11:26 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:11:26 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:11:26 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:11:36 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:11:36 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:11:36 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:11:39 [kv.go:60] [I] session create请求创建成功 
+2014/12/25 18:11:39 [kv.go:63] [I] 200 
+2014/12/25 18:11:39 [kv.go:68] [I] 发送session create请求成功 
+2014/12/25 18:11:39 [kv.go:74] [I] 读取session create 返回值成功 {"ID":"00377943-a2b5-dc25-e00d-ade369e619ba"} 
+2014/12/25 18:11:39 [kv.go:81] [I] 解析session create返回值成功 00377943-a2b5-dc25-e00d-ade369e619ba 
+2014/12/25 18:11:49 [kv.go:96] [I] acquire请求创建成功 
+2014/12/25 18:11:49 [kv.go:99] [I] 200 
+2014/12/25 18:11:49 [kv.go:104] [I] 发送acquire成功 
+2014/12/25 18:11:49 [kv.go:111] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:11:49 [kv.go:115] [I] 添加锁成功 
+2014/12/25 18:11:59 [kv.go:128] [I] release请求创建成功 
+2014/12/25 18:11:59 [kv.go:135] [I] 发送release请求成功 
+2014/12/25 18:11:59 [kv.go:142] [I] 读取release 操作返回值成功 
+2014/12/25 18:11:59 [kv.go:147] [I] 释放锁成功 
+2014/12/25 18:12:54 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:12:54 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:12:54 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:13:04 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:13:04 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:13:04 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:13:07 [kv.go:60] [I] session create请求创建成功 
+2014/12/25 18:13:07 [kv.go:63] [I] 200 
+2014/12/25 18:13:07 [kv.go:68] [I] 发送session create请求成功 
+2014/12/25 18:13:07 [kv.go:74] [I] 读取session create 返回值成功 {"ID":"2a7cde51-7b02-3e83-fc64-368d8046fc8b"} 
+2014/12/25 18:13:07 [kv.go:81] [I] 解析session create返回值成功 2a7cde51-7b02-3e83-fc64-368d8046fc8b 
+2014/12/25 18:13:17 [kv.go:96] [I] acquire请求创建成功 
+2014/12/25 18:13:18 [kv.go:99] [I] 200 
+2014/12/25 18:13:18 [kv.go:111] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:13:18 [kv.go:104] [I] 发送acquire成功 
+2014/12/25 18:13:18 [kv.go:115] [I] 添加锁成功 
+2014/12/25 18:14:56 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:14:56 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:14:56 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:15:06 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:15:06 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:15:06 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:15:09 [kv.go:60] [I] session create请求创建成功 
+2014/12/25 18:15:09 [kv.go:63] [I] 200 
+2014/12/25 18:15:09 [kv.go:68] [I] 发送session create请求成功 
+2014/12/25 18:15:09 [kv.go:74] [I] 读取session create 返回值成功 {"ID":"aa8531d0-7f02-c0ce-074e-50b3dfb6debb"} 
+2014/12/25 18:15:09 [kv.go:81] [I] 解析session create返回值成功 aa8531d0-7f02-c0ce-074e-50b3dfb6debb 
+2014/12/25 18:15:29 [kv.go:96] [I] acquire请求创建成功 
+2014/12/25 18:15:29 [kv.go:99] [I] 200 
+2014/12/25 18:15:29 [kv.go:104] [I] 发送acquire成功 
+2014/12/25 18:15:29 [kv.go:115] [I] 添加锁成功 
+2014/12/25 18:15:29 [kv.go:111] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:17:46 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:17:46 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:17:46 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:17:56 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:17:56 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:17:56 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:17:59 [kv.go:60] [I] session create请求创建成功 
+2014/12/25 18:17:59 [kv.go:63] [I] 200 
+2014/12/25 18:17:59 [kv.go:68] [I] 发送session create请求成功 
+2014/12/25 18:17:59 [kv.go:74] [I] 读取session create 返回值成功 {"ID":"2de3673d-3003-422b-73d8-132aaba46ea8"} 
+2014/12/25 18:17:59 [kv.go:81] [I] 解析session create返回值成功 2de3673d-3003-422b-73d8-132aaba46ea8 
+2014/12/25 18:18:19 [kv.go:96] [I] acquire请求创建成功 
+2014/12/25 18:18:20 [kv.go:99] [I] 200 
+2014/12/25 18:18:20 [kv.go:104] [I] 发送acquire成功 
+2014/12/25 18:18:20 [kv.go:111] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:18:20 [kv.go:115] [I] 添加锁成功 
+2014/12/25 18:30:03 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:30:03 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:30:03 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:30:13 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:30:13 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:30:13 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:30:13 [session.go:30] [I] session create请求创建成功 
+2014/12/25 18:30:13 [session.go:33] [I] 200 
+2014/12/25 18:30:13 [session.go:38] [I] 发送session create请求成功 
+2014/12/25 18:30:13 [session.go:44] [I] 读取session create 返回值成功 {"ID":"0197818e-0033-3df4-6b24-e869a7c78567"} 
+2014/12/25 18:30:13 [session.go:51] [I] 解析session create返回值成功 0197818e-0033-3df4-6b24-e869a7c78567 
+2014/12/25 18:30:13 [main.go:19] [I] 0197818e-0033-3df4-6b24-e869a7c78567 
+2014/12/25 18:30:16 [kv.go:60] [I] session create请求创建成功 
+2014/12/25 18:30:16 [kv.go:63] [I] 200 
+2014/12/25 18:30:16 [kv.go:68] [I] 发送session create请求成功 
+2014/12/25 18:30:16 [kv.go:74] [I] 读取session create 返回值成功 {"ID":"c2494bc2-5ab7-5852-e3dd-08c02acf1cbe"} 
+2014/12/25 18:30:16 [kv.go:81] [I] 解析session create返回值成功 c2494bc2-5ab7-5852-e3dd-08c02acf1cbe 
+2014/12/25 18:30:36 [kv.go:96] [I] acquire请求创建成功 
+2014/12/25 18:30:36 [kv.go:99] [I] 200 
+2014/12/25 18:30:36 [kv.go:104] [I] 发送acquire成功 
+2014/12/25 18:30:36 [kv.go:111] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:30:36 [kv.go:115] [I] 添加锁成功 
+2014/12/25 18:37:32 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:37:32 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:37:32 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:37:42 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:37:42 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:37:42 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:37:42 [session.go:30] [I] session create请求创建成功 
+2014/12/25 18:37:42 [session.go:33] [I] 200 
+2014/12/25 18:37:42 [session.go:38] [I] 发送session create请求成功 
+2014/12/25 18:37:42 [session.go:44] [I] 读取session create 返回值成功 {"ID":"5abff207-8b47-9308-a768-320b2718c3dd"} 
+2014/12/25 18:37:42 [session.go:51] [I] 解析session create返回值成功 5abff207-8b47-9308-a768-320b2718c3dd 
+2014/12/25 18:37:42 [main.go:19] [I] 5abff207-8b47-9308-a768-320b2718c3dd 
+2014/12/25 18:37:45 [kv.go:83] [I] 5abff207-8b47-9308-a768-320b2718c3dd 
+2014/12/25 18:38:05 [kv.go:97] [I] acquire请求创建成功 
+2014/12/25 18:38:05 [kv.go:100] [I] 200 
+2014/12/25 18:38:05 [kv.go:105] [I] 发送acquire成功 
+2014/12/25 18:38:05 [kv.go:112] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:38:05 [kv.go:116] [I] 添加锁成功 
+2014/12/25 18:40:26 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:40:26 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:40:26 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:40:36 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:40:36 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:40:36 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:40:36 [session.go:30] [I] session create请求创建成功 
+2014/12/25 18:40:36 [session.go:33] [I] 200 
+2014/12/25 18:40:36 [session.go:38] [I] 发送session create请求成功 
+2014/12/25 18:40:36 [session.go:44] [I] 读取session create 返回值成功 {"ID":"1cc42d05-c2e4-91e7-b648-4d3ff3d06f05"} 
+2014/12/25 18:40:36 [session.go:51] [I] 解析session create返回值成功 1cc42d05-c2e4-91e7-b648-4d3ff3d06f05 
+2014/12/25 18:40:36 [main.go:19] [I] 1cc42d05-c2e4-91e7-b648-4d3ff3d06f05 
+2014/12/25 18:40:59 [kv.go:85] [I] 1cc42d05-c2e4-91e7-b648-4d3ff3d06f05 
+2014/12/25 18:40:59 [kv.go:98] [I] acquire请求创建成功 
+2014/12/25 18:40:59 [kv.go:101] [I] 200 
+2014/12/25 18:40:59 [kv.go:106] [I] 发送acquire成功 
+2014/12/25 18:40:59 [kv.go:113] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:40:59 [kv.go:117] [I] 添加锁成功 
+2014/12/25 18:43:18 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:43:18 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:43:18 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:43:28 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:43:28 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:43:28 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:43:28 [session.go:30] [I] session create请求创建成功 
+2014/12/25 18:43:28 [session.go:33] [I] 200 
+2014/12/25 18:43:28 [session.go:38] [I] 发送session create请求成功 
+2014/12/25 18:43:28 [session.go:44] [I] 读取session create 返回值成功 {"ID":"473ad2bd-1555-33a9-bbe0-51917ce831fa"} 
+2014/12/25 18:43:28 [session.go:51] [I] 解析session create返回值成功 473ad2bd-1555-33a9-bbe0-51917ce831fa 
+2014/12/25 18:43:28 [main.go:19] [I] 473ad2bd-1555-33a9-bbe0-51917ce831fa 
+2014/12/25 18:43:51 [kv.go:16] [I] 473ad2bd-1555-33a9-bbe0-51917ce831fa 
+2014/12/25 18:43:51 [kv.go:29] [I] acquire请求创建成功 
+2014/12/25 18:43:52 [kv.go:32] [I] 200 
+2014/12/25 18:43:52 [kv.go:37] [I] 发送acquire成功 
+2014/12/25 18:43:52 [kv.go:44] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:43:52 [kv.go:48] [I] 添加锁成功 
+2014/12/25 18:44:02 [kv.go:61] [I] release请求创建成功 
+2014/12/25 18:44:02 [kv.go:68] [I] 发送release请求成功 
+2014/12/25 18:44:02 [kv.go:75] [I] 读取release 操作返回值成功 
+2014/12/25 18:44:02 [kv.go:80] [I] 释放锁成功 
+2014/12/25 18:44:22 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:44:22 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:44:22 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:44:32 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:44:32 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:44:32 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:44:32 [session.go:30] [I] session create请求创建成功 
+2014/12/25 18:44:32 [session.go:33] [I] 200 
+2014/12/25 18:44:32 [session.go:38] [I] 发送session create请求成功 
+2014/12/25 18:44:32 [session.go:44] [I] 读取session create 返回值成功 {"ID":"ab365aef-eab7-ca6b-90ea-f1bc154337a1"} 
+2014/12/25 18:44:32 [session.go:51] [I] 解析session create返回值成功 ab365aef-eab7-ca6b-90ea-f1bc154337a1 
+2014/12/25 18:44:32 [main.go:19] [I] ab365aef-eab7-ca6b-90ea-f1bc154337a1 
+2014/12/25 18:44:55 [kv.go:16] [I] ab365aef-eab7-ca6b-90ea-f1bc154337a1 
+2014/12/25 18:44:55 [kv.go:29] [I] acquire请求创建成功 
+2014/12/25 18:44:55 [kv.go:32] [I] 200 
+2014/12/25 18:44:55 [kv.go:37] [I] 发送acquire成功 
+2014/12/25 18:44:55 [kv.go:44] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:44:55 [kv.go:48] [I] 添加锁成功 
+2014/12/25 18:45:05 [kv.go:61] [I] release请求创建成功 
+2014/12/25 18:45:05 [kv.go:68] [I] 发送release请求成功 
+2014/12/25 18:45:05 [kv.go:75] [I] 读取release 操作返回值成功 
+2014/12/25 18:45:05 [kv.go:80] [I] 释放锁成功 
+2014/12/25 18:49:19 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:49:19 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:49:19 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:49:24 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:49:25 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:49:25 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:49:25 [session.go:30] [I] session create请求创建成功 
+2014/12/25 18:49:25 [session.go:33] [I] 200 
+2014/12/25 18:49:25 [session.go:38] [I] 发送session create请求成功 
+2014/12/25 18:49:25 [session.go:44] [I] 读取session create 返回值成功 {"ID":"df6f74a7-115a-52f5-e700-661740af8d40"} 
+2014/12/25 18:49:25 [session.go:51] [I] 解析session create返回值成功 df6f74a7-115a-52f5-e700-661740af8d40 
+2014/12/25 18:49:25 [main.go:19] [I] df6f74a7-115a-52f5-e700-661740af8d40 
+2014/12/25 18:49:30 [kv.go:16] [I] df6f74a7-115a-52f5-e700-661740af8d40 
+2014/12/25 18:49:30 [kv.go:29] [I] acquire请求创建成功 
+2014/12/25 18:49:30 [kv.go:32] [I] 200 
+2014/12/25 18:49:30 [kv.go:37] [I] 发送acquire成功 
+2014/12/25 18:49:30 [kv.go:44] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:49:30 [kv.go:48] [I] 添加锁成功 
+2014/12/25 18:49:40 [kv.go:61] [I] release请求创建成功 
+2014/12/25 18:49:40 [kv.go:68] [I] 发送release请求成功 
+2014/12/25 18:49:40 [kv.go:75] [I] 读取release 操作返回值成功 
+2014/12/25 18:49:40 [kv.go:80] [I] 释放锁成功 
+2014/12/25 18:55:33 [service.go:24] [I] agent1 register service创建请求成功 
+2014/12/25 18:55:33 [service.go:31] [I] 发送agent1 register service成功 
+2014/12/25 18:55:33 [service.go:37] [I] 读取agent1 register service 返回值成功  
+2014/12/25 18:55:38 [kvcreate.go:24] [I] create kv 请求创建成功 
+2014/12/25 18:55:39 [kvcreate.go:31] [I] 发送create kv请求成功 
+2014/12/25 18:55:39 [kvcreate.go:37] [I] 读取create kv请求成功 true 
+2014/12/25 18:55:39 [session.go:30] [I] session create请求创建成功 
+2014/12/25 18:55:39 [session.go:33] [I] 200 
+2014/12/25 18:55:39 [session.go:38] [I] 发送session create请求成功 
+2014/12/25 18:55:39 [session.go:44] [I] 读取session create 返回值成功 {"ID":"796aebed-56a5-09eb-49e3-28e4a731390e"} 
+2014/12/25 18:55:39 [session.go:51] [I] 解析session create返回值成功 796aebed-56a5-09eb-49e3-28e4a731390e 
+2014/12/25 18:55:39 [main.go:19] [I] 796aebed-56a5-09eb-49e3-28e4a731390e 
+2014/12/25 18:55:44 [kv.go:16] [I] 796aebed-56a5-09eb-49e3-28e4a731390e 
+2014/12/25 18:55:44 [kv.go:29] [I] acquire请求创建成功 
+2014/12/25 18:55:44 [kv.go:32] [I] 200 
+2014/12/25 18:55:44 [kv.go:37] [I] 发送acquire成功 
+2014/12/25 18:55:44 [kv.go:44] [I] 读取acquire操作返回值成功 true 
+2014/12/25 18:55:44 [kv.go:48] [I] 添加锁成功 
+2014/12/25 18:55:54 [kv.go:97] [I] release请求创建成功 
+2014/12/25 18:55:54 [kv.go:104] [I] 发送release请求成功 
+2014/12/25 18:55:54 [kv.go:111] [I] 读取release 操作返回值成功 
+2014/12/25 18:55:54 [kv.go:116] [I] 释放锁成功 

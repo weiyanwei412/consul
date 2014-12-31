@@ -1,0 +1,590 @@
+
+2014/12/28 00:00:14 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 00:00:14 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 00:00:14 [http.go:53] [I] body: {"Node":"docker-node12","IP":"192.168.2.52","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 00:00:14 [http.go:57] [I] body: {"Node":"docker-node12","IP":"192.168.2.52","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 00:00:14 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 00:00:14 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 00:00:15 [http.go:83] [I] session request Success 
+2014/12/28 00:00:15 [http.go:86] [I] 200 
+2014/12/28 00:00:15 [http.go:91] [I] session api 发送成功 
+2014/12/28 00:00:15 [http.go:103] [I] session 解析成功！ 
+2014/12/28 00:00:15 [http.go:104] [I] session ID: fd76f296-b5ff-9144-c556-3b73a8759124 
+2014/12/28 00:00:24 [http.go:119] [I] kv request Success! 
+2014/12/28 00:00:24 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 00:00:24 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 00:00:24 [http.go:134] [I] kv acquire: false 
+2014/12/28 00:05:31 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 00:05:31 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 00:05:31 [http.go:53] [I] body: {
+  	"Node":"consul-agent2",
+    "IP":"192.168.2.62",
+    "Port":3306,
+    "username":"root",
+    "password":"",
+    "holdon":"N"
+} 
+2014/12/28 00:05:31 [http.go:57] [I] body: {
+  	"Node":"consul-agent2",
+    "IP":"192.168.2.62",
+    "Port":3306,
+    "username":"root",
+    "password":"",
+    "holdon":"N"
+} 
+2014/12/28 00:05:31 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 00:05:31 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 00:05:31 [http.go:83] [I] session request Success 
+2014/12/28 00:05:31 [http.go:86] [I] 200 
+2014/12/28 00:05:31 [http.go:91] [I] session api 发送成功 
+2014/12/28 00:05:31 [http.go:103] [I] session 解析成功！ 
+2014/12/28 00:05:31 [http.go:104] [I] session ID: 5f2bac7b-a675-023f-1f6e-8b73601e918e 
+2014/12/28 00:05:41 [http.go:119] [I] kv request Success! 
+2014/12/28 00:05:41 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 00:05:41 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 00:05:41 [http.go:134] [I] kv acquire: false 
+2014/12/28 00:07:50 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 00:07:50 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 00:07:50 [http.go:53] [I] body: {
+  	"Node":"consul-agent2",
+    "IP":"192.168.2.62",
+    "Port":3306,
+    "username":"root",
+    "password":"",
+    "holdon":"N"
+} 
+2014/12/28 00:07:50 [http.go:57] [I] body: {
+  	"Node":"consul-agent2",
+    "IP":"192.168.2.62",
+    "Port":3306,
+    "username":"root",
+    "password":"",
+    "holdon":"N"
+} 
+2014/12/28 00:07:50 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 00:07:50 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 00:07:51 [http.go:83] [I] session request Success 
+2014/12/28 00:07:51 [http.go:86] [I] 200 
+2014/12/28 00:07:51 [http.go:91] [I] session api 发送成功 
+2014/12/28 00:07:51 [http.go:103] [I] session 解析成功！ 
+2014/12/28 00:07:51 [http.go:104] [I] session ID: fec41fb2-01d2-1e39-6b7d-665a517b27bd 
+2014/12/28 00:08:01 [http.go:119] [I] kv request Success! 
+2014/12/28 00:08:01 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 00:08:01 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 00:08:01 [http.go:134] [I] kv acquire: false 
+2014/12/28 00:08:06 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 00:08:06 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 00:08:06 [http.go:53] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 00:08:06 [http.go:57] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 00:08:06 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 00:08:06 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 00:08:07 [http.go:83] [I] session request Success 
+2014/12/28 00:08:07 [http.go:86] [I] 200 
+2014/12/28 00:08:07 [http.go:91] [I] session api 发送成功 
+2014/12/28 00:08:07 [http.go:103] [I] session 解析成功！ 
+2014/12/28 00:08:07 [http.go:104] [I] session ID: 32b20ee5-a9fa-84a9-1569-3e7aeb2dbfc7 
+2014/12/28 00:08:17 [http.go:119] [I] kv request Success! 
+2014/12/28 00:08:17 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 00:08:17 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 00:08:17 [http.go:134] [I] kv acquire: false 
+2014/12/28 00:38:08 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 00:38:08 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 00:38:08 [http.go:53] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 00:38:08 [http.go:57] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 00:38:08 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 00:38:08 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 00:38:09 [http.go:83] [I] session request Success 
+2014/12/28 00:38:09 [http.go:86] [I] 200 
+2014/12/28 00:38:09 [http.go:91] [I] session api 发送成功 
+2014/12/28 00:38:09 [http.go:103] [I] session 解析成功！ 
+2014/12/28 00:38:09 [http.go:104] [I] session ID: 39209a8f-e223-f5f7-f434-088a24f1599e 
+2014/12/28 00:38:19 [http.go:119] [I] kv request Success! 
+2014/12/28 00:38:19 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 00:38:19 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 00:38:19 [http.go:134] [I] kv acquire: false 
+2014/12/28 01:24:54 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:24:54 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:24:54 [http.go:53] [I] body: {
+  	"Node":"consul-agent3",
+    "IP":"192.168.2.63",
+    "Port":3306,
+    "username":"root",
+    "password":"",
+    "holdon":"N"
+} 
+2014/12/28 01:24:54 [http.go:57] [I] body: {
+  	"Node":"consul-agent3",
+    "IP":"192.168.2.63",
+    "Port":3306,
+    "username":"root",
+    "password":"",
+    "holdon":"N"
+} 
+2014/12/28 01:24:54 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:24:54 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:24:55 [http.go:83] [I] session request Success 
+2014/12/28 01:24:55 [http.go:86] [I] 200 
+2014/12/28 01:24:55 [http.go:91] [I] session api 发送成功 
+2014/12/28 01:24:55 [http.go:103] [I] session 解析成功！ 
+2014/12/28 01:24:55 [http.go:104] [I] session ID: a6031707-7761-3e72-1c17-a5ed5bd13e41 
+2014/12/28 01:25:05 [http.go:119] [I] kv request Success! 
+2014/12/28 01:25:05 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 01:25:05 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 01:25:05 [http.go:134] [I] kv acquire: false 
+2014/12/28 01:29:38 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:29:38 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:29:38 [http.go:53] [I] body: {
+  	"Node":"consul-agent1",
+    "IP":"192.168.2.61",
+    "Port":3306,
+    "username":"root",
+    "password":"111111",
+    "holdon":"N"
+} 
+2014/12/28 01:29:38 [http.go:57] [I] body: {
+  	"Node":"consul-agent1",
+    "IP":"192.168.2.61",
+    "Port":3306,
+    "username":"root",
+    "password":"111111",
+    "holdon":"N"
+} 
+2014/12/28 01:29:38 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:29:38 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:29:38 [http.go:67] [I] 本机是leader 
+2014/12/28 01:31:00 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:31:00 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:31:00 [http.go:53] [I] body: {
+  	"Node":"consul-agent3",
+    "IP":"192.168.2.63",
+    "Port":3306,
+    "username":"root",
+    "password":"111111",
+    "holdon":"N"
+} 
+2014/12/28 01:31:00 [http.go:57] [I] body: {
+  	"Node":"consul-agent3",
+    "IP":"192.168.2.63",
+    "Port":3306,
+    "username":"root",
+    "password":"111111",
+    "holdon":"N"
+} 
+2014/12/28 01:31:00 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:31:00 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:31:00 [http.go:83] [I] session request Success 
+2014/12/28 01:31:00 [http.go:86] [I] 200 
+2014/12/28 01:31:00 [http.go:91] [I] session api 发送成功 
+2014/12/28 01:31:00 [http.go:103] [I] session 解析成功！ 
+2014/12/28 01:31:00 [http.go:104] [I] session ID: b647b3da-fc56-b059-b46f-64614a8065a5 
+2014/12/28 01:31:10 [http.go:119] [I] kv request Success! 
+2014/12/28 01:31:10 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 01:31:10 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 01:31:10 [http.go:134] [I] kv acquire: false 
+2014/12/28 01:32:34 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:32:34 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:32:34 [http.go:53] [I] body: {
+  	"Node":"consul-agent3",
+    "IP":"192.168.2.63",
+    "Port":3306,
+    "username":"root",
+    "password":"111111",
+    "holdon":"N"
+} 
+2014/12/28 01:32:34 [http.go:57] [I] body: {
+  	"Node":"consul-agent3",
+    "IP":"192.168.2.63",
+    "Port":3306,
+    "username":"root",
+    "password":"111111",
+    "holdon":"N"
+} 
+2014/12/28 01:32:34 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:32:34 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:32:35 [http.go:83] [I] session request Success 
+2014/12/28 01:32:35 [http.go:86] [I] 200 
+2014/12/28 01:32:35 [http.go:91] [I] session api 发送成功 
+2014/12/28 01:32:35 [http.go:103] [I] session 解析成功！ 
+2014/12/28 01:32:35 [http.go:104] [I] session ID: c08c4071-8249-427a-0bc7-96adb89cfd3d 
+2014/12/28 01:32:45 [http.go:119] [I] kv request Success! 
+2014/12/28 01:32:45 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 01:32:45 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 01:32:45 [http.go:134] [I] kv acquire: true 
+2014/12/28 01:32:50 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:32:50 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:32:50 [http.go:53] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:32:50 [http.go:57] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:32:50 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:32:50 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:32:50 [http.go:67] [I] 本机是leader 
+2014/12/28 01:35:46 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:35:46 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:35:46 [http.go:53] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:35:46 [http.go:57] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:35:46 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:35:46 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:35:46 [http.go:67] [I] 本机是leader 
+2014/12/28 01:36:02 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:36:02 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:36:02 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:36:02 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:36:02 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:36:02 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:36:02 [http.go:83] [I] session request Success 
+2014/12/28 01:36:02 [http.go:86] [I] 500 
+2014/12/28 01:36:02 [http.go:88] [E] session api 发送失败！ <nil> 
+2014/12/28 01:39:25 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:39:25 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:39:25 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:39:25 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:39:25 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:39:25 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:39:26 [http.go:83] [I] session request Success 
+2014/12/28 01:39:26 [http.go:86] [I] 200 
+2014/12/28 01:39:26 [http.go:91] [I] session api 发送成功 
+2014/12/28 01:39:26 [http.go:103] [I] session 解析成功！ 
+2014/12/28 01:39:26 [http.go:104] [I] session ID: d70fbb9b-5ad8-50ff-3199-1a940385ab47 
+2014/12/28 01:39:36 [http.go:119] [I] kv request Success! 
+2014/12/28 01:39:36 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 01:39:36 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 01:39:36 [http.go:134] [I] kv acquire: false 
+2014/12/28 01:39:41 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:39:41 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:39:41 [http.go:53] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:39:41 [http.go:57] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:39:41 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:39:41 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:39:41 [http.go:83] [I] session request Success 
+2014/12/28 01:39:42 [http.go:86] [I] 200 
+2014/12/28 01:39:42 [http.go:91] [I] session api 发送成功 
+2014/12/28 01:39:42 [http.go:103] [I] session 解析成功！ 
+2014/12/28 01:39:42 [http.go:104] [I] session ID: e68d2a8d-d1b1-8b93-6ffb-9e1780c2b614 
+2014/12/28 01:39:52 [http.go:119] [I] kv request Success! 
+2014/12/28 01:39:52 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 01:39:52 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 01:39:52 [http.go:134] [I] kv acquire: false 
+2014/12/28 01:41:18 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:41:18 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:41:18 [http.go:53] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:41:18 [http.go:57] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:41:18 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:41:18 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:41:18 [http.go:83] [I] session request Success 
+2014/12/28 01:41:19 [http.go:86] [I] 200 
+2014/12/28 01:41:19 [http.go:91] [I] session api 发送成功 
+2014/12/28 01:41:19 [http.go:103] [I] session 解析成功！ 
+2014/12/28 01:41:19 [http.go:104] [I] session ID: 1d78e753-c9cc-0dec-7539-e5e8ad05e61c 
+2014/12/28 01:41:29 [http.go:119] [I] kv request Success! 
+2014/12/28 01:41:29 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 01:41:29 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 01:41:29 [http.go:134] [I] kv acquire: false 
+2014/12/28 01:41:34 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:41:34 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:41:34 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:41:34 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:41:34 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:41:34 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:41:34 [http.go:83] [I] session request Success 
+2014/12/28 01:41:34 [http.go:86] [I] 200 
+2014/12/28 01:41:34 [http.go:91] [I] session api 发送成功 
+2014/12/28 01:41:34 [http.go:103] [I] session 解析成功！ 
+2014/12/28 01:41:34 [http.go:104] [I] session ID: 6933f0a8-bc36-db17-4d1b-6e39f9a78a4a 
+2014/12/28 01:41:44 [http.go:119] [I] kv request Success! 
+2014/12/28 01:41:44 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 01:41:44 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 01:41:44 [http.go:134] [I] kv acquire: false 
+2014/12/28 01:42:52 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:42:52 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:42:52 [http.go:53] [I] body:  
+2014/12/28 01:42:52 [http.go:83] [I] session request Success 
+2014/12/28 01:42:52 [http.go:86] [I] 200 
+2014/12/28 01:42:52 [http.go:91] [I] session api 发送成功 
+2014/12/28 01:42:52 [http.go:103] [I] session 解析成功！ 
+2014/12/28 01:42:52 [http.go:104] [I] session ID: 66f84b2a-79cf-0584-2596-25fb7fe471b9 
+2014/12/28 01:43:02 [http.go:119] [I] kv request Success! 
+2014/12/28 01:43:02 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 01:43:02 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 01:43:02 [http.go:134] [I] kv acquire: false 
+2014/12/28 01:43:07 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:43:07 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:43:07 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:43:07 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:43:07 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:43:07 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:43:08 [http.go:83] [I] session request Success 
+2014/12/28 01:43:08 [http.go:86] [I] 200 
+2014/12/28 01:43:08 [http.go:91] [I] session api 发送成功 
+2014/12/28 01:43:08 [http.go:103] [I] session 解析成功！ 
+2014/12/28 01:43:08 [http.go:104] [I] session ID: 5e083245-dacf-0485-5aa4-c669b326f62d 
+2014/12/28 01:43:18 [http.go:119] [I] kv request Success! 
+2014/12/28 01:43:18 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 01:43:18 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 01:43:18 [http.go:134] [I] kv acquire: false 
+2014/12/28 01:50:19 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:50:19 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:50:19 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:50:19 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:50:19 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:50:19 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:50:19 [http.go:83] [I] session request Success 
+2014/12/28 01:50:19 [http.go:86] [I] 200 
+2014/12/28 01:50:19 [http.go:91] [I] session api 发送成功 
+2014/12/28 01:50:19 [http.go:103] [I] session 解析成功！ 
+2014/12/28 01:50:19 [http.go:104] [I] session ID: 4b1d66db-a048-aea3-5b96-c8a3aaf08f92 
+2014/12/28 01:50:29 [http.go:119] [I] kv request Success! 
+2014/12/28 01:50:29 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 01:50:29 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 01:50:29 [http.go:134] [I] kv acquire: true 
+2014/12/28 01:50:35 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 01:50:35 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 01:50:35 [http.go:53] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:50:35 [http.go:57] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 01:50:35 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 01:50:35 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 01:50:35 [http.go:67] [I] 本机是leader 
+2014/12/28 02:08:06 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 02:08:06 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 02:08:06 [http.go:53] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:08:06 [http.go:57] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:08:06 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 02:08:06 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 02:08:07 [http.go:83] [I] session request Success 
+2014/12/28 02:08:07 [http.go:86] [I] 200 
+2014/12/28 02:08:07 [http.go:91] [I] session api 发送成功 
+2014/12/28 02:08:07 [http.go:103] [I] session 解析成功！ 
+2014/12/28 02:08:07 [http.go:104] [I] session ID: 3b35e579-8853-327d-8d46-6ff062b7e4c2 
+2014/12/28 02:08:17 [http.go:119] [I] kv request Success! 
+2014/12/28 02:08:17 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 02:08:17 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 02:08:17 [http.go:134] [I] kv acquire: false 
+2014/12/28 02:08:22 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 02:08:22 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 02:08:22 [http.go:53] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:08:22 [http.go:57] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:08:22 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 02:08:22 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 02:08:23 [http.go:83] [I] session request Success 
+2014/12/28 02:08:23 [http.go:86] [I] 200 
+2014/12/28 02:08:23 [http.go:91] [I] session api 发送成功 
+2014/12/28 02:08:23 [http.go:103] [I] session 解析成功！ 
+2014/12/28 02:08:23 [http.go:104] [I] session ID: 0d8144fb-217f-9f54-4dd9-76239ed13df7 
+2014/12/28 02:08:33 [http.go:119] [I] kv request Success! 
+2014/12/28 02:08:33 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 02:08:33 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 02:08:33 [http.go:134] [I] kv acquire: false 
+2014/12/28 02:10:05 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 02:10:05 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 02:10:05 [http.go:53] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:10:05 [http.go:57] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:10:05 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 02:10:05 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 02:10:06 [http.go:83] [I] session request Success 
+2014/12/28 02:10:06 [http.go:86] [I] 200 
+2014/12/28 02:10:06 [http.go:91] [I] session api 发送成功 
+2014/12/28 02:10:06 [http.go:103] [I] session 解析成功！ 
+2014/12/28 02:10:06 [http.go:104] [I] session ID: b913dbc5-33be-591b-64d8-64457884489d 
+2014/12/28 02:10:16 [http.go:119] [I] kv request Success! 
+2014/12/28 02:10:16 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 02:10:16 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 02:10:16 [http.go:134] [I] kv acquire: true 
+2014/12/28 02:10:21 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 02:10:21 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 02:10:21 [http.go:53] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:10:21 [http.go:57] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:10:21 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 02:10:21 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 02:10:21 [http.go:67] [I] 本机是leader 
+2014/12/28 02:25:28 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 02:25:28 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 02:25:28 [http.go:53] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:25:28 [http.go:57] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:25:28 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 02:25:28 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 02:25:29 [http.go:83] [I] session request Success 
+2014/12/28 02:25:29 [http.go:86] [I] 200 
+2014/12/28 02:25:29 [http.go:91] [I] session api 发送成功 
+2014/12/28 02:25:29 [http.go:103] [I] session 解析成功！ 
+2014/12/28 02:25:29 [http.go:104] [I] session ID: 2b407092-d5ea-2690-e162-d010d115f7b1 
+2014/12/28 02:25:39 [http.go:119] [I] kv request Success! 
+2014/12/28 02:25:39 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 02:25:39 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 02:25:39 [http.go:134] [I] kv acquire: false 
+2014/12/28 02:25:44 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 02:25:44 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 02:25:44 [http.go:53] [I] body: {"Node":"docker-node12","IP":"192.168.2.52","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:25:44 [http.go:57] [I] body: {"Node":"docker-node12","IP":"192.168.2.52","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 02:25:44 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 02:25:44 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 02:25:44 [http.go:83] [I] session request Success 
+2014/12/28 02:25:44 [http.go:86] [I] 200 
+2014/12/28 02:25:44 [http.go:91] [I] session api 发送成功 
+2014/12/28 02:25:44 [http.go:103] [I] session 解析成功！ 
+2014/12/28 02:25:44 [http.go:104] [I] session ID: 0aba7389-7b70-4765-f012-25eecbaf1096 
+2014/12/28 02:25:54 [http.go:119] [I] kv request Success! 
+2014/12/28 02:25:54 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 02:25:54 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 02:25:54 [http.go:134] [I] kv acquire: false 
+2014/12/28 03:35:40 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 03:35:40 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 03:35:40 [http.go:53] [I] body: {"Node":"docker-node12","IP":"192.168.2.52","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:35:40 [http.go:57] [I] body: {"Node":"docker-node12","IP":"192.168.2.52","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:35:40 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 03:35:40 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 03:35:40 [http.go:83] [I] session request Success 
+2014/12/28 03:35:40 [http.go:86] [I] 200 
+2014/12/28 03:35:40 [http.go:91] [I] session api 发送成功 
+2014/12/28 03:35:40 [http.go:103] [I] session 解析成功！ 
+2014/12/28 03:35:40 [http.go:104] [I] session ID: 2f5389ce-1c33-5d37-c431-eefb75a1fd48 
+2014/12/28 03:35:50 [http.go:119] [I] kv request Success! 
+2014/12/28 03:35:51 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 03:35:51 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 03:35:51 [http.go:134] [I] kv acquire: false 
+2014/12/28 03:35:56 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 03:35:56 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 03:35:56 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:35:56 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:35:56 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 03:35:56 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 03:35:56 [http.go:83] [I] session request Success 
+2014/12/28 03:35:56 [http.go:86] [I] 200 
+2014/12/28 03:35:56 [http.go:91] [I] session api 发送成功 
+2014/12/28 03:35:56 [http.go:103] [I] session 解析成功！ 
+2014/12/28 03:35:56 [http.go:104] [I] session ID: 3b44761d-5bc3-421e-7ce8-72bc492b326c 
+2014/12/28 03:36:06 [http.go:119] [I] kv request Success! 
+2014/12/28 03:36:06 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 03:36:06 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 03:36:06 [http.go:134] [I] kv acquire: false 
+2014/12/28 03:38:26 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 03:38:26 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 03:38:26 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:38:26 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:38:26 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 03:38:26 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 03:38:26 [http.go:83] [I] session request Success 
+2014/12/28 03:38:26 [http.go:86] [I] 200 
+2014/12/28 03:38:26 [http.go:91] [I] session api 发送成功 
+2014/12/28 03:38:26 [http.go:103] [I] session 解析成功！ 
+2014/12/28 03:38:26 [http.go:104] [I] session ID: 50a974db-6b3f-4f7c-91a3-f10cf83bd0f3 
+2014/12/28 03:38:36 [http.go:119] [I] kv request Success! 
+2014/12/28 03:38:36 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 03:38:36 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 03:38:36 [http.go:134] [I] kv acquire: true 
+2014/12/28 03:38:41 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 03:38:41 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 03:38:41 [http.go:53] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:38:41 [http.go:57] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:38:41 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 03:38:41 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 03:38:41 [http.go:67] [I] 本机是leader 
+2014/12/28 03:50:18 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 03:50:18 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 03:50:18 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:50:18 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:50:18 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 03:50:18 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 03:50:19 [http.go:83] [I] session request Success 
+2014/12/28 03:50:19 [http.go:86] [I] 200 
+2014/12/28 03:50:19 [http.go:91] [I] session api 发送成功 
+2014/12/28 03:50:19 [http.go:103] [I] session 解析成功！ 
+2014/12/28 03:50:19 [http.go:104] [I] session ID: c30ba418-ab2e-7610-2c21-f1f85b191661 
+2014/12/28 03:50:29 [http.go:119] [I] kv request Success! 
+2014/12/28 03:50:29 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 03:50:29 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 03:50:29 [http.go:134] [I] kv acquire: false 
+2014/12/28 03:50:34 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 03:50:34 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 03:50:34 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:50:34 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:50:34 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 03:50:34 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 03:50:34 [http.go:83] [I] session request Success 
+2014/12/28 03:50:34 [http.go:86] [I] 200 
+2014/12/28 03:50:34 [http.go:91] [I] session api 发送成功 
+2014/12/28 03:50:34 [http.go:103] [I] session 解析成功！ 
+2014/12/28 03:50:34 [http.go:104] [I] session ID: 8d8cb0b1-5c3a-63a0-3e39-519e5ca1c8c8 
+2014/12/28 03:50:44 [http.go:119] [I] kv request Success! 
+2014/12/28 03:50:44 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 03:50:44 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 03:50:44 [http.go:134] [I] kv acquire: false 
+2014/12/28 03:50:54 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 03:50:54 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 03:50:54 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:50:54 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:50:54 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 03:50:54 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 03:50:54 [http.go:83] [I] session request Success 
+2014/12/28 03:50:54 [http.go:86] [I] 200 
+2014/12/28 03:50:54 [http.go:91] [I] session api 发送成功 
+2014/12/28 03:50:54 [http.go:103] [I] session 解析成功！ 
+2014/12/28 03:50:54 [http.go:104] [I] session ID: f5b8dad9-6ef5-c009-334c-affee56594e3 
+2014/12/28 03:51:04 [http.go:119] [I] kv request Success! 
+2014/12/28 03:51:04 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 03:51:04 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 03:51:04 [http.go:134] [I] kv acquire: false 
+2014/12/28 03:51:10 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 03:51:10 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 03:51:10 [http.go:53] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:51:10 [http.go:57] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:51:10 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 03:51:10 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 03:51:10 [http.go:83] [I] session request Success 
+2014/12/28 03:51:10 [http.go:86] [I] 200 
+2014/12/28 03:51:10 [http.go:91] [I] session api 发送成功 
+2014/12/28 03:51:10 [http.go:103] [I] session 解析成功！ 
+2014/12/28 03:51:10 [http.go:104] [I] session ID: 20858f9b-f82f-eb5b-8bcb-726313e96c65 
+2014/12/28 03:51:20 [http.go:119] [I] kv request Success! 
+2014/12/28 03:51:20 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 03:51:20 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 03:51:20 [http.go:134] [I] kv acquire: false 
+2014/12/28 03:58:05 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 03:58:05 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 03:58:05 [http.go:53] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:58:05 [http.go:57] [I] body: {"Node":"consul-agent3","IP":"192.168.2.63","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:58:05 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 03:58:05 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 03:58:06 [http.go:83] [I] session request Success 
+2014/12/28 03:58:06 [http.go:86] [I] 200 
+2014/12/28 03:58:06 [http.go:91] [I] session api 发送成功 
+2014/12/28 03:58:06 [http.go:103] [I] session 解析成功！ 
+2014/12/28 03:58:06 [http.go:104] [I] session ID: 8c20999f-41c8-95ca-2916-7e7ade162146 
+2014/12/28 03:58:16 [http.go:119] [I] kv request Success! 
+2014/12/28 03:58:16 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 03:58:16 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 03:58:16 [http.go:134] [I] kv acquire: false 
+2014/12/28 03:58:21 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 03:58:21 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 03:58:21 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:58:21 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 03:58:21 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 03:58:21 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 03:58:22 [http.go:83] [I] session request Success 
+2014/12/28 03:58:22 [http.go:86] [I] 200 
+2014/12/28 03:58:22 [http.go:91] [I] session api 发送成功 
+2014/12/28 03:58:22 [http.go:103] [I] session 解析成功！ 
+2014/12/28 03:58:22 [http.go:104] [I] session ID: a83e869b-1a29-61f5-a0b8-5d99ad704a83 
+2014/12/28 03:58:32 [http.go:119] [I] kv request Success! 
+2014/12/28 03:58:32 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 03:58:32 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 03:58:32 [http.go:134] [I] kv acquire: false 
+2014/12/28 04:06:47 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 04:06:47 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 04:06:47 [http.go:53] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 04:06:47 [http.go:57] [I] body: {"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 04:06:47 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 04:06:47 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 04:06:48 [http.go:83] [I] session request Success 
+2014/12/28 04:06:48 [http.go:86] [I] 200 
+2014/12/28 04:06:48 [http.go:91] [I] session api 发送成功 
+2014/12/28 04:06:48 [http.go:103] [I] session 解析成功！ 
+2014/12/28 04:06:48 [http.go:104] [I] session ID: a36fc5e8-9352-5f43-c906-105a51d06286 
+2014/12/28 04:06:58 [http.go:119] [I] kv request Success! 
+2014/12/28 04:06:58 [http.go:126] [I] kv acquire  发送成功！ 
+2014/12/28 04:06:58 [http.go:133] [I] 读取kv  数据成功！ 
+2014/12/28 04:06:58 [http.go:134] [I] kv acquire: true 
+2014/12/28 04:07:03 [http.go:40] [I] get kv value request Success1! 
+2014/12/28 04:07:03 [http.go:47] [I] get kv api 发送成功! 
+2014/12/28 04:07:03 [http.go:53] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 04:07:03 [http.go:57] [I] body: {"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111","holdon":"N"} 
+2014/12/28 04:07:03 [http.go:58] [I] 读取 get kv value 数据成功! <nil> 
+2014/12/28 04:07:03 [http.go:65] [I] get kv value 解析成功! 
+2014/12/28 04:07:03 [http.go:67] [I] 本机是leader 

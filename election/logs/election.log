@@ -1,0 +1,444 @@
+2014/12/20 10:44:10 [main.go:36] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 11:45:31 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 13:10:57 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 13:11:44 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 13:11:44 [main.go:29] [E] Failure to obtain master information: dial tcp: unknown port tcp/kv.Port 
+2014/12/20 13:13:03 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 13:13:03 [main.go:29] [E] Failure to obtain master information: dial tcp: unknown port tcp/kv.Port 
+2014/12/20 13:13:08 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 13:13:08 [main.go:29] [E] Failure to obtain master information: dial tcp: unknown port tcp/kv.Port 
+2014/12/20 13:14:35 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 13:14:35 [main.go:29] [E] Failure to obtain master information: dial tcp: unknown port tcp/kv.Port 
+2014/12/20 13:23:46 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 13:24:14 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 14:49:45 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 14:49:45 [main.go:29] [E] Failure to obtain master information: Error 1045: Access denied for user 'kv.Username + '@'192.168.2.124' (using password: YES) 
+2014/12/20 15:17:01 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 15:19:16 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 15:19:47 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 15:29:35 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 15:51:01 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 15:52:21 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 15:54:41 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 15:59:39 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 15:59:39 [query-leader.go:86] [E] Insert data failed: Error 1290: The MariaDB server is running with the --read-only option so it cannot execute this statement 
+2014/12/20 15:59:39 [main.go:29] [E] Failure to obtain master information: Error 1290: The MariaDB server is running with the --read-only option so it cannot execute this statement 
+2014/12/20 16:07:41 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:07:41 [query-leader.go:86] [E] Insert data failed: Error 1290: The MariaDB server is running with the --read-only option so it cannot execute this statement 
+2014/12/20 16:07:41 [main.go:29] [E] Failure to obtain master information: Error 1290: The MariaDB server is running with the --read-only option so it cannot execute this statement 
+2014/12/20 16:09:21 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:21:37 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:21:38 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:21:38 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:21:39 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:21:40 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:38:56 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:40:00 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:40:50 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:42:54 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:46:38 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:54:42 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 16:55:26 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 17:02:25 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 17:02:37 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 17:13:17 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 17:28:07 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:28:07 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:38:06 [query-leader.go:90] [E] error sql: expected 3 destination arguments in Scan, not 1 
+2014/12/20 17:47:15 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 17:47:42 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 17:47:51 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 17:47:55 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 
+2014/12/20 17:48:04 [main.go:21] [I] 
+	LevelEmergency	0
+    	LevelAlert	1
+   	LevelCritical	2
+    	LevelError	3
+    	LevelWarning	4
+    	LevelNotice	5
+    	LevelInformational  6
+    	LevelDebug	7 //default 

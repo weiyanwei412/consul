@@ -1,0 +1,1240 @@
+#%RAML 0.8
+title: Consul  API
+baseUri: http://192.168.2.61:8500/{version}
+version: v1
+/kv: 
+  displayName: Data Storage
+  /:
+    description: Query all the keys
+    get:
+      queryParameters:
+        keys:  
+          type: string   
+        recurse:
+          type: string  
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                [
+                  "web/key1", 
+                  "web/key2"
+                ] 
+  /{key}:
+    get:
+      description: Query key-value pairs
+      queryParameters:
+        recurse:
+          type: string
+          description: When using the GET method, Consul will return the specified key, or if the "?recurse" query parameter is provided, it will return all keys with the given prefix
+        dc:
+          type: string
+          description: By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter
+        raw:
+          type: string
+          description: If the "?raw" query parameter is used with a non-recursive GET, then the response is just the raw value of the key, without any encoding
+        keys:
+          type: string
+          description: It is possible to also only list keys without their values by using the "?keys" query parameter along with a GET request
+        separator:
+          type: string
+          description:  The optional "?separator=" can be used to list only up to a given separator.
+        pretty:
+          type: string
+        index:
+          type: number
+        wait:
+          type: number
+      responses:
+        200:
+          body: 
+            application/json:
+              example: |
+                [
+                  {
+                    "CreateIndex": 76,
+                    "ModifyIndex": 84,
+                    "LockIndex": 0,
+                    "Key": "web/key1",
+                    "Flags": 1,
+                    "Value": "c3Nz"
+                  }
+                ]         
+    put:
+      description: Query key-value pairs  
+      queryParameters: 
+        cas:
+          type: number
+          description: ?cas=<index>:This flag is used to turn the PUT into a Check-And-Set operation. This is very useful as it allows clients to build more complex syncronization primitives on top. If the index is 0, then Consul will only put the key if it does not already exist. If the index is non-zero, then the key is only set if the index matches the ModifyIndex of that key.
+        flags:
+          type: number
+          description: ?flags=<num>:This can be used to specify an unsigned value between 0 and 264-1. It is opaque to the user, but a client application may use it
+        acquire:
+          type: string
+          description: ?acquire=<session>:This flag is used to turn the PUT into a lock acquisition operation. This is useful as it allows leader election to be built on top of Consul. If the lock is not held and the session is valid, this increments the LockIndex and sets the Session value of the key in addition to updating the key contents. A key does not need to exist to be acquired
+        release:
+          type: string
+          description: ?release=<session>:This flag is used to turn the PUT into a lock release operation. This is useful when paired with "?acquire=" as it allows clients to yield a lock. This will leave the LockIndex unmodified but will clear the associated Session of the key. The key must be held by this session to be unlocked
+      body:
+        application/json:
+          example: |
+            { 
+              "name": "Temperature Measurement",
+              "source": "Thermometer",
+              "sourceTime": "2014-01-01T16:56:54+11:00",
+              "entityRef": "http://example.org/thermometers/99981",
+              "context": {
+              "value": "37.7",
+              "units": "Celsius"
+              }
+            }    
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                ture
+          
+    delete:
+      description: Delete the key-value pairs
+      queryParameters:
+        recurse:
+          type: string
+          description: The DELETE method can be used to delete a single key or all keys sharing a prefix. If the "?recurse" query parameter is provided, then all keys with the prefix are deleted, otherwise only the specified key.
+      responses:
+        200:
+/agent:
+  /checks:
+    description: The return of the check information
+    get:
+      queryParameters:
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "mysql-1": {
+                  "Node": "consul-agent1",
+                  "CheckID": "mysql-1",
+                  "Name": "mysql-1",
+                  "Status": "critical",
+                  "Notes": "",
+                  "Output": "/bin/bash: /root/mysqlcheck.sh: No such file or directory\n",
+                  "ServiceID": "",
+                  "ServiceName": ""
+                  }
+                }
+  /services:
+    description: Returns the service registration information
+    get:
+      queryParameters:
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "mysql-2": {
+                   "ID": "mysql-2",
+                   "Service": "mysql-2",
+                  "Tags": [
+                     "master"
+                   ],
+                  "Port": 3306
+                   }
+                }
+  /members:
+    description: Member of the returned information
+    get:
+      queryParameters:
+        wan:
+          type: integer
+          description: For agents running in server mode, providing a "?wan=1" query parameter returns the list of WAN members instead of the LAN members which is default
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                [
+                  {
+                    "Name": "consul-server2",
+                    "Addr": "192.168.2.72",
+                     "Port": 8301,
+                     "Tags": {
+                       "build": "0.4.1:",
+                       "dc": "dc1",
+                       "port": "8300",
+                       "role": "consul",
+                       "vsn": "2",
+                      "vsn_max": "2",
+                       "vsn_min": "1"
+                     },
+                    "Status": 1,
+                    "ProtocolMin": 1,
+                    "ProtocolMax": 2,
+                    "ProtocolCur": 2,
+                    "DelegateMin": 2,
+                    "DelegateMax": 4,
+                    "DelegateCur": 4
+                  },
+                  {
+                    "Name": "consul-server3",
+                    "Addr": "192.168.2.73",
+                    "Port": 8301,
+                    "Tags": {
+                      "build": "0.4.1:",
+                      "dc": "dc1",
+                      "port": "8300",
+                      "role": "consul",
+                      "vsn": "2",
+                      "vsn_max": "2",
+                      "vsn_min": "1"
+                    },
+                    "Status": 1,
+                    "ProtocolMin": 1,
+                    "ProtocolMax": 2,
+                    "ProtocolCur": 2,
+                    "DelegateMin": 2,
+                    "DelegateMax": 4,
+                    "DelegateCur": 4
+                  },
+                  {
+                    "Name": "consul-agent2",
+                    "Addr": "192.168.2.62",
+                    "Port": 8301,
+                    "Tags": {
+                      "build": "0.4.1:",
+                      "dc": "dc1",
+                      "role": "node",
+                      "vsn": "2",
+                      "vsn_max": "2",
+                      "vsn_min": "1"
+                    },
+                    "Status": 1,
+                    "ProtocolMin": 1,
+                    "ProtocolMax": 2,
+                    "ProtocolCur": 2,
+                    "DelegateMin": 2,    
+                    "DelegateMax": 4,
+                    "DelegateCur": 4
+                  },
+                  {
+                    "Name": "consul-server1",
+                    "Addr": "192.168.2.71",
+                    "Port": 8301,
+                    "Tags": {
+                      "build": "0.4.1:",
+                      "dc": "dc1",
+                      "port": "8300",
+                      "role": "consul",
+                      "vsn": "2",
+                      "vsn_max": "2",
+                      "vsn_min": "1"
+                    },
+                    "Status": 1,
+                    "ProtocolMin": 1,
+                    "ProtocolMax": 2,
+                    "ProtocolCur": 2,
+                    "DelegateMin": 2,
+                    "DelegateMax": 4,
+                    "DelegateCur": 4
+                  },
+                  {
+                    "Name": "consul-agent1",
+                    "Addr": "192.168.2.61",
+                    "Port": 8301,
+                    "Tags": {
+                      "build": "0.4.1:",
+                      "dc": "dc1",
+                      "role": "node",
+                      "vsn": "2",
+                      "vsn_max": "2",
+                      "vsn_min": "1"
+                    },
+                    "Status": 1,
+                    "ProtocolMin": 1,
+                    "ProtocolMax": 2,
+                    "ProtocolCur": 2,
+                    "DelegateMin": 2,
+                    "DelegateMax": 4,
+                    "DelegateCur": 4
+                  }
+                ]
+  /self:
+    description: Returns the information to configure
+    get:
+      queryParameters:
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "Config": {
+                  "Bootstrap": false,
+                  "BootstrapExpect": 0,
+                  "Server": false,
+                  "Datacenter": "dc1",
+                  "DataDir": "/tmp/consul",
+                  "DNSRecursor": "",
+                  "DNSRecursors": [],
+                  "DNSConfig": {
+                    "NodeTTL": 0,
+                    "ServiceTTL": null,
+                    "AllowStale": false,
+                    "EnableTruncate": false,
+                    "MaxStale": 5000000000
+                  },
+                  "Domain": "consul.",
+                  "LogLevel": "INFO",
+                  "NodeName": "consul-agent1",
+                  "ClientAddr": "192.168.2.61",
+                  "BindAddr": "0.0.0.0",
+                  "AdvertiseAddr": "192.168.2.61",
+                  "Ports": {
+                    "DNS": 8600,
+                    "HTTP": 8500,
+                    "RPC": 8400,
+                    "SerfLan": 8301,
+                    "SerfWan": 8302,
+                    "Server": 8300
+                  },
+                  "Addresses": {
+                    "DNS": "",
+                    "HTTP": "",
+                    "RPC": ""
+                  },
+                  "LeaveOnTerm": false,
+                  "SkipLeaveOnInt": false,
+                  "StatsiteAddr": "",
+                  "StatsdAddr": "",
+                  "Protocol": 2,
+                  "EnableDebug": false,
+                  "VerifyIncoming": false,
+                  "VerifyOutgoing": false,
+                  "CAFile": "",
+                  "CertFile": "",
+                  "KeyFile": "",
+                  "ServerName": "",
+                  "StartJoin": [
+                    "192.168.2.72"
+                  ],
+                  "RetryJoin": [],
+                  "RetryMaxAttempts": 0,
+                  "RetryIntervalRaw": "",
+                  "UiDir": "",
+                  "PidFile": "",
+                  "EnableSyslog": false,
+                  "SyslogFacility": "LOCAL0",
+                  "RejoinAfterLeave": false,
+                  "CheckUpdateInterval": 300000000000,
+                  "ACLDatacenter": "",
+                  "ACLTTL": 30000000000,
+                  "ACLTTLRaw": "",
+                  "ACLDefaultPolicy": "allow",
+                  "ACLDownPolicy": "extend-cache",
+                  "Watches": null,
+                  "DisableRemoteExec": false,
+                  "DisableUpdateCheck": false,
+                  "DisableAnonymousSignature": false,
+                  "Revision": "",
+                  "Version": "0.4.1",
+                  "VersionPrerelease": ""
+                },
+                "Member": {
+                  "Name": "consul-agent1",
+                  "Addr": "192.168.2.61",
+                  "Port": 8301,
+                  "Tags": {
+                    "build": "0.4.1:",
+                    "dc": "dc1",
+                    "role": "node",
+                    "vsn": "2",
+                    "vsn_max": "2",
+                    "vsn_min": "1"
+                  },
+                  "Status": 1,
+                  "ProtocolMin": 1,
+                  "ProtocolMax": 2,
+                  "ProtocolCur": 2,
+                  "DelegateMin": 2,
+                  "DelegateMax": 4,
+                  "DelegateCur": 4
+                  }
+                 }
+  /join:
+    /{address}:
+      description: Join the cluster
+      put:
+        queryParameters:
+          wan:
+            type: integer
+            description: For agents running in server mode, providing a "?wan=1" query parameter causes the agent to attempt to join using the WAN pool
+        responses:
+          200:
+  /force-leave:
+    /{node}:
+      description: Forced out of the node
+      put:
+        responses:
+          200:
+  /check:
+    /register:
+      description: Registration check the configuration
+      put:
+        body:
+          application/json:
+            example: |
+              {
+                "ID": "mysql-1",
+                "Name": "mysql-1",
+                "Script": "/root/mysqlcheck.sh orz1bsg",
+                "Interval": "10s"
+              }
+        responses:
+          200:
+    /deregister:
+      /{checkId}:
+        description: Deregister check the configuration
+        put:
+          responses:
+            200:
+    /pass:
+      /{checkId}:
+        description: Set the check status passing,When you register a check needs to be set TTL
+        put:
+          queryParameters:
+            note:
+              type: string
+              description: The optional "?note=" query parameter can be used to associate output with the status of the check. This should be human readable for operators
+          responses:
+            200:
+    /warn:
+      /{checkId}:
+        description: Set the check status warning,When you register a check needs to be set TTL
+        put:
+          queryParameters:
+            note:
+              type: string
+              description: The optional "?note=" query parameter can be used to associate output with the status of the check. This should be human readable for operators
+          responses:
+            200:
+    /fail:
+      /{checkId}:
+        description: Set the check status critical,When you register a check needs to be set TTL
+        put:
+          queryParameters:
+            note:
+              type: string
+              description: The optional "?note=" query parameter can be used to associate output with the status of the check. This should be human readable for operators
+          responses:
+            200:
+  /service:
+    /register:
+      description: Registration Service
+      put:
+        body:
+          application/json:
+            example: |
+              {
+                "Name": "mysql-2",
+                "Tags": [
+                "master"
+                ],
+                "Port": 3306,
+                "Check": {
+                  "Script": "/root/mysqlcheck.sh orz1bsg",
+                  "Interval": "10s"
+                }
+              }
+    /deregister:
+      /{serviceID}:
+        description: Deregister Service
+        put:
+          responses:
+            200:
+          
+/catalog:
+  /register:
+    description: The registration service and check
+    put:
+      description: If ID is not provided, it will be defaulted to Service;The CheckID can be omitted, and will default to the Name
+      body:
+        application/json:
+          example: |
+            {
+              "Datacenter": "dc1",
+              "Node": "consul-agent1",
+              "Address": "192.168.2.61",
+              "Service": {
+                "ID": "mysql-2",
+                "Service": "mysql-2",
+                "Tags": [
+                  "master",
+                  "v1"
+                ]
+              },
+              "port": 3306,
+              "Check": {
+                "Node": "consul-agent1",
+                "CheckID": "service:mysql-2",
+                "Name": "mysql-2 health check",
+                "Notes": "script based health check",
+                "status": "passing",
+                "ServiceID": "mysql-2"
+                }
+              }
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                true
+  /deregister:
+    description: The deregister service and check
+    put:
+      body:
+        application/json:
+          example: |
+            {
+              "Datacenter": "dc1",
+              "Node": "consul-agent1",
+              "ServiceID": "mysql-1"
+            }
+  /datacenters:
+    description: Returns all of the datacenters
+    get:
+      queryParameters:
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                [
+                  "dc1"
+                ]
+  /nodes:
+    description: Returns all nodes
+    get:
+      queryParameters:
+        dc:
+          type: string
+          description:  By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter.
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+                example: |
+                  [
+                    {
+                      "Node": "consul-agent1",
+                      "Address": "192.168.2.61"
+                    },
+                    {
+                      "Node": "consul-agent2",
+                      "Address": "192.168.2.62"
+                    },
+                    {
+                      "Node": "consul-server1",
+                      "Address": "192.168.2.71"
+                    },
+                    {
+                      "Node": "consul-server2",
+                      "Address": "192.168.2.72"
+                    },
+                    {
+                      "Node": "consul-server3",
+                      "Address": "192.168.2.73"
+                    }
+                  ]   
+  /services:
+    description: Query the registration service
+    get:
+      queryParameters:
+        dc:
+          type: string
+          description: By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "consul": [],
+                  "mysql-2": [
+                    "master"
+                  ]
+                }
+  /service:
+    /{service}:
+      description: Returns the specified service
+      get:
+        queryParameters:
+          dc:
+            type: string
+            description:  By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter
+          tag:
+            type: string
+            description: By default all nodes in that service are returned. However, the list can be filtered by tag using the "?tag=" query parameter.
+          pretty:
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  [
+                    {
+                      "Node": "consul-agent1",
+                      "Address": "192.168.2.61",
+                      "ServiceID": "mysql-2",
+                      "ServiceName": "mysql-2",
+                      "ServiceTags": [
+                        "master"
+                      ],
+                      "ServicePort": 3306
+                    }
+                  ]
+  /node:
+    /{node}:
+      description: Returns the specified node
+      get:
+        queryParameters:
+          dc:
+            type: string
+            description: By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter
+          pretty:
+            type: string
+        responses:
+          200:
+            body: 
+              application/json:
+                example: |
+                  {
+                    "Node": {
+                      "Node": "consul-agent2",
+                      "Address": "192.168.2.62"
+                    },
+                    "Services": {}
+                  }
+/health:
+  /node:
+    /{node}:
+      description: Returns the specified node health information
+      get:  
+        queryParameters:
+          dc:
+            type: string
+            description:  By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter
+          pretty:
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  [
+                    {
+                      "Node": "consul-agent2",
+                      "CheckID": "serfHealth",
+                      "Name": "Serf Health Status",
+                      "Status": "passing",
+                      "Notes": "",
+                      "Output": "Agent alive and reachable",
+                      "ServiceID": "",
+                      "ServiceName": ""
+                    }
+                  ] 
+  /checks:
+    /{service}:
+      description: Returns the specified service check information
+      get:
+        queryParameters:
+          dc:
+            type: string
+            description: By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter
+          pretty:
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  [
+                    {
+                      "Node": "consul-agent1",
+                      "CheckID": "service:mysql-2",
+                      "Name": "Service 'mysql-2' check",
+                      "Status": "critical",
+                      "Notes": "",
+                      "Output": "TTL expired",
+                      "ServiceID": "mysql-2",
+                      "ServiceName": "mysql-2"
+                    }
+                  ]
+  /service:
+    /{service}:
+      description: Returns the specified health information services
+      get:
+        queryParameters:
+          dc:
+            type: string
+            description:  By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter
+          tag:
+            type: string
+            description: By default all nodes in that service are returned. However, the list can be filtered by tag using the "?tag=" query parameter.
+          passing:
+            type: string
+            description: Providing the "?passing" query parameter will filter results to only nodes with all checks in the passing state
+          pretty:
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  [
+                    {
+                      "Node": {
+                      "Node": "consul-agent1",
+                      "Address": "192.168.2.61"
+                      },
+                      "Service": {
+                      "ID": "mysql-2",
+                      "Service": "mysql-2",
+                      "Tags": [
+                        "master"
+                      ],
+                      "Port": 3306
+                      },
+                      "Checks": [
+                        {
+                          "Node": "consul-agent1",
+                          "CheckID": "service:mysql-2",
+                          "Name": "Service 'mysql-2' check",
+                          "Status": "critical",
+                          "Notes": "",
+                          "Output": "TTL expired",
+                          "ServiceID": "mysql-2",
+                          "ServiceName": "mysql-2"
+                        },
+                        {
+                          "Node": "consul-agent1",
+                          "CheckID": "serfHealth",
+                          "Name": "Serf Health Status",
+                          "Status": "passing",
+                          "Notes": "",
+                          "Output": "Agent alive and reachable",
+                          "ServiceID": "",
+                          "ServiceName": ""
+                        },
+                        {
+                          "Node": "consul-agent1",
+                          "CheckID": "mysql-1",
+                          "Name": "mysql-1",
+                          "Status": "critical",
+                          "Notes": "",
+                          "Output": "/bin/bash: /root/mysqlcheck.sh: No such file or directory\n",
+                          "ServiceID": "",
+                          "ServiceName": ""
+                        }
+                      ]
+                    }
+                  ]
+  /state:
+    /{state}:
+      description: Return information given state
+      get:
+        queryParameters:
+          dc:
+            type: string
+            description: By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter
+          pretty:
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  [
+                    {
+                      "Node": "consul-server2",
+                      "CheckID": "serfHealth",
+                      "Name": "Serf Health Status",
+                      "Status": "passing",
+                      "Notes": "",
+                      "Output": "Agent alive and reachable",
+                      "ServiceID": "",
+                      "ServiceName": ""
+                    },
+                    {
+                      "Node": "consul-server3",
+                      "CheckID": "serfHealth",
+                      "Name": "Serf Health Status",
+                      "Status": "passing",
+                      "Notes": "",
+                      "Output": "Agent alive and reachable",
+                      "ServiceID": "",
+                      "ServiceName": ""
+                    },
+                    {
+                      "Node": "consul-server1",
+                      "CheckID": "serfHealth",
+                      "Name": "Serf Health Status",
+                      "Status": "passing",
+                      "Notes": "",
+                      "Output": "Agent alive and reachable",
+                      "ServiceID": "",
+                      "ServiceName": ""
+                    },
+                    {
+                      "Node": "consul-agent1",
+                      "CheckID": "serfHealth",
+                      "Name": "Serf Health Status",
+                      "Status": "passing",
+                      "Notes": "",
+                      "Output": "Agent alive and reachable",
+                      "ServiceID": "",
+                      "ServiceName": ""
+                    },
+                    {
+                      "Node": "consul-agent2",
+                      "CheckID": "serfHealth",
+                      "Name": "Serf Health Status",
+                      "Status": "passing",
+                      "Notes": "",
+                      "Output": "Agent alive and reachable",
+                      "ServiceID": "",
+                      "ServiceName": ""
+                    }
+                  ]
+                  
+/session:
+  /create:
+    description: Create session
+    put:
+      description:  By default, the agent uses it's own node name, and provides the "serfHealth" check, along with a 15 second lock delay; By default, the agent will use it's own name; By default the "serfHealth" check is provided.
+      queryParameters:
+        dc:
+          type: string
+          description: By default, the agent's local datacenter is used, but another datacenter can be specified using the "?dc=" query parameter. It is not recommended to use cross-region sessions
+        pretty:
+          type: string
+      body:
+        application/json:
+          example: |
+            {
+              "LockDelay": "15s",
+              "Name": "mysql",
+              "Node": "consul-agent1",
+              "Checks": [
+                "serfHealth"
+              ]
+            }
+            
+      responses:
+        200:
+          body:  
+            application/json:
+              example: |
+                {
+                  "ID": "05f79651-87ed-4f43-882f-2c727cace086"
+                }
+                
+  /destroy:
+    /{sessionID}:
+      description: Logout session
+      put:
+        queryParameters:
+          dc:
+            type: string
+            description:   By default the local datacenter is used, but the "?dc=" query parameter can be used to specify the datacenter. The session being destroyed must be provided after the slash
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  true
+  /info:
+    /{sessionID}:
+      description: Displays session information
+      get:
+        queryParameters:
+          dc:
+            type: string
+            description: By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter. The session being queried must be provided after the slash
+          pretty:
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  [
+                    {
+                      "CreateIndex": 781,
+                      "ID": "ae186218-00e1-8f0b-1fa4-b56175d3f3c8",
+                      "Name": "mysql",
+                      "Node": "consul-agent1",
+                      "Checks": [
+                        "mysql-1"
+                      ],
+                      "LockDelay": 15000000000
+                    }
+                  ]           
+  /node:
+    /{node}:
+      description: Returns a node sessions
+      get:
+        queryParameters:
+          dc:
+            type: string
+            description:  By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter. The node being queried must be provided after the slash.
+          pretty:
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  [
+                    {
+                      "CreateIndex": 781,
+                      "ID": "ae186218-00e1-8f0b-1fa4-b56175d3f3c8",
+                      "Name": "mysql",
+                      "Node": "consul-agent1",
+                      "Checks": [
+                        "mysql-1"
+                      ],
+                      "LockDelay": 15000000000
+                    }
+                  ]   
+                    
+  /list:
+    description: Back to all sessions
+    get:
+      queryParameters:
+        dc:
+          type: string
+          description: By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                [
+                  {
+                    "CreateIndex": 781,
+                    "ID": "ae186218-00e1-8f0b-1fa4-b56175d3f3c8",
+                    "Name": "mysql",
+                    "Node": "node5",
+                    "Checks": [
+                      "mysql-1"
+                    ],
+                    "LockDelay": 15000000000
+                  }
+                ] 
+/acl:
+  /create:
+    description: Create a token
+    put:
+      description: None of the fields are mandatory, and in fact no body needs to be PUT if the defaults are to be used. The Name and Rules default to being blank, and the Type defaults to "client"
+      queryParameters:
+        token:
+          type: string
+        pretty:
+          type: string
+      body:
+        application/json:
+          example: |
+            {
+              "Name": "test_token",
+              "Type": "client",
+              "Rules": " key \"testread/\" { policy = \"read\" } key \"testwrite/\" { policy = \"write\" } "
+            }            
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "ID": "907f9f17-4814-77a3-f4d8-41ed26c33ca6"
+                }
+                
+  /update:
+    description: Update token
+    put:
+      description: Only the ID field is mandatory, the other fields provide defaults. The Name and Rules default to being blank, and the Type defaults to "client"
+      queryParameters:
+        token:
+          type: string
+        pretty:
+          type: string  
+      body:
+        application/json:
+          example: |
+            {
+              "ID": "907f9f17-4814-77a3-f4d8-41ed26c33ca6",
+              "Name": "test_token1",
+              "Type": "client",
+              "Rules": " key \"test1/\" { policy = \"write\" } "
+            }
+            
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "ID": "567b1eb3-2e7d-ede5-9ad1-29619321fd76"
+                }
+                          
+  /destroy:
+    /{aclId}:
+      description: Destruction token
+      put:
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  true 
+  /list:
+    description: Return all tokens
+    get:
+      queryParameters:
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                [
+                  {
+                    "CreateIndex": 162,
+                    "ModifyIndex": 448,
+                    "ID": "567b1eb3-2e7d-ede5-9ad1-29619321fd76",
+                    "Name": "test_token1",
+                    "Type": "client",
+                    "Rules": " key \"test1/\" { policy = \"write\" } "
+                  },
+                  {
+                    "CreateIndex": 172,
+                    "ModifyIndex": 172,
+                    "ID": "58755da3-3b6b-b624-7b17-1690b5223f0a",
+                    "Name": "test_token1",
+                    "Type": "client",
+                    "Rules": " key \"test1/\" { policy = \"write\" } "
+                  },
+                  {
+                    "CreateIndex": 450,
+                    "ModifyIndex": 450,
+                    "ID": "907f9f17-4814-77a3-f4d8-41ed26c33ca6",
+                    "Name": "test_token",
+                    "Type": "client",
+                    "Rules": " key \"testread/\" { policy = \"read\" } key \"testwrite/\" { policy = \"write\" } "
+                  },
+                  {
+                    "CreateIndex": 2,
+                    "ModifyIndex": 2,
+                    "ID": "anonymous",
+                    "Name": "Anonymous Token",
+                    "Type": "client",
+                    "Rules": ""
+                  },
+                  {
+                    "CreateIndex": 3,
+                    "ModifyIndex": 3,
+                    "ID": "master_token_test",
+                    "Name": "Master Token",
+                    "Type": "management",
+                    "Rules": ""
+                  }
+                ]
+                               
+  /info:
+    /{aclid}:
+      description: Returns the token information
+      get:
+        queryParameters:
+          pretty:
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  [
+                    {
+                      "CreateIndex": 162,
+                      "ModifyIndex": 448,
+                      "ID": "567b1eb3-2e7d-ede5-9ad1-29619321fd76",
+                      "Name": "test_token1",
+                      "Type": "client",
+                      "Rules": " key \"test1/\" { policy = \"write\" } "
+                    }
+                  ]
+                  
+  /clone:
+    /{aclID}:
+      description: Clone Token
+      put:
+        queryParameters:
+          pretty:
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  {
+                    "ID": "0e23123a-c90e-229f-8538-ea58273c4a36"
+                  }             
+/event:
+  /fire:
+    /{name}:
+      description: Create an event
+      put:
+        description: The ?node=, ?service=, and ?tag= query parameters may optionally be provided. They respectively provide a regular expression to filter by node name, service, and service tags.
+        queryParameters:
+          dc:
+            type: string      
+            description: By default, the agent's local datacenter is used, but another datacenter can be specified using the "?dc=" query parameter
+          node:
+            type: string
+            description: 
+          service:
+            type: string
+          tag:
+            type: string
+          pretty:
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  {
+                    "ID": "c36e2d97-94ab-e3e3-8187-f74c3724f94e",
+                    "Name": "test_token1",
+                    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOSIsCiAgIk5hbWUiOiAidGVzdF90b2tlbjEiLAogICJQYXlsb2FkIjogbnVsbCwKICAiTm9kZUZpbHRlciI6ICIiLAogICJTZXJ2aWNlRmlsdGVyIjogIiIsCiAgIlRhZ0ZpbHRlciI6ICIiLAogICJWZXJzaW9uIjogMSwKICAiTFRpbWUiOiAwCn0=",
+                    "NodeFilter": "",
+                    "ServiceFilter": "",
+                    "TagFilter": "",
+                    "Version": 1,
+                    "LTime": 0
+                  }     
+  /list:
+    description:  Get a list of recent events
+    get:
+      description: Lastly, agents only buffer the most recent entries. The number of entries should not be depended upon, but currently defaults to 256
+      queryParameters:
+        name:
+          type: string
+          description: This endpoint does allow for filtering on events by name by providing the ?name= query parameter.
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                [
+                  {
+                    "ID": "4f806790-f0c2-de9c-10a2-0bd222e6f822",
+                    "Name": "test_token1",
+                    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOTYxOTMyMWZkNzYiLAogICJOYW1lIjogInRlc3RfdG9rZW4xIiwKICAiUGF5bG9hZCI6IG51bGwsCiAgIk5vZGVGaWx0ZXIiOiAiIiwKICAiU2VydmljZUZpbHRlciI6ICIiLAogICJUYWdGaWx0ZXIiOiAiIiwKICAiVmVyc2lvbiI6IDEsCiAgIkxUaW1lIjogMAp9",
+                    "NodeFilter": "",
+                    "ServiceFilter": "",
+                    "TagFilter": "",
+                    "Version": 1,
+                    "LTime": 3
+                  },
+                  {
+                    "ID": "b5457d55-6b7e-d351-0851-43d2350b3668",
+                    "Name": "test_token1",
+                    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOTYxOTMyMWZkNzYiLAogICJOYW1lIjogInRlc3RfdG9rZW4xIiwKICAiUGF5bG9hZCI6IG51bGwsCiAgIk5vZGVGaWx0ZXIiOiAiIiwKICAiU2VydmljZUZpbHRlciI6ICIiLAogICJUYWdGaWx0ZXIiOiAiIiwKICAiVmVyc2lvbiI6IDEsCiAgIkxUaW1lIjogMAp9",
+                    "NodeFilter": "",
+                    "ServiceFilter": "",
+                    "TagFilter": "",
+                    "Version": 1,
+                    "LTime": 4
+                  },
+                  {
+                    "ID": "525752e1-50df-7b55-284a-ea6ce4b50bd6",
+                    "Name": "test_token1",
+                    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOSIsCiAgIk5hbWUiOiAidGVzdF90b2tlbjEiLAogICJQYXlsb2FkIjogbnVsbCwKICAiTm9kZUZpbHRlciI6ICIiLAogICJTZXJ2aWNlRmlsdGVyIjogIiIsCiAgIlRhZ0ZpbHRlciI6ICIiLAogICJWZXJzaW9uIjogMSwKICAiTFRpbWUiOiAwCn0=",
+                    "NodeFilter": "",
+                    "ServiceFilter": "",
+                    "TagFilter": "",
+                    "Version": 1,
+                    "LTime": 5
+                  },
+                  {
+                    "ID": "c5eaefbd-c1a9-c079-4be2-a7c25d8b164b",
+                    "Name": "test_token1",
+                    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOSIsCiAgIk5hbWUiOiAidGVzdF90b2tlbjEiLAogICJQYXlsb2FkIjogbnVsbCwKICAiTm9kZUZpbHRlciI6ICIiLAogICJTZXJ2aWNlRmlsdGVyIjogIiIsCiAgIlRhZ0ZpbHRlciI6ICIiLAogICJWZXJzaW9uIjogMSwKICAiTFRpbWUiOiAwCn0=",
+                    "NodeFilter": "",
+                    "ServiceFilter": "",
+                    "TagFilter": "",
+                    "Version": 1,
+                    "LTime": 6
+                  },
+                  {
+                    "ID": "c36e2d97-94ab-e3e3-8187-f74c3724f94e",
+                    "Name": "test_token1",
+                    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOSIsCiAgIk5hbWUiOiAidGVzdF90b2tlbjEiLAogICJQYXlsb2FkIjogbnVsbCwKICAiTm9kZUZpbHRlciI6ICIiLAogICJTZXJ2aWNlRmlsdGVyIjogIiIsCiAgIlRhZ0ZpbHRlciI6ICIiLAogICJWZXJzaW9uIjogMSwKICAiTFRpbWUiOiAwCn0=",
+                    "NodeFilter": "",
+                    "ServiceFilter": "",
+                    "TagFilter": "",
+                    "Version": 1,
+                    "LTime": 7
+                  }
+                ]  
+                
+/status:
+  /leader:
+    description: Returns leader node
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                "192.168.2.73:8300"  
+  /peers:
+    description: Return to the same level of address and port number
+    get:
+      queryParameters:
+        pretty:
+          type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                [
+                  "192.168.2.73:8300",
+                  "192.168.2.71:8300",
+                  "192.168.2.72:8300"
+                ]
+    

@@ -1,0 +1,106 @@
+##consul启动配置文件
+    {
+        "bootstrap":false,
+        //用来控制一个server是否在bootstrap模式，在一个datacenter中只能有一个server处于bootstrap模式，当一个server处于bootstrap模式时，可以自己选举为raft leader，默认false
+        "bootstrap_expect":3,
+        //在一个datacenter中期望提供的server节点数目，当该值提供的时候，consul一直等到达到指定sever数目的时候才会引导整个集群，//该标记不能和bootstrap公用，默认0
+        "server":true,
+        //定义agent运行在server模式，每个集群至少有一个server，建议每个集群的server不要超过5个，默认false
+        "datacenter":"dc1", 
+        //该标记控制agent允许的datacenter的名称，默认是dc1
+        "data_dir":"/tmp/consul",
+        //提供一个目录用来存放agent的状态，所有的agent允许都需要该目录，该目录必须是稳定的，系统重启后都继续存在
+        // "recursor":"8.8.8.8",//可以设置允许的DNS服务器,已经被丢弃
+        // "recursors": [
+        //         "8.8.8.8",
+        //         "8.8.4.4"
+        // ],//可以设置允许的DNS服务器数组
+        // "dns_config":{
+        //         "allow_stale":"true",
+        //         "max_stale":"15s",
+        //         "node_ttl":"5s",
+        //         "service_ttl":{
+        //                 "*": "1s",
+        //                  "api": "10s", 
+        //                  "web": "30s"
+        //         },
+        //         "enable_truncate":true“
+        // },//是一个嵌套对象，可以设置以下参数：allow_stale、max_stale、node_ttl 、service_ttl、enable_truncate
+        // "domain":"consul-agent1",//默认情况下consul在进行DNS查询时，查询的是consul域，可以通过该参数进行修改，默认"c                onsul."
+        // "encrypt": "randomStringGoesHere==",//指定secret key，使consul在通讯时进行加密，key可以通过consul keygen生成，同一个//集群中的节点必须使用相同的key
+          "log_level": "INFO",//consul agent启动后显示的日志信息级别。可选：trace、debug、info、warn、err,默认是INFO
+          "node_name":"consul-agent1",//节点在集群中的名称，在一个集群中必须是唯一的，默认是该节点的主机名
+          "client_addr":"192.168.2.71",//consul绑定在哪个client地址上，这个地址提供HTTP、DNS、RPC等服务，默认是127.0.0.1
+         // "bind_addr": "0.0.0.0",//该地址用来在集群内部的通讯，集群内的所有节点到地址都必须是可达的，默认是0.0.0.0
+         // "advertise_addr": "192.168.2.75",//通知展现地址用来改变我们给集群中的其他节点展现的地址，一般情况下-bind地址就是展现地址
+          "ports": {
+                   "dns": 8600,
+                   "http": 8500,
+                   "https":8501,
+                   "rpc": 8400,
+                   "serf_lan": 8301,
+                   "serf_wan": 8302,
+                   "server": 8300
+          },//这是一个嵌套对象，可以设置以下key：dns(dns地址：8600)、http(http api地址：8500)、(HTTPS:   -1)、rpc(rpc:8400)、serf_lan(lan port:8301)、serf_wan(wan port:8302)、server(server rpc:8300)
+          "addresses":{
+                   "dns":"0.0.0.0",
+                   "http":"192.168.2.71",
+                   "https":"192.168.2.71",
+                   "rpc":"192.168.2.71"
+          },//一个嵌套对象，可以设置以下key：dns、http、rpc
+          //"leave_on_terminate":true,//默认是false，如果为true，当agent收到一个TERM信号的时候，它会发送leave信息到集群中的其他节点上
+          //"skip_leave_on_interrupt":true,//和leave_on_terminate比较类似，不过只影响当前句柄
+          //"statsite_addr":"192.168.2.71:7250",//指定statsite搭建的地址和端口号，用于监控，根据statsd重构
+          //"statsd_addr": "192.168.2.71:7251",//指定statsd搭建的地址和端口号，用于监控
+          //"protocol":"0.1.1",consul使用的协议版本
+          //"enable_debug":true,//开启debug模式
+          //"verify_incoming":true,//默认false，如果为true，则所有进入链接都需要使用TLS，需要客户端使用ca_file提供ca文件，只用于consul server端，因为client从来没有进入的链接
+         //"verify_outgoing":true,//默认false，如果为true，则所有出去链接都需要使用TLS，需要服务端使用ca_file提供ca文件，consul server和client都需要使用，因为两者都有出去的链接
+          //"ca_file":"/tmp/ca/file",//提供CA文件路径，用来检查客户端或者服务端的链接
+          //"cert_file":"my.cert",//必须和key_file一起
+          //"key_file":"key.pem",//提供私钥的路径
+          "server_name":"consul-service1",//会覆盖TLS CA的node_name，可以用来确认CA name和hostname相匹配
+          //"start_join":[
+          //        "consul-server1",
+          //        "consul-server2",
+          //        "consul-server3"
+          //],//一个字符数组提供的节点地址会在启动时被加入
+          //"start_join_wan":[
+          //        "192.168.2.71",
+          //        "192.168.2.72",
+          //        "192.168.2.73"
+          //],//wan池的地址列表，尝试加入wan池
+          //"retry_join":[
+          //        "192.168.2.71",
+         //        "192.168.2.72"
+          //],//和join类似，但是允许你在第一次失败后进行尝试
+          //"retry_max":3,//指定尝试加入的最大次数
+          //"retry_interval":10s,//两次join之间的时间间隔，默认是30s，最小是1s
+          //"retry_join_wan":[
+          //        "192.168.2.71",
+          //        "192.168.2.72"
+          //],//需要尝试加入wan的列表
+          //"retry_max_wan":3,指定尝试加入wan池的最大值
+          //"retry_interval_wan":10s,//指定时间量，等待加入wan池
+          //"ui_dir":"/root/ui",//提供存放web ui资源的路径，该目录必须是可读的
+          //"pid_file":"/tmp/consul/pid",存储pid文件路径
+          //"enable_syslog": true,//开启系统日志功能，只在linux/osx上生效
+          //"syslog_facility":"LOCAL4",//当enable_syslog被提供后，该参数控制哪个级别的信息被发送，默认Local0
+          //"rejoin_after_leave":true,//使consul忽略先前的离开，在再次启动后仍旧尝试加入集群中
+          //"check_update_interval":"10s",//指定多少时间之后将check输出同步到server
+          "acl_token":"defaulttoken",//agent会使用这个token和consul server进行请
+          "acl_master_token":"master_token_test",用来引导ACL系统的初始令牌
+          "acl_datacenter":"dc1",//只用于server，指定的datacenter的权威ACL信息，所有的servers和datacenter必须同意ACL datacenter
+          "acl_ttl":10s,//控制TTL的cache，默认是30s
+          "acl_default_policy":"deny",//默认策略，如果不设置默认是allow，谁都可以访问
+          "acl_down_policy":"deny",//用于ACL交互，不能在数据中心或者leader上读出，有三种模式，一种是allow，deny和extend-cache,默认值是extend-cache
+          // "watches": [
+          //                        {
+          //                            "type": "checks",
+          //                            "handler": "/root/mysqlcheck.sh"
+          //                        }
+          // ]//watch一个详细名单
+          // "disable_remote_exec":true,//禁止支持远程执行，设置为true，agent会忽视所有进入的远程执行请求
+          // "disable_update_check":true,//禁止自动检查安全公告和新版本信息
+          // "disable_anonymous_signature":true,//在进行更新检查时禁止匿名签名
+      }

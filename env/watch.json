@@ -1,0 +1,9 @@
+{
+  "watches": [
+   {
+     "type": "key",
+     "key": "service/mysql-1/leader",
+     "handler": "/root/handlers/handlers"
+   }
+  ]
+}

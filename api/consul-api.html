@@ -1,0 +1,770 @@
+<!DOCTYPE HTML><html><head><title>Consul API API documentation</title><meta http-equiv=X-UA-Compatible content="IE=edge"><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta name=generator content="https://github.com/kevinrenskers/raml2html 1.0.4"><link rel=stylesheet href=http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css><link rel=stylesheet href=http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css><script type=text/javascript src=http://code.jquery.com/jquery-1.11.0.min.js></script><script type=text/javascript src=http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js></script><script type=text/javascript src=http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js></script><script type=text/javascript>
+        $(document).ready(function() {
+            $('.page-header pre code, .top-resource-description pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+
+            $('[data-toggle]').click(function() {
+                var selector = $(this).data('target') + ' pre code';
+                $(selector).each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });
+            });
+        });
+    </script><style>
+        .hljs {
+            background: transparent;
+        }
+        .parent {
+            color: #999;
+        }
+        .list-group-item > .badge {
+            float: none;
+            margin-right: 6px;
+        }
+        .panel-title > .methods {
+            float: right;
+        }
+        .badge {
+            border-radius: 0;
+            text-transform: uppercase;
+            width: 70px;
+            font-weight: normal;
+            color: #f3f3f6;
+            line-height: normal;
+        }
+        .badge_get {
+            background-color: #63a8e2;
+        }
+        .badge_post {
+            background-color: #6cbd7d;
+        }
+        .badge_put {
+            background-color: #22bac4;
+        }
+        .badge_delete {
+            background-color: #d26460;
+        }
+        .list-group, .panel-group {
+            margin-bottom: 0;
+        }
+        .panel-group .panel+.panel-white {
+            margin-top: 0;
+        }
+        .panel-group .panel-white {
+            border-bottom: 1px solid #F5F5F5;
+            border-radius: 0;
+        }
+        .panel-white:last-child {
+            border-bottom-color: white;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .panel-white .panel-heading {
+            background: white;
+        }
+        .tab-pane ul {
+            padding-left: 2em;
+        }
+        .tab-pane h2 {
+            font-size: 1.2em;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #ddd;
+        }
+        .tab-pane h3 {
+            font-size: 1.1em;
+        }
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        #sidebar {
+            margin-top: 30px;
+        }
+        .top-resource-description {
+            border-bottom: 1px solid #ddd;
+            background: #fcfcfc;
+            padding: 15px 15px 0 15px;
+            margin: -15px -15px 10px -15px;
+        }
+        .resource-description {
+            border-bottom: 1px solid #fcfcfc;
+            background: #fcfcfc;
+            padding: 15px 15px 0 15px;
+            margin: -15px -15px 10px -15px;
+        }
+        .list-group .badge {
+            float: left;
+        }
+        .method_description {
+            margin-left: 85px;
+        }
+        .method_description p:last-child {
+            margin: 0;
+        }
+        .list-group-item {
+            cursor: pointer;
+        }
+        .list-group-item:hover {
+            background-color: #f5f5f5;
+        }
+    </style></head><body data-spy=scroll data-target=#sidebar><div class=container><div class=row><div class=col-md-9 role=main><div class=page-header><h1>Consul API API documentation <small>version v1</small></h1><p>http://192.168.2.61:8500/v1</p></div><div class="panel panel-default"><div class=panel-heading><h3 id=_kv class=panel-title>Data Storage</h3></div><div class=panel-body><div class=panel-group><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__kv_><span class=parent>/kv</span>/</a> <span class=methods><a href=# data-toggle=modal data-target=#_kv__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__kv_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Query all the keys</p></div><div class=list-group><div data-toggle=modal data-target=#_kv__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_kv__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/kv</span>/</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_kv__get_request data-toggle=tab>Request</a></li><li><a href=#_kv__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_kv__get_request><h3>Query Parameters</h3><ul><li><strong>keys</strong>: <em>(string)</em></li><li><strong>recurse</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_kv__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  "web/key1", 
+  "web/key2"
+] 
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__kv__key_><span class=parent>/kv</span>/{key}</a> <span class=methods><a href=# data-toggle=modal data-target=#_kv__key__get><span class="badge badge_get">get</span></a> <a href=# data-toggle=modal data-target=#_kv__key__put><span class="badge badge_put">put</span></a> <a href=# data-toggle=modal data-target=#_kv__key__delete><span class="badge badge_delete">delete</span></a></span></h4></div><div id=panel__kv__key_ class="panel-collapse collapse"><div class=panel-body><div class=list-group><div data-toggle=modal data-target=#_kv__key__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description><p>Query key-value pairs</p></div><div class=clearfix></div></div><div data-toggle=modal data-target=#_kv__key__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description><p>Query key-value pairs</p></div><div class=clearfix></div></div><div data-toggle=modal data-target=#_kv__key__delete class=list-group-item><span class="badge badge_delete">delete</span><div class=method_description><p>Delete the key-value pairs</p></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_kv__key__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/kv</span>/{key}</h4></div><div class=modal-body><div class="alert alert-info"><p>Query key-value pairs</p></div><ul class="nav nav-tabs"><li class=active><a href=#_kv__key__get_request data-toggle=tab>Request</a></li><li><a href=#_kv__key__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_kv__key__get_request><h3>URI Parameters</h3><ul><li><strong>key</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>recurse</strong>: <em>(string)</em><p>When using the GET method, Consul will return the specified key, or if the "?recurse" query parameter is provided, it will return all keys with the given prefix</p></li><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter</p></li><li><strong>raw</strong>: <em>(string)</em><p>If the "?raw" query parameter is used with a non-recursive GET, then the response is just the raw value of the key, without any encoding</p></li><li><strong>keys</strong>: <em>(string)</em><p>It is possible to also only list keys without their values by using the "?keys" query parameter along with a GET request</p></li><li><strong>separator</strong>: <em>(string)</em><p>The optional "?separator=" can be used to list only up to a given separator.</p></li><li><strong>pretty</strong>: <em>(string)</em></li><li><strong>index</strong>: <em>(number)</em></li><li><strong>wait</strong>: <em>(number)</em></li></ul></div><div class=tab-pane id=_kv__key__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "CreateIndex": 76,
+    "ModifyIndex": 84,
+    "LockIndex": 0,
+    "Key": "web/key1",
+    "Flags": 1,
+    "Value": "c3Nz"
+  }
+]         
+</code></pre></div></div></div></div></div></div><div class="modal fade" tabindex=0 id=_kv__key__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/kv</span>/{key}</h4></div><div class=modal-body><div class="alert alert-info"><p>Query key-value pairs</p></div><ul class="nav nav-tabs"><li class=active><a href=#_kv__key__put_request data-toggle=tab>Request</a></li><li><a href=#_kv__key__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_kv__key__put_request><h3>URI Parameters</h3><ul><li><strong>key</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>cas</strong>: <em>(number)</em><p>?cas=<index>:This flag is used to turn the PUT into a Check-And-Set operation. This is very useful as it allows clients to build more complex syncronization primitives on top. If the index is 0, then Consul will only put the key if it does not already exist. If the index is non-zero, then the key is only set if the index matches the ModifyIndex of that key.</index></p></li><li><strong>flags</strong>: <em>(number)</em><p>?flags=<num>:This can be used to specify an unsigned value between 0 and 264-1. It is opaque to the user, but a client application may use it</num></p></li><li><strong>acquire</strong>: <em>(string)</em><p>?acquire=<session>:This flag is used to turn the PUT into a lock acquisition operation. This is useful as it allows leader election to be built on top of Consul. If the lock is not held and the session is valid, this increments the LockIndex and sets the Session value of the key in addition to updating the key contents. A key does not need to exist to be acquired</session></p></li><li><strong>release</strong>: <em>(string)</em><p>?release=<session>:This flag is used to turn the PUT into a lock release operation. This is useful when paired with "?acquire=" as it allows clients to yield a lock. This will leave the LockIndex unmodified but will clear the associated Session of the key. The key must be held by this session to be unlocked</session></p></li></ul><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{ 
+  "name": "Temperature Measurement",
+  "source": "Thermometer",
+  "sourceTime": "2014-01-01T16:56:54+11:00",
+  "entityRef": "http://example.org/thermometers/99981",
+  "context": {
+  "value": "37.7",
+  "units": "Celsius"
+  }
+}    
+</code></pre></div><div class=tab-pane id=_kv__key__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>ture
+</code></pre></div></div></div></div></div></div><div class="modal fade" tabindex=0 id=_kv__key__delete><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_delete">delete</span> <span class=parent>/kv</span>/{key}</h4></div><div class=modal-body><div class="alert alert-info"><p>Delete the key-value pairs</p></div><ul class="nav nav-tabs"><li class=active><a href=#_kv__key__delete_request data-toggle=tab>Request</a></li><li><a href=#_kv__key__delete_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_kv__key__delete_request><h3>URI Parameters</h3><ul><li><strong>key</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>recurse</strong>: <em>(string)</em><p>The DELETE method can be used to delete a single key or all keys sharing a prefix. If the "?recurse" query parameter is provided, then all keys with the prefix are deleted, otherwise only the specified key.</p></li></ul></div><div class=tab-pane id=_kv__key__delete_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class=panel-heading><h3 id=_agent class=panel-title>/agent</h3></div><div class=panel-body><div class=panel-group><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_checks><span class=parent>/agent</span>/checks</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_checks_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__agent_checks class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>The return of the check information</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_checks_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_checks_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/agent</span>/checks</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_checks_get_request data-toggle=tab>Request</a></li><li><a href=#_agent_checks_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_checks_get_request><h3>Query Parameters</h3><ul><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_agent_checks_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "mysql-1": {
+  "Node": "consul-agent1",
+  "CheckID": "mysql-1",
+  "Name": "mysql-1",
+  "Status": "critical",
+  "Notes": "",
+  "Output": "/bin/bash: /root/mysqlcheck.sh: No such file or directory\n",
+  "ServiceID": "",
+  "ServiceName": ""
+  }
+}
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_services><span class=parent>/agent</span>/services</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_services_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__agent_services class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns the service registration information</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_services_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_services_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/agent</span>/services</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_services_get_request data-toggle=tab>Request</a></li><li><a href=#_agent_services_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_services_get_request><h3>Query Parameters</h3><ul><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_agent_services_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "mysql-2": {
+   "ID": "mysql-2",
+   "Service": "mysql-2",
+  "Tags": [
+     "master"
+   ],
+  "Port": 3306
+   }
+}
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_members><span class=parent>/agent</span>/members</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_members_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__agent_members class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Member of the returned information</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_members_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_members_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/agent</span>/members</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_members_get_request data-toggle=tab>Request</a></li><li><a href=#_agent_members_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_members_get_request><h3>Query Parameters</h3><ul><li><strong>wan</strong>: <em>(integer)</em><p>For agents running in server mode, providing a "?wan=1" query parameter returns the list of WAN members instead of the LAN members which is default</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_agent_members_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "Name": "consul-server2",
+    "Addr": "192.168.2.72",
+     "Port": 8301,
+     "Tags": {
+       "build": "0.4.1:",
+       "dc": "dc1",
+       "port": "8300",
+       "role": "consul",
+       "vsn": "2",
+      "vsn_max": "2",
+       "vsn_min": "1"
+     },
+    "Status": 1,
+    "ProtocolMin": 1,
+    "ProtocolMax": 2,
+    "ProtocolCur": 2,
+    "DelegateMin": 2,
+    "DelegateMax": 4,
+    "DelegateCur": 4
+  },
+  {
+    "Name": "consul-server3",
+    "Addr": "192.168.2.73",
+    "Port": 8301,
+    "Tags": {
+      "build": "0.4.1:",
+      "dc": "dc1",
+      "port": "8300",
+      "role": "consul",
+      "vsn": "2",
+      "vsn_max": "2",
+      "vsn_min": "1"
+    },
+    "Status": 1,
+    "ProtocolMin": 1,
+    "ProtocolMax": 2,
+    "ProtocolCur": 2,
+    "DelegateMin": 2,
+    "DelegateMax": 4,
+    "DelegateCur": 4
+  },
+  {
+    "Name": "consul-agent2",
+    "Addr": "192.168.2.62",
+    "Port": 8301,
+    "Tags": {
+      "build": "0.4.1:",
+      "dc": "dc1",
+      "role": "node",
+      "vsn": "2",
+      "vsn_max": "2",
+      "vsn_min": "1"
+    },
+    "Status": 1,
+    "ProtocolMin": 1,
+    "ProtocolMax": 2,
+    "ProtocolCur": 2,
+    "DelegateMin": 2,    
+    "DelegateMax": 4,
+    "DelegateCur": 4
+  },
+  {
+    "Name": "consul-server1",
+    "Addr": "192.168.2.71",
+    "Port": 8301,
+    "Tags": {
+      "build": "0.4.1:",
+      "dc": "dc1",
+      "port": "8300",
+      "role": "consul",
+      "vsn": "2",
+      "vsn_max": "2",
+      "vsn_min": "1"
+    },
+    "Status": 1,
+    "ProtocolMin": 1,
+    "ProtocolMax": 2,
+    "ProtocolCur": 2,
+    "DelegateMin": 2,
+    "DelegateMax": 4,
+    "DelegateCur": 4
+  },
+  {
+    "Name": "consul-agent1",
+    "Addr": "192.168.2.61",
+    "Port": 8301,
+    "Tags": {
+      "build": "0.4.1:",
+      "dc": "dc1",
+      "role": "node",
+      "vsn": "2",
+      "vsn_max": "2",
+      "vsn_min": "1"
+    },
+    "Status": 1,
+    "ProtocolMin": 1,
+    "ProtocolMax": 2,
+    "ProtocolCur": 2,
+    "DelegateMin": 2,
+    "DelegateMax": 4,
+    "DelegateCur": 4
+  }
+]
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_self><span class=parent>/agent</span>/self</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_self_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__agent_self class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns the information to configure</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_self_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_self_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/agent</span>/self</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_self_get_request data-toggle=tab>Request</a></li><li><a href=#_agent_self_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_self_get_request><h3>Query Parameters</h3><ul><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_agent_self_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "Config": {
+  "Bootstrap": false,
+  "BootstrapExpect": 0,
+  "Server": false,
+  "Datacenter": "dc1",
+  "DataDir": "/tmp/consul",
+  "DNSRecursor": "",
+  "DNSRecursors": [],
+  "DNSConfig": {
+    "NodeTTL": 0,
+    "ServiceTTL": null,
+    "AllowStale": false,
+    "EnableTruncate": false,
+    "MaxStale": 5000000000
+  },
+  "Domain": "consul.",
+  "LogLevel": "INFO",
+  "NodeName": "consul-agent1",
+  "ClientAddr": "192.168.2.61",
+  "BindAddr": "0.0.0.0",
+  "AdvertiseAddr": "192.168.2.61",
+  "Ports": {
+    "DNS": 8600,
+    "HTTP": 8500,
+    "RPC": 8400,
+    "SerfLan": 8301,
+    "SerfWan": 8302,
+    "Server": 8300
+  },
+  "Addresses": {
+    "DNS": "",
+    "HTTP": "",
+    "RPC": ""
+  },
+  "LeaveOnTerm": false,
+  "SkipLeaveOnInt": false,
+  "StatsiteAddr": "",
+  "StatsdAddr": "",
+  "Protocol": 2,
+  "EnableDebug": false,
+  "VerifyIncoming": false,
+  "VerifyOutgoing": false,
+  "CAFile": "",
+  "CertFile": "",
+  "KeyFile": "",
+  "ServerName": "",
+  "StartJoin": [
+    "192.168.2.72"
+  ],
+  "RetryJoin": [],
+  "RetryMaxAttempts": 0,
+  "RetryIntervalRaw": "",
+  "UiDir": "",
+  "PidFile": "",
+  "EnableSyslog": false,
+  "SyslogFacility": "LOCAL0",
+  "RejoinAfterLeave": false,
+  "CheckUpdateInterval": 300000000000,
+  "ACLDatacenter": "",
+  "ACLTTL": 30000000000,
+  "ACLTTLRaw": "",
+  "ACLDefaultPolicy": "allow",
+  "ACLDownPolicy": "extend-cache",
+  "Watches": null,
+  "DisableRemoteExec": false,
+  "DisableUpdateCheck": false,
+  "DisableAnonymousSignature": false,
+  "Revision": "",
+  "Version": "0.4.1",
+  "VersionPrerelease": ""
+},
+"Member": {
+  "Name": "consul-agent1",
+  "Addr": "192.168.2.61",
+  "Port": 8301,
+  "Tags": {
+    "build": "0.4.1:",
+    "dc": "dc1",
+    "role": "node",
+    "vsn": "2",
+    "vsn_max": "2",
+    "vsn_min": "1"
+  },
+  "Status": 1,
+  "ProtocolMin": 1,
+  "ProtocolMax": 2,
+  "ProtocolCur": 2,
+  "DelegateMin": 2,
+  "DelegateMax": 4,
+  "DelegateCur": 4
+  }
+ }
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_join__address_><span class=parent>/agent/join</span>/{address}</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_join__address__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__agent_join__address_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Join the cluster</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_join__address__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_join__address__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/agent/join</span>/{address}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_join__address__put_request data-toggle=tab>Request</a></li><li><a href=#_agent_join__address__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_join__address__put_request><h3>URI Parameters</h3><ul><li><strong>address</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>wan</strong>: <em>(integer)</em><p>For agents running in server mode, providing a "?wan=1" query parameter causes the agent to attempt to join using the WAN pool</p></li></ul></div><div class=tab-pane id=_agent_join__address__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_force_leave__node_><span class=parent>/agent/force-leave</span>/{node}</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_force_leave__node__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__agent_force_leave__node_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Forced out of the node</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_force_leave__node__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_force_leave__node__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/agent/force-leave</span>/{node}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_force_leave__node__put_request data-toggle=tab>Request</a></li><li><a href=#_agent_force_leave__node__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_force_leave__node__put_request><h3>URI Parameters</h3><ul><li><strong>node</strong>: <em>required (string)</em></li></ul></div><div class=tab-pane id=_agent_force_leave__node__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_check_register><span class=parent>/agent/check</span>/register</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_check_register_put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__agent_check_register class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Registration check the configuration</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_check_register_put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_check_register_put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/agent/check</span>/register</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_check_register_put_request data-toggle=tab>Request</a></li><li><a href=#_agent_check_register_put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_check_register_put_request><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "ID": "mysql-1",
+  "Name": "mysql-1",
+  "Script": "/root/mysqlcheck.sh orz1bsg",
+  "Interval": "10s"
+}
+</code></pre></div><div class=tab-pane id=_agent_check_register_put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_check_deregister__checkId_><span class=parent>/agent/check/deregister</span>/{checkId}</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_check_deregister__checkId__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__agent_check_deregister__checkId_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Deregister check the configuration</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_check_deregister__checkId__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_check_deregister__checkId__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/agent/check/deregister</span>/{checkId}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_check_deregister__checkId__put_request data-toggle=tab>Request</a></li><li><a href=#_agent_check_deregister__checkId__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_check_deregister__checkId__put_request><h3>URI Parameters</h3><ul><li><strong>checkId</strong>: <em>required (string)</em></li></ul></div><div class=tab-pane id=_agent_check_deregister__checkId__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_check_pass__checkId_><span class=parent>/agent/check/pass</span>/{checkId}</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_check_pass__checkId__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__agent_check_pass__checkId_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Set the check status passing,When you register a check needs to be set TTL</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_check_pass__checkId__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_check_pass__checkId__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/agent/check/pass</span>/{checkId}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_check_pass__checkId__put_request data-toggle=tab>Request</a></li><li><a href=#_agent_check_pass__checkId__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_check_pass__checkId__put_request><h3>URI Parameters</h3><ul><li><strong>checkId</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>note</strong>: <em>(string)</em><p>The optional "?note=" query parameter can be used to associate output with the status of the check. This should be human readable for operators</p></li></ul></div><div class=tab-pane id=_agent_check_pass__checkId__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_check_warn__checkId_><span class=parent>/agent/check/warn</span>/{checkId}</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_check_warn__checkId__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__agent_check_warn__checkId_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Set the check status warning,When you register a check needs to be set TTL</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_check_warn__checkId__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_check_warn__checkId__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/agent/check/warn</span>/{checkId}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_check_warn__checkId__put_request data-toggle=tab>Request</a></li><li><a href=#_agent_check_warn__checkId__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_check_warn__checkId__put_request><h3>URI Parameters</h3><ul><li><strong>checkId</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>note</strong>: <em>(string)</em><p>The optional "?note=" query parameter can be used to associate output with the status of the check. This should be human readable for operators</p></li></ul></div><div class=tab-pane id=_agent_check_warn__checkId__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_check_fail__checkId_><span class=parent>/agent/check/fail</span>/{checkId}</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_check_fail__checkId__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__agent_check_fail__checkId_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Set the check status critical,When you register a check needs to be set TTL</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_check_fail__checkId__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_check_fail__checkId__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/agent/check/fail</span>/{checkId}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_check_fail__checkId__put_request data-toggle=tab>Request</a></li><li><a href=#_agent_check_fail__checkId__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_check_fail__checkId__put_request><h3>URI Parameters</h3><ul><li><strong>checkId</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>note</strong>: <em>(string)</em><p>The optional "?note=" query parameter can be used to associate output with the status of the check. This should be human readable for operators</p></li></ul></div><div class=tab-pane id=_agent_check_fail__checkId__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_service_register><span class=parent>/agent/service</span>/register</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_service_register_put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__agent_service_register class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Registration Service</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_service_register_put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_service_register_put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/agent/service</span>/register</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_service_register_put_request data-toggle=tab>Request</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_service_register_put_request><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "Name": "mysql-2",
+  "Tags": [
+  "master"
+  ],
+  "Port": 3306,
+  "Check": {
+    "Script": "/root/mysqlcheck.sh orz1bsg",
+    "Interval": "10s",
+    "TTL":"10s"
+  }
+}
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__agent_service_deregister__serviceID_><span class=parent>/agent/service/deregister</span>/{serviceID}</a> <span class=methods><a href=# data-toggle=modal data-target=#_agent_service_deregister__serviceID__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__agent_service_deregister__serviceID_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Deregister Service</p></div><div class=list-group><div data-toggle=modal data-target=#_agent_service_deregister__serviceID__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_agent_service_deregister__serviceID__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/agent/service/deregister</span>/{serviceID}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_agent_service_deregister__serviceID__put_request data-toggle=tab>Request</a></li><li><a href=#_agent_service_deregister__serviceID__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_agent_service_deregister__serviceID__put_request><h3>URI Parameters</h3><ul><li><strong>serviceID</strong>: <em>required (string)</em></li></ul></div><div class=tab-pane id=_agent_service_deregister__serviceID__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class=panel-heading><h3 id=_catalog class=panel-title>/catalog</h3></div><div class=panel-body><div class=panel-group><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__catalog_register><span class=parent>/catalog</span>/register</a> <span class=methods><a href=# data-toggle=modal data-target=#_catalog_register_put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__catalog_register class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>The registration service and check</p></div><div class=list-group><div data-toggle=modal data-target=#_catalog_register_put class=list-group-item><span class="badge badge_put">put</span><div class=method_description><p>If ID is not provided, it will be defaulted to Service;The CheckID can be omitted, and will default to the Name</p></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_catalog_register_put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/catalog</span>/register</h4></div><div class=modal-body><div class="alert alert-info"><p>If ID is not provided, it will be defaulted to Service;The CheckID can be omitted, and will default to the Name</p></div><ul class="nav nav-tabs"><li class=active><a href=#_catalog_register_put_request data-toggle=tab>Request</a></li><li><a href=#_catalog_register_put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_catalog_register_put_request><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "Datacenter": "dc1",
+  "Node": "consul-agent1",
+  "Address": "192.168.2.61",
+  "Service": {
+    "ID": "mysql-2",
+    "Service": "mysql-2",
+    "Tags": [
+      "master",
+      "v1"
+    ]
+  },
+  "port": 3306,
+  "Check": {
+    "Node": "consul-agent1",
+    "CheckID": "service:mysql-2",
+    "Name": "mysql-2 health check",
+    "Notes": "script based health check",
+    "status": "passing",
+    "ServiceID": "mysql-2"
+    }
+  }
+</code></pre></div><div class=tab-pane id=_catalog_register_put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>true
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__catalog_deregister><span class=parent>/catalog</span>/deregister</a> <span class=methods><a href=# data-toggle=modal data-target=#_catalog_deregister_put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__catalog_deregister class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>The deregister service and check</p></div><div class=list-group><div data-toggle=modal data-target=#_catalog_deregister_put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_catalog_deregister_put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/catalog</span>/deregister</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_catalog_deregister_put_request data-toggle=tab>Request</a></li></ul><div class=tab-content><div class="tab-pane active" id=_catalog_deregister_put_request><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "Datacenter": "dc1",
+  "Node": "consul-agent1",
+  "ServiceID": "mysql-1"
+}
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__catalog_datacenters><span class=parent>/catalog</span>/datacenters</a> <span class=methods><a href=# data-toggle=modal data-target=#_catalog_datacenters_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__catalog_datacenters class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns all of the datacenters</p></div><div class=list-group><div data-toggle=modal data-target=#_catalog_datacenters_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_catalog_datacenters_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/catalog</span>/datacenters</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_catalog_datacenters_get_request data-toggle=tab>Request</a></li><li><a href=#_catalog_datacenters_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_catalog_datacenters_get_request><h3>Query Parameters</h3><ul><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_catalog_datacenters_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  "dc1"
+]
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__catalog_nodes><span class=parent>/catalog</span>/nodes</a> <span class=methods><a href=# data-toggle=modal data-target=#_catalog_nodes_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__catalog_nodes class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns all nodes</p></div><div class=list-group><div data-toggle=modal data-target=#_catalog_nodes_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_catalog_nodes_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/catalog</span>/nodes</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_catalog_nodes_get_request data-toggle=tab>Request</a></li><li><a href=#_catalog_nodes_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_catalog_nodes_get_request><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter.</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_catalog_nodes_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "Node": "consul-agent1",
+    "Address": "192.168.2.61"
+  },
+  {
+    "Node": "consul-agent2",
+    "Address": "192.168.2.62"
+  },
+  {
+    "Node": "consul-server1",
+    "Address": "192.168.2.71"
+  },
+  {
+    "Node": "consul-server2",
+    "Address": "192.168.2.72"
+  },
+  {
+    "Node": "consul-server3",
+    "Address": "192.168.2.73"
+  }
+]   
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__catalog_services><span class=parent>/catalog</span>/services</a> <span class=methods><a href=# data-toggle=modal data-target=#_catalog_services_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__catalog_services class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Query the registration service</p></div><div class=list-group><div data-toggle=modal data-target=#_catalog_services_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_catalog_services_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/catalog</span>/services</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_catalog_services_get_request data-toggle=tab>Request</a></li><li><a href=#_catalog_services_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_catalog_services_get_request><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_catalog_services_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "consul": [],
+  "mysql-2": [
+    "master"
+  ]
+}
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__catalog_service__service_><span class=parent>/catalog/service</span>/{service}</a> <span class=methods><a href=# data-toggle=modal data-target=#_catalog_service__service__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__catalog_service__service_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns the specified service</p></div><div class=list-group><div data-toggle=modal data-target=#_catalog_service__service__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_catalog_service__service__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/catalog/service</span>/{service}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_catalog_service__service__get_request data-toggle=tab>Request</a></li><li><a href=#_catalog_service__service__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_catalog_service__service__get_request><h3>URI Parameters</h3><ul><li><strong>service</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter</p></li><li><strong>tag</strong>: <em>(string)</em><p>By default all nodes in that service are returned. However, the list can be filtered by tag using the "?tag=" query parameter.</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_catalog_service__service__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "Node": "consul-agent1",
+    "Address": "192.168.2.61",
+    "ServiceID": "mysql-2",
+    "ServiceName": "mysql-2",
+    "ServiceTags": [
+      "master"
+    ],
+    "ServicePort": 3306
+  }
+]
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__catalog_node__node_><span class=parent>/catalog/node</span>/{node}</a> <span class=methods><a href=# data-toggle=modal data-target=#_catalog_node__node__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__catalog_node__node_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns the specified node</p></div><div class=list-group><div data-toggle=modal data-target=#_catalog_node__node__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_catalog_node__node__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/catalog/node</span>/{node}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_catalog_node__node__get_request data-toggle=tab>Request</a></li><li><a href=#_catalog_node__node__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_catalog_node__node__get_request><h3>URI Parameters</h3><ul><li><strong>node</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_catalog_node__node__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "Node": {
+    "Node": "consul-agent2",
+    "Address": "192.168.2.62"
+  },
+  "Services": {}
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class=panel-heading><h3 id=_health class=panel-title>/health</h3></div><div class=panel-body><div class=panel-group><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__health_node__node_><span class=parent>/health/node</span>/{node}</a> <span class=methods><a href=# data-toggle=modal data-target=#_health_node__node__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__health_node__node_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns the specified node health information</p></div><div class=list-group><div data-toggle=modal data-target=#_health_node__node__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_health_node__node__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/health/node</span>/{node}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_health_node__node__get_request data-toggle=tab>Request</a></li><li><a href=#_health_node__node__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_health_node__node__get_request><h3>URI Parameters</h3><ul><li><strong>node</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_health_node__node__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "Node": "consul-agent2",
+    "CheckID": "serfHealth",
+    "Name": "Serf Health Status",
+    "Status": "passing",
+    "Notes": "",
+    "Output": "Agent alive and reachable",
+    "ServiceID": "",
+    "ServiceName": ""
+  }
+] 
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__health_checks__service_><span class=parent>/health/checks</span>/{service}</a> <span class=methods><a href=# data-toggle=modal data-target=#_health_checks__service__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__health_checks__service_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns the specified service check information</p></div><div class=list-group><div data-toggle=modal data-target=#_health_checks__service__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_health_checks__service__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/health/checks</span>/{service}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_health_checks__service__get_request data-toggle=tab>Request</a></li><li><a href=#_health_checks__service__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_health_checks__service__get_request><h3>URI Parameters</h3><ul><li><strong>service</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_health_checks__service__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "Node": "consul-agent1",
+    "CheckID": "service:mysql-2",
+    "Name": "Service &#x27;mysql-2&#x27; check",
+    "Status": "critical",
+    "Notes": "",
+    "Output": "TTL expired",
+    "ServiceID": "mysql-2",
+    "ServiceName": "mysql-2"
+  }
+]
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__health_service__service_><span class=parent>/health/service</span>/{service}</a> <span class=methods><a href=# data-toggle=modal data-target=#_health_service__service__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__health_service__service_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns the specified health information services</p></div><div class=list-group><div data-toggle=modal data-target=#_health_service__service__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_health_service__service__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/health/service</span>/{service}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_health_service__service__get_request data-toggle=tab>Request</a></li><li><a href=#_health_service__service__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_health_service__service__get_request><h3>URI Parameters</h3><ul><li><strong>service</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter</p></li><li><strong>tag</strong>: <em>(string)</em><p>By default all nodes in that service are returned. However, the list can be filtered by tag using the "?tag=" query parameter.</p></li><li><strong>passing</strong>: <em>(string)</em><p>Providing the "?passing" query parameter will filter results to only nodes with all checks in the passing state</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_health_service__service__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "Node": {
+    "Node": "consul-agent1",
+    "Address": "192.168.2.61"
+    },
+    "Service": {
+    "ID": "mysql-2",
+    "Service": "mysql-2",
+    "Tags": [
+      "master"
+    ],
+    "Port": 3306
+    },
+    "Checks": [
+      {
+        "Node": "consul-agent1",
+        "CheckID": "service:mysql-2",
+        "Name": "Service &#x27;mysql-2&#x27; check",
+        "Status": "critical",
+        "Notes": "",
+        "Output": "TTL expired",
+        "ServiceID": "mysql-2",
+        "ServiceName": "mysql-2"
+      },
+      {
+        "Node": "consul-agent1",
+        "CheckID": "serfHealth",
+        "Name": "Serf Health Status",
+        "Status": "passing",
+        "Notes": "",
+        "Output": "Agent alive and reachable",
+        "ServiceID": "",
+        "ServiceName": ""
+      },
+      {
+        "Node": "consul-agent1",
+        "CheckID": "mysql-1",
+        "Name": "mysql-1",
+        "Status": "critical",
+        "Notes": "",
+        "Output": "/bin/bash: /root/mysqlcheck.sh: No such file or directory\n",
+        "ServiceID": "",
+        "ServiceName": ""
+      }
+    ]
+  }
+]
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__health_state__state_><span class=parent>/health/state</span>/{state}</a> <span class=methods><a href=# data-toggle=modal data-target=#_health_state__state__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__health_state__state_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Return information given state</p></div><div class=list-group><div data-toggle=modal data-target=#_health_state__state__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_health_state__state__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/health/state</span>/{state}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_health_state__state__get_request data-toggle=tab>Request</a></li><li><a href=#_health_state__state__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_health_state__state__get_request><h3>URI Parameters</h3><ul><li><strong>state</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_health_state__state__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "Node": "consul-server2",
+    "CheckID": "serfHealth",
+    "Name": "Serf Health Status",
+    "Status": "passing",
+    "Notes": "",
+    "Output": "Agent alive and reachable",
+    "ServiceID": "",
+    "ServiceName": ""
+  },
+  {
+    "Node": "consul-server3",
+    "CheckID": "serfHealth",
+    "Name": "Serf Health Status",
+    "Status": "passing",
+    "Notes": "",
+    "Output": "Agent alive and reachable",
+    "ServiceID": "",
+    "ServiceName": ""
+  },
+  {
+    "Node": "consul-server1",
+    "CheckID": "serfHealth",
+    "Name": "Serf Health Status",
+    "Status": "passing",
+    "Notes": "",
+    "Output": "Agent alive and reachable",
+    "ServiceID": "",
+    "ServiceName": ""
+  },
+  {
+    "Node": "consul-agent1",
+    "CheckID": "serfHealth",
+    "Name": "Serf Health Status",
+    "Status": "passing",
+    "Notes": "",
+    "Output": "Agent alive and reachable",
+    "ServiceID": "",
+    "ServiceName": ""
+  },
+  {
+    "Node": "consul-agent2",
+    "CheckID": "serfHealth",
+    "Name": "Serf Health Status",
+    "Status": "passing",
+    "Notes": "",
+    "Output": "Agent alive and reachable",
+    "ServiceID": "",
+    "ServiceName": ""
+  }
+]
+</code></pre></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class=panel-heading><h3 id=_session class=panel-title>/session</h3></div><div class=panel-body><div class=panel-group><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__session_create><span class=parent>/session</span>/create</a> <span class=methods><a href=# data-toggle=modal data-target=#_session_create_put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__session_create class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Create session</p></div><div class=list-group><div data-toggle=modal data-target=#_session_create_put class=list-group-item><span class="badge badge_put">put</span><div class=method_description><p>By default, the agent uses it&#39;s own node name, and provides the "serfHealth" check, along with a 15 second lock delay; By default, the agent will use it&#39;s own name; By default the "serfHealth" check is provided.</p></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_session_create_put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/session</span>/create</h4></div><div class=modal-body><div class="alert alert-info"><p>By default, the agent uses it&#39;s own node name, and provides the "serfHealth" check, along with a 15 second lock delay; By default, the agent will use it&#39;s own name; By default the "serfHealth" check is provided.</p></div><ul class="nav nav-tabs"><li class=active><a href=#_session_create_put_request data-toggle=tab>Request</a></li><li><a href=#_session_create_put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_session_create_put_request><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default, the agent&#39;s local datacenter is used, but another datacenter can be specified using the "?dc=" query parameter. It is not recommended to use cross-region sessions</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "LockDelay": "15s",
+  "Name": "mysql",
+  "Node": "consul-agent1",
+  "Checks": [
+    "serfHealth"
+  ]
+}
+</code></pre></div><div class=tab-pane id=_session_create_put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "ID": "05f79651-87ed-4f43-882f-2c727cace086"
+}
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__session_destroy__sessionID_><span class=parent>/session/destroy</span>/{sessionID}</a> <span class=methods><a href=# data-toggle=modal data-target=#_session_destroy__sessionID__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__session_destroy__sessionID_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Logout session</p></div><div class=list-group><div data-toggle=modal data-target=#_session_destroy__sessionID__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_session_destroy__sessionID__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/session/destroy</span>/{sessionID}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_session_destroy__sessionID__put_request data-toggle=tab>Request</a></li><li><a href=#_session_destroy__sessionID__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_session_destroy__sessionID__put_request><h3>URI Parameters</h3><ul><li><strong>sessionID</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the local datacenter is used, but the "?dc=" query parameter can be used to specify the datacenter. The session being destroyed must be provided after the slash</p></li></ul></div><div class=tab-pane id=_session_destroy__sessionID__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>true
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__session_info__sessionID_><span class=parent>/session/info</span>/{sessionID}</a> <span class=methods><a href=# data-toggle=modal data-target=#_session_info__sessionID__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__session_info__sessionID_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Displays session information</p></div><div class=list-group><div data-toggle=modal data-target=#_session_info__sessionID__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_session_info__sessionID__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/session/info</span>/{sessionID}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_session_info__sessionID__get_request data-toggle=tab>Request</a></li><li><a href=#_session_info__sessionID__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_session_info__sessionID__get_request><h3>URI Parameters</h3><ul><li><strong>sessionID</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter. The session being queried must be provided after the slash</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_session_info__sessionID__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "CreateIndex": 781,
+    "ID": "ae186218-00e1-8f0b-1fa4-b56175d3f3c8",
+    "Name": "mysql",
+    "Node": "consul-agent1",
+    "Checks": [
+      "mysql-1"
+    ],
+    "LockDelay": 15000000000
+  }
+]           
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__session_node__node_><span class=parent>/session/node</span>/{node}</a> <span class=methods><a href=# data-toggle=modal data-target=#_session_node__node__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__session_node__node_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns a node sessions</p></div><div class=list-group><div data-toggle=modal data-target=#_session_node__node__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_session_node__node__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/session/node</span>/{node}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_session_node__node__get_request data-toggle=tab>Request</a></li><li><a href=#_session_node__node__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_session_node__node__get_request><h3>URI Parameters</h3><ul><li><strong>node</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter. The node being queried must be provided after the slash.</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_session_node__node__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "CreateIndex": 781,
+    "ID": "ae186218-00e1-8f0b-1fa4-b56175d3f3c8",
+    "Name": "mysql",
+    "Node": "consul-agent1",
+    "Checks": [
+      "mysql-1"
+    ],
+    "LockDelay": 15000000000
+  }
+]   
+  
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__session_list><span class=parent>/session</span>/list</a> <span class=methods><a href=# data-toggle=modal data-target=#_session_list_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__session_list class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Back to all sessions</p></div><div class=list-group><div data-toggle=modal data-target=#_session_list_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_session_list_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/session</span>/list</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_session_list_get_request data-toggle=tab>Request</a></li><li><a href=#_session_list_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_session_list_get_request><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default the datacenter of the agent is queried, however the dc can be provided using the "?dc=" query parameter</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_session_list_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "CreateIndex": 781,
+    "ID": "ae186218-00e1-8f0b-1fa4-b56175d3f3c8",
+    "Name": "mysql",
+    "Node": "node5",
+    "Checks": [
+      "mysql-1"
+    ],
+    "LockDelay": 15000000000
+  }
+] 
+</code></pre></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class=panel-heading><h3 id=_acl class=panel-title>/acl</h3></div><div class=panel-body><div class=panel-group><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__acl_create><span class=parent>/acl</span>/create</a> <span class=methods><a href=# data-toggle=modal data-target=#_acl_create_put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__acl_create class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Create a token</p></div><div class=list-group><div data-toggle=modal data-target=#_acl_create_put class=list-group-item><span class="badge badge_put">put</span><div class=method_description><p>None of the fields are mandatory, and in fact no body needs to be PUT if the defaults are to be used. The Name and Rules default to being blank, and the Type defaults to "client"</p></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_acl_create_put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/acl</span>/create</h4></div><div class=modal-body><div class="alert alert-info"><p>None of the fields are mandatory, and in fact no body needs to be PUT if the defaults are to be used. The Name and Rules default to being blank, and the Type defaults to "client"</p></div><ul class="nav nav-tabs"><li class=active><a href=#_acl_create_put_request data-toggle=tab>Request</a></li><li><a href=#_acl_create_put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_acl_create_put_request><h3>Query Parameters</h3><ul><li><strong>token</strong>: <em>(string)</em></li><li><strong>pretty</strong>: <em>(string)</em></li></ul><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "Name": "test_token",
+  "Type": "client",
+  "Rules": " key \"testread/\" { policy = \"read\" } key \"testwrite/\" { policy = \"write\" } "
+}            
+</code></pre></div><div class=tab-pane id=_acl_create_put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "ID": "907f9f17-4814-77a3-f4d8-41ed26c33ca6"
+}
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__acl_update><span class=parent>/acl</span>/update</a> <span class=methods><a href=# data-toggle=modal data-target=#_acl_update_put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__acl_update class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Update token</p></div><div class=list-group><div data-toggle=modal data-target=#_acl_update_put class=list-group-item><span class="badge badge_put">put</span><div class=method_description><p>Only the ID field is mandatory, the other fields provide defaults. The Name and Rules default to being blank, and the Type defaults to "client"</p></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_acl_update_put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/acl</span>/update</h4></div><div class=modal-body><div class="alert alert-info"><p>Only the ID field is mandatory, the other fields provide defaults. The Name and Rules default to being blank, and the Type defaults to "client"</p></div><ul class="nav nav-tabs"><li class=active><a href=#_acl_update_put_request data-toggle=tab>Request</a></li><li><a href=#_acl_update_put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_acl_update_put_request><h3>Query Parameters</h3><ul><li><strong>token</strong>: <em>(string)</em></li><li><strong>pretty</strong>: <em>(string)</em></li></ul><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "ID": "907f9f17-4814-77a3-f4d8-41ed26c33ca6",
+  "Name": "test_token1",
+  "Type": "client",
+  "Rules": " key \"test1/\" { policy = \"write\" } "
+}
+</code></pre></div><div class=tab-pane id=_acl_update_put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "ID": "567b1eb3-2e7d-ede5-9ad1-29619321fd76"
+}
+          
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__acl_destroy__aclId_><span class=parent>/acl/destroy</span>/{aclId}</a> <span class=methods><a href=# data-toggle=modal data-target=#_acl_destroy__aclId__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__acl_destroy__aclId_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Destruction token</p></div><div class=list-group><div data-toggle=modal data-target=#_acl_destroy__aclId__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_acl_destroy__aclId__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/acl/destroy</span>/{aclId}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_acl_destroy__aclId__put_request data-toggle=tab>Request</a></li><li><a href=#_acl_destroy__aclId__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_acl_destroy__aclId__put_request><h3>URI Parameters</h3><ul><li><strong>aclId</strong>: <em>required (string)</em></li></ul></div><div class=tab-pane id=_acl_destroy__aclId__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>true 
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__acl_list><span class=parent>/acl</span>/list</a> <span class=methods><a href=# data-toggle=modal data-target=#_acl_list_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__acl_list class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Return all tokens</p></div><div class=list-group><div data-toggle=modal data-target=#_acl_list_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_acl_list_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/acl</span>/list</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_acl_list_get_request data-toggle=tab>Request</a></li><li><a href=#_acl_list_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_acl_list_get_request><h3>Query Parameters</h3><ul><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_acl_list_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "CreateIndex": 162,
+    "ModifyIndex": 448,
+    "ID": "567b1eb3-2e7d-ede5-9ad1-29619321fd76",
+    "Name": "test_token1",
+    "Type": "client",
+    "Rules": " key \"test1/\" { policy = \"write\" } "
+  },
+  {
+    "CreateIndex": 172,
+    "ModifyIndex": 172,
+    "ID": "58755da3-3b6b-b624-7b17-1690b5223f0a",
+    "Name": "test_token1",
+    "Type": "client",
+    "Rules": " key \"test1/\" { policy = \"write\" } "
+  },
+  {
+    "CreateIndex": 450,
+    "ModifyIndex": 450,
+    "ID": "907f9f17-4814-77a3-f4d8-41ed26c33ca6",
+    "Name": "test_token",
+    "Type": "client",
+    "Rules": " key \"testread/\" { policy = \"read\" } key \"testwrite/\" { policy = \"write\" } "
+  },
+  {
+    "CreateIndex": 2,
+    "ModifyIndex": 2,
+    "ID": "anonymous",
+    "Name": "Anonymous Token",
+    "Type": "client",
+    "Rules": ""
+  },
+  {
+    "CreateIndex": 3,
+    "ModifyIndex": 3,
+    "ID": "master_token_test",
+    "Name": "Master Token",
+    "Type": "management",
+    "Rules": ""
+  }
+]
+               
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__acl_info__aclid_><span class=parent>/acl/info</span>/{aclid}</a> <span class=methods><a href=# data-toggle=modal data-target=#_acl_info__aclid__get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__acl_info__aclid_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns the token information</p></div><div class=list-group><div data-toggle=modal data-target=#_acl_info__aclid__get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_acl_info__aclid__get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/acl/info</span>/{aclid}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_acl_info__aclid__get_request data-toggle=tab>Request</a></li><li><a href=#_acl_info__aclid__get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_acl_info__aclid__get_request><h3>URI Parameters</h3><ul><li><strong>aclid</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_acl_info__aclid__get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "CreateIndex": 162,
+    "ModifyIndex": 448,
+    "ID": "567b1eb3-2e7d-ede5-9ad1-29619321fd76",
+    "Name": "test_token1",
+    "Type": "client",
+    "Rules": " key \"test1/\" { policy = \"write\" } "
+  }
+]
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__acl_clone__aclID_><span class=parent>/acl/clone</span>/{aclID}</a> <span class=methods><a href=# data-toggle=modal data-target=#_acl_clone__aclID__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__acl_clone__aclID_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Clone Token</p></div><div class=list-group><div data-toggle=modal data-target=#_acl_clone__aclID__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_acl_clone__aclID__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/acl/clone</span>/{aclID}</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_acl_clone__aclID__put_request data-toggle=tab>Request</a></li><li><a href=#_acl_clone__aclID__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_acl_clone__aclID__put_request><h3>URI Parameters</h3><ul><li><strong>aclID</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_acl_clone__aclID__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "ID": "0e23123a-c90e-229f-8538-ea58273c4a36"
+}             
+</code></pre></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class=panel-heading><h3 id=_event class=panel-title>/event</h3></div><div class=panel-body><div class=panel-group><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__event_fire__name_><span class=parent>/event/fire</span>/{name}</a> <span class=methods><a href=# data-toggle=modal data-target=#_event_fire__name__put><span class="badge badge_put">put</span></a></span></h4></div><div id=panel__event_fire__name_ class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Create an event</p></div><div class=list-group><div data-toggle=modal data-target=#_event_fire__name__put class=list-group-item><span class="badge badge_put">put</span><div class=method_description><p>The ?node=, ?service=, and ?tag= query parameters may optionally be provided. They respectively provide a regular expression to filter by node name, service, and service tags.</p></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_event_fire__name__put><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_put">put</span> <span class=parent>/event/fire</span>/{name}</h4></div><div class=modal-body><div class="alert alert-info"><p>The ?node=, ?service=, and ?tag= query parameters may optionally be provided. They respectively provide a regular expression to filter by node name, service, and service tags.</p></div><ul class="nav nav-tabs"><li class=active><a href=#_event_fire__name__put_request data-toggle=tab>Request</a></li><li><a href=#_event_fire__name__put_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_event_fire__name__put_request><h3>URI Parameters</h3><ul><li><strong>name</strong>: <em>required (string)</em></li></ul><h3>Query Parameters</h3><ul><li><strong>dc</strong>: <em>(string)</em><p>By default, the agent&#39;s local datacenter is used, but another datacenter can be specified using the "?dc=" query parameter</p></li><li><strong>node</strong>: <em>(string)</em></li><li><strong>service</strong>: <em>(string)</em></li><li><strong>tag</strong>: <em>(string)</em></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_event_fire__name__put_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "ID": "c36e2d97-94ab-e3e3-8187-f74c3724f94e",
+  "Name": "test_token1",
+  "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOSIsCiAgIk5hbWUiOiAidGVzdF90b2tlbjEiLAogICJQYXlsb2FkIjogbnVsbCwKICAiTm9kZUZpbHRlciI6ICIiLAogICJTZXJ2aWNlRmlsdGVyIjogIiIsCiAgIlRhZ0ZpbHRlciI6ICIiLAogICJWZXJzaW9uIjogMSwKICAiTFRpbWUiOiAwCn0=",
+  "NodeFilter": "",
+  "ServiceFilter": "",
+  "TagFilter": "",
+  "Version": 1,
+  "LTime": 0
+}     
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__event_list><span class=parent>/event</span>/list</a> <span class=methods><a href=# data-toggle=modal data-target=#_event_list_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__event_list class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Get a list of recent events</p></div><div class=list-group><div data-toggle=modal data-target=#_event_list_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description><p>Lastly, agents only buffer the most recent entries. The number of entries should not be depended upon, but currently defaults to 256</p></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_event_list_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/event</span>/list</h4></div><div class=modal-body><div class="alert alert-info"><p>Lastly, agents only buffer the most recent entries. The number of entries should not be depended upon, but currently defaults to 256</p></div><ul class="nav nav-tabs"><li class=active><a href=#_event_list_get_request data-toggle=tab>Request</a></li><li><a href=#_event_list_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_event_list_get_request><h3>Query Parameters</h3><ul><li><strong>name</strong>: <em>(string)</em><p>This endpoint does allow for filtering on events by name by providing the ?name= query parameter.</p></li><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_event_list_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  {
+    "ID": "4f806790-f0c2-de9c-10a2-0bd222e6f822",
+    "Name": "test_token1",
+    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOTYxOTMyMWZkNzYiLAogICJOYW1lIjogInRlc3RfdG9rZW4xIiwKICAiUGF5bG9hZCI6IG51bGwsCiAgIk5vZGVGaWx0ZXIiOiAiIiwKICAiU2VydmljZUZpbHRlciI6ICIiLAogICJUYWdGaWx0ZXIiOiAiIiwKICAiVmVyc2lvbiI6IDEsCiAgIkxUaW1lIjogMAp9",
+    "NodeFilter": "",
+    "ServiceFilter": "",
+    "TagFilter": "",
+    "Version": 1,
+    "LTime": 3
+  },
+  {
+    "ID": "b5457d55-6b7e-d351-0851-43d2350b3668",
+    "Name": "test_token1",
+    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOTYxOTMyMWZkNzYiLAogICJOYW1lIjogInRlc3RfdG9rZW4xIiwKICAiUGF5bG9hZCI6IG51bGwsCiAgIk5vZGVGaWx0ZXIiOiAiIiwKICAiU2VydmljZUZpbHRlciI6ICIiLAogICJUYWdGaWx0ZXIiOiAiIiwKICAiVmVyc2lvbiI6IDEsCiAgIkxUaW1lIjogMAp9",
+    "NodeFilter": "",
+    "ServiceFilter": "",
+    "TagFilter": "",
+    "Version": 1,
+    "LTime": 4
+  },
+  {
+    "ID": "525752e1-50df-7b55-284a-ea6ce4b50bd6",
+    "Name": "test_token1",
+    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOSIsCiAgIk5hbWUiOiAidGVzdF90b2tlbjEiLAogICJQYXlsb2FkIjogbnVsbCwKICAiTm9kZUZpbHRlciI6ICIiLAogICJTZXJ2aWNlRmlsdGVyIjogIiIsCiAgIlRhZ0ZpbHRlciI6ICIiLAogICJWZXJzaW9uIjogMSwKICAiTFRpbWUiOiAwCn0=",
+    "NodeFilter": "",
+    "ServiceFilter": "",
+    "TagFilter": "",
+    "Version": 1,
+    "LTime": 5
+  },
+  {
+    "ID": "c5eaefbd-c1a9-c079-4be2-a7c25d8b164b",
+    "Name": "test_token1",
+    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOSIsCiAgIk5hbWUiOiAidGVzdF90b2tlbjEiLAogICJQYXlsb2FkIjogbnVsbCwKICAiTm9kZUZpbHRlciI6ICIiLAogICJTZXJ2aWNlRmlsdGVyIjogIiIsCiAgIlRhZ0ZpbHRlciI6ICIiLAogICJWZXJzaW9uIjogMSwKICAiTFRpbWUiOiAwCn0=",
+    "NodeFilter": "",
+    "ServiceFilter": "",
+    "TagFilter": "",
+    "Version": 1,
+    "LTime": 6
+  },
+  {
+    "ID": "c36e2d97-94ab-e3e3-8187-f74c3724f94e",
+    "Name": "test_token1",
+    "Payload": "ewogICJJRCI6ICI1NjdiMWViMy0yZTdkLWVkZTUtOWFkMS0yOSIsCiAgIk5hbWUiOiAidGVzdF90b2tlbjEiLAogICJQYXlsb2FkIjogbnVsbCwKICAiTm9kZUZpbHRlciI6ICIiLAogICJTZXJ2aWNlRmlsdGVyIjogIiIsCiAgIlRhZ0ZpbHRlciI6ICIiLAogICJWZXJzaW9uIjogMSwKICAiTFRpbWUiOiAwCn0=",
+    "NodeFilter": "",
+    "ServiceFilter": "",
+    "TagFilter": "",
+    "Version": 1,
+    "LTime": 7
+  }
+]  
+</code></pre></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class=panel-heading><h3 id=_status class=panel-title>/status</h3></div><div class=panel-body><div class=panel-group><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__status_leader><span class=parent>/status</span>/leader</a> <span class=methods><a href=# data-toggle=modal data-target=#_status_leader_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__status_leader class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Returns leader node</p></div><div class=list-group><div data-toggle=modal data-target=#_status_leader_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_status_leader_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/status</span>/leader</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_status_leader_get_request data-toggle=tab>Request</a></li><li><a href=#_status_leader_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_status_leader_get_request></div><div class=tab-pane id=_status_leader_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>"192.168.2.73:8300"  
+</code></pre></div></div></div></div></div></div></div><div class="panel panel-white"><div class=panel-heading><h4 class=panel-title><a class=collapsed data-toggle=collapse href=#panel__status_peers><span class=parent>/status</span>/peers</a> <span class=methods><a href=# data-toggle=modal data-target=#_status_peers_get><span class="badge badge_get">get</span></a></span></h4></div><div id=panel__status_peers class="panel-collapse collapse"><div class=panel-body><div class=resource-description><p>Return to the same level of address and port number</p></div><div class=list-group><div data-toggle=modal data-target=#_status_peers_get class=list-group-item><span class="badge badge_get">get</span><div class=method_description></div><div class=clearfix></div></div></div></div></div><div class="modal fade" tabindex=0 id=_status_peers_get><div class=modal-dialog><div class=modal-content><div class=modal-header><button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button><h4 class=modal-title id=myModalLabel><span class="badge badge_get">get</span> <span class=parent>/status</span>/peers</h4></div><div class=modal-body><div class="alert alert-info"></div><ul class="nav nav-tabs"><li class=active><a href=#_status_peers_get_request data-toggle=tab>Request</a></li><li><a href=#_status_peers_get_response data-toggle=tab>Response</a></li></ul><div class=tab-content><div class="tab-pane active" id=_status_peers_get_request><h3>Query Parameters</h3><ul><li><strong>pretty</strong>: <em>(string)</em></li></ul></div><div class=tab-pane id=_status_peers_get_response><h2>HTTP status code <a href=http://httpstatus.es/200 target=_blank>200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>[
+  "192.168.2.73:8300",
+  "192.168.2.71:8300",
+  "192.168.2.72:8300"
+]
+</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class=col-md-3><div id=sidebar class="hidden-print affix" role=complementary><ul class="nav nav-pills nav-stacked"><li><a href=#_kv>Data Storage</a></li><li><a href=#_agent>/agent</a></li><li><a href=#_catalog>/catalog</a></li><li><a href=#_health>/health</a></li><li><a href=#_session>/session</a></li><li><a href=#_acl>/acl</a></li><li><a href=#_event>/event</a></li><li><a href=#_status>/status</a></li></ul></div></div></div></div></body></html>
