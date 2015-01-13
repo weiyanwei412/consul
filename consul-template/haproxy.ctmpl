@@ -1,0 +1,47 @@
+global
+	pidfile /var/run/haproxy.pid
+	daemon
+	user nobody
+	group nobody
+	#* Performance Tuning
+	maxconn {{key "service/N2PC4F/maxconn"}}
+	spread-checks 3
+	quiet
+defaults
+	#log global
+	mode tcp
+	option dontlognull
+	option tcp-smart-accept
+	option tcp-smart-connect
+	#option dontlog-normal
+	retries 3
+	option redispatch
+	maxconn {{key "service/N2PC4F/maxconn"}}
+	timeout check 3500ms
+	timeout queue 3500ms
+	timeout connect 3500ms
+	timeout client 10000ms
+	timeout server 10000ms
+
+	userlist STATSUSERS
+	group admin users admin
+	user admin insecure-password {{key "service/N2PC4F/haproxy-admin"}}
+	user stats insecure-password {{key "service/N2PC4F/haproxy-admin-passwd"}}
+
+listen admin_page 0.0.0.0:{{key "service/N2PC4F/haproxy-admin-page-port"}}
+	mode http
+	stats enable
+	stats refresh 60s
+	stats uri /
+	acl AuthOkay_ReadOnly http_auth(STATSUSERS)
+	acl AuthOkay_Admin http_auth_group(STATSUSERS) admin
+	stats http-request auth realm admin_page unless AuthOkay_ReadOnly
+	stats admin if AuthOkay_Admin
+
+listen {{key "service/N2PC4F/name"}}
+	bind *:{{key "service/N2PC4F/front-port"}}
+	timeout client 60000ms
+	timeout server 60000ms
+	balance {{key "service/N2PC4F/balance_mode"}}
+	{{range service "N2PC4F"}}
+	server {{.Node}} {{.Address}}:{{.Port}} {{end}}
