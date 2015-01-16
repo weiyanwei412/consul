@@ -73,8 +73,23 @@
 	
 ### regexReplaceAll
 	
+	{{"foo.bar" | regexReplaceAll "foo([.a-z]+)", "$1"}} # 将某个字符串匹配的正则表达式某个字段打印，如$1将打印.bar,$0将打印foo.bar
 	
+### replaceAll
+
+	{{"foo.bar" | replaceAll ".", "_"}} # 将字符串指定的某个字符转换成另一个字符，如将.转换成_
+
+### toLower
+
+	{{key "service/N2PC4F/haproxy-admin" | toLower}} # 将service/N2PC4F/haproxy-admin键的值大写转换为小写
 	
+### toTitle
+	
+	{{key "service/N2PC4F/balance-mode" | toTitle}} # 将service/N2PC4F/balance-mode键的值第一个字母转换为大写
+	
+### toUpper
+
+	{{key "service/N2PC4F/balance-mode" | toUpper}} # 将service/N2PC4F/balance-mode键的值转换为大写
 	
 	
 	
