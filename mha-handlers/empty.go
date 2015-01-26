@@ -1,8 +1,11 @@
 package main
 
 import (
-//	"bytes"
+	//	"bytes"
+	"database/sql"
+	"fmt"
 	"github.com/astaxie/beego"
+	_ "github.com/go-sql-driver/mysql"
 	"net/http"
 	"net/url"
 )
@@ -28,4 +31,5 @@ func Empty() {
 		return
 	}
 	beego.Info("Update service/mysql-1/leader success!")
+
 }
