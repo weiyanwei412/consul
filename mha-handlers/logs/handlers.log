@@ -8,3 +8,135 @@
 2015/01/23 16:27:27 [empty.go:30] [I] Update service/mysql-1/leader success! 
 2015/01/26 18:03:24 [empty.go:23] [I] Update service/mysql-1/leader request success! 
 2015/01/26 18:03:24 [empty.go:30] [I] Update service/mysql-1/leader success! 
+2015/01/27 12:09:33 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 12:09:33 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 12:09:33 [slave.go:29] [E] error: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 12:13:42 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 12:13:42 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 12:13:42 [slave.go:29] [E] error: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 15:00:07 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:00:07 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:01:55 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:01:55 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:07:26 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:07:26 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:08:07 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:08:07 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:08:07 [slave.go:31] [E] error: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 15:38:03 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:38:03 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:39:07 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:39:07 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:40:50 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:40:50 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:41:04 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:41:04 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:41:27 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:41:27 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:42:39 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:42:39 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:43:13 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:43:13 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:46:43 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:46:43 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:47:03 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:47:03 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:48:26 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:48:26 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:49:08 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:49:08 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:49:53 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:49:54 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:51:28 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:51:28 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:51:28 [slave.go:48] [E] scan err: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 15:51:28 [slave.go:55] [E] scan err: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 15:51:52 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:51:52 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:51:52 [slave.go:48] [E] scan err: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 15:51:52 [slave.go:55] [E] scan err: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 15:54:30 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:54:30 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:54:30 [slave.go:45] [E] scan err: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 15:54:44 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:54:44 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:54:44 [slave.go:45] [E] scan err: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 15:56:39 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:56:39 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 15:56:39 [slave.go:47] [E] scan err: sql: expected 44 destination arguments in Scan, not 2 
+2015/01/27 15:58:20 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 15:58:20 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:10:41 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:10:42 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:11:07 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:11:07 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:11:07 [slave.go:90] [E] scan err: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 16:11:20 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:11:20 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:11:20 [slave.go:90] [E] scan err: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 16:21:13 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:21:13 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:21:13 [slave.go:91] [E] scan err: sql: expected 44 destination arguments in Scan, not 1 
+2015/01/27 16:33:50 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:33:50 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:33:50 [slave.go:98] [E] scan err: sql: Scan error on column index 32: unsupported driver -> Scan pair: <nil> -> *string 
+2015/01/27 16:35:05 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:35:05 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:35:06 [slave.go:97] [E] scan err: sql: Scan error on column index 32: unsupported driver -> Scan pair: <nil> -> *string 
+2015/01/27 16:35:57 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:35:58 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:35:58 [slave.go:97] [E] scan err: sql: Scan error on column index 32: unsupported driver -> Scan pair: <nil> -> *string 
+2015/01/27 16:36:29 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:36:29 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:36:29 [slave.go:97] [E] scan err: sql: Scan error on column index 32: unsupported driver -> Scan pair: <nil> -> *string 
+2015/01/27 16:36:52 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:36:52 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:38:17 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:38:17 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:38:29 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:38:29 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:39:02 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:39:02 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:43:47 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:43:47 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:44:26 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:44:27 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:44:49 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:44:49 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:45:02 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:45:02 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:45:13 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:45:13 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:46:12 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:46:12 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:46:12 [slave.go:97] [E] scan err: sql: Scan error on column index 0: destination not a pointer 
+2015/01/27 16:49:00 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:49:00 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:49:00 [slave.go:100] [E] scan err: sql: Scan error on column index 0: destination not a pointer 
+2015/01/27 16:49:24 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:49:24 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:49:24 [slave.go:100] [E] scan err: sql: Scan error on column index 0: destination pointer is nil 
+2015/01/27 16:51:36 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:51:36 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:51:36 [slave.go:100] [E] scan err: sql: Scan error on column index 0: destination not a pointer 
+2015/01/27 16:51:46 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:51:46 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 16:52:03 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 16:52:03 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 17:21:12 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 17:21:12 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 17:38:46 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 17:38:46 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 17:43:21 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 17:43:21 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 17:43:21 [slave.go:68] [E] error sql: Rows are closed 
+2015/01/27 17:44:07 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 17:44:07 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 18:07:23 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 18:07:23 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 18:07:41 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 18:07:41 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 18:12:55 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 18:12:55 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/27 18:21:53 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/27 18:21:53 [empty.go:33] [I] Update service/mysql-1/leader success! 

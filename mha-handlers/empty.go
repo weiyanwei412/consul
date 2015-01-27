@@ -2,8 +2,8 @@ package main
 
 import (
 	//	"bytes"
-	"database/sql"
-	"fmt"
+//	"database/sql"
+//	"fmt"
 	"github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"
 	"net/http"
