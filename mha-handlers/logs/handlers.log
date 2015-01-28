@@ -140,3 +140,72 @@
 2015/01/27 18:12:55 [empty.go:33] [I] Update service/mysql-1/leader success! 
 2015/01/27 18:21:53 [empty.go:26] [I] Update service/mysql-1/leader request success! 
 2015/01/27 18:21:53 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/28 11:20:21 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/28 11:20:21 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/28 11:25:04 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/28 11:25:04 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/28 11:25:31 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/28 11:25:31 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/28 11:26:19 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/28 11:26:19 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/28 11:31:20 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/28 11:31:20 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/28 11:31:30 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/28 11:31:30 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/28 11:37:18 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/28 11:37:18 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/28 11:37:31 [empty.go:26] [I] Update service/mysql-1/leader request success! 
+2015/01/28 11:37:31 [empty.go:33] [I] Update service/mysql-1/leader success! 
+2015/01/28 14:23:48 [empty.go:31] [I] Update service/mysql-1/leader request success! 
+2015/01/28 14:23:48 [empty.go:38] [I] Update service/mysql-1/leader success! 
+2015/01/28 14:23:48 [slave.go:52] [E] SQL的复制线程不正常! <nil> 
+2015/01/28 14:23:48 [empty.go:55] [I] NewRequest方法执行成功 
+2015/01/28 14:23:48 [empty.go:59] [I] 200 
+2015/01/28 14:23:48 [empty.go:64] [I] session 创建成功 
+2015/01/28 14:23:48 [empty.go:71] [I] 读取session数据成功 
+2015/01/28 14:23:48 [empty.go:79] [I] 解析session ID成功 
+2015/01/28 14:23:48 [empty.go:80] [I] session ID: 2c7f27ab-4936-fab9-ce5b-e124968ebada 
+2015/01/28 14:23:48 [empty.go:95] [I] acquire NewRequest方法执行成功 
+2015/01/28 14:23:48 [empty.go:103] [I] acquire 加入锁成功 
+2015/01/28 14:23:48 [empty.go:111] [I] 读取 acquire 数据成功 
+2015/01/28 14:23:48 [empty.go:112] [I] kv acquire: false 
+2015/01/28 14:31:26 [empty.go:31] [I] Update service/mysql-1/leader request success! 
+2015/01/28 14:31:26 [empty.go:38] [I] Update service/mysql-1/leader success! 
+2015/01/28 14:31:26 [slave.go:52] [E] SQL的复制线程不正常! <nil> 
+2015/01/28 14:31:26 [empty.go:55] [I] NewRequest方法执行成功 
+2015/01/28 14:31:26 [empty.go:59] [I] 200 
+2015/01/28 14:31:26 [empty.go:64] [I] session 创建成功 
+2015/01/28 14:31:26 [empty.go:71] [I] 读取session数据成功 
+2015/01/28 14:31:26 [empty.go:79] [I] 解析session ID成功 
+2015/01/28 14:31:26 [empty.go:80] [I] session ID: e45e01b2-224a-d766-2edb-ff126f9bfdb1 
+2015/01/28 14:31:26 [empty.go:95] [I] acquire NewRequest方法执行成功 
+2015/01/28 14:31:26 [empty.go:103] [I] acquire 加入锁成功 
+2015/01/28 14:31:26 [empty.go:111] [I] 读取 acquire 数据成功 
+2015/01/28 14:31:26 [empty.go:112] [I] kv acquire: false 
+2015/01/28 14:38:50 [empty.go:31] [I] Update service/mysql-1/leader request success! 
+2015/01/28 14:38:50 [empty.go:38] [I] Update service/mysql-1/leader success! 
+2015/01/28 14:40:37 [empty.go:31] [I] Update service/mysql-1/leader request success! 
+2015/01/28 14:40:37 [empty.go:38] [I] Update service/mysql-1/leader success! 
+2015/01/28 14:40:37 [slave.go:53] [E] SQL的复制线程不正常! <nil> 
+2015/01/28 14:40:37 [empty.go:55] [I] NewRequest方法执行成功 
+2015/01/28 14:40:37 [empty.go:59] [I] 200 
+2015/01/28 14:40:37 [empty.go:64] [I] session 创建成功 
+2015/01/28 14:40:37 [empty.go:71] [I] 读取session数据成功 
+2015/01/28 14:40:37 [empty.go:79] [I] 解析session ID成功 
+2015/01/28 14:40:37 [empty.go:80] [I] session ID: 99a4fa3b-bbcd-e708-1134-fe2578b416b2 
+2015/01/28 14:40:37 [empty.go:95] [I] acquire NewRequest方法执行成功 
+2015/01/28 14:40:38 [empty.go:103] [I] acquire 加入锁成功 
+2015/01/28 14:40:38 [empty.go:111] [I] 读取 acquire 数据成功 
+2015/01/28 14:40:38 [empty.go:112] [I] kv acquire: false 
+2015/01/28 14:41:19 [empty.go:31] [I] Update service/mysql-1/leader request success! 
+2015/01/28 14:41:19 [empty.go:38] [I] Update service/mysql-1/leader success! 
+2015/01/28 14:41:19 [empty.go:55] [I] NewRequest方法执行成功 
+2015/01/28 14:41:19 [empty.go:59] [I] 200 
+2015/01/28 14:41:19 [empty.go:64] [I] session 创建成功 
+2015/01/28 14:41:19 [empty.go:71] [I] 读取session数据成功 
+2015/01/28 14:41:19 [empty.go:79] [I] 解析session ID成功 
+2015/01/28 14:41:19 [empty.go:80] [I] session ID: 847b7e3a-15b9-7cd4-1324-387ff188d5b2 
+2015/01/28 14:41:19 [empty.go:95] [I] acquire NewRequest方法执行成功 
+2015/01/28 14:41:19 [empty.go:103] [I] acquire 加入锁成功 
+2015/01/28 14:41:19 [empty.go:111] [I] 读取 acquire 数据成功 
+2015/01/28 14:41:19 [empty.go:112] [I] kv acquire: false 
