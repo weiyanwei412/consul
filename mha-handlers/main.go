@@ -12,6 +12,6 @@ func init() {
 func main() {
 	defer beego.BeeLogger.Close()
 	Empty()
-	slave()
-	SetConn()
+//	slave()
+//	SetConn()
 }

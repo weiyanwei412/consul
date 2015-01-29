@@ -91,4 +91,5 @@ func slave() {
 		}
 		beego.Info("设置可读可写成功")
 	}
+	SetConn()
 }

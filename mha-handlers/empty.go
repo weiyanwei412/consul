@@ -2,6 +2,7 @@ package main
 
 import (
 	"bytes"
+	"fmt"
 	//"database/sql"
 	"encoding/json"
 	"github.com/astaxie/beego"
@@ -15,8 +16,60 @@ type Session struct {
 	ID string
 }
 
+type Value struct {
+	Key         string
+	CreateIndex uint64
+	ModifyIndex uint64
+	LockIndex   uint64
+	Flags       uint64
+	Value       []byte
+	Session     string
+}
+
 func Empty() {
 	client := new(http.Client)
+	getkvurl := &url.URL{
+		Scheme: "http",
+		Host:   "192.168.2.71:8500",
+		Path:   "/v1/kv/service/mysql-1/leader",
+	}
+	getreg, err := http.NewRequest("GET", getkvurl.String(), nil)
+	if err != nil {
+		beego.Error("获得service/mysql-1/leader的信息NewRequest失败", err)
+		return
+	}
+	beego.Info("获得service/mysql-1/leader的信息NewRequest成功")
+	getreg.Header.Set("Content-Type", "application/json")
+	getresg, err := client.Do(getreg)
+	if getresg.StatusCode != 200 {
+		beego.Error("获得service/mysql-1/leader失败", err)
+		return
+	}
+	beego.Info("获得service/mysql-1/leader成功")
+	getkvbody, err := ioutil.ReadAll(getresg.Body)
+	if err != nil {
+		beego.Error("读取service/mysql-1/leader数据失败", err)
+		return
+	}
+	beego.Info("读取service.mysql-1/leader数据成功")
+	values := []Value{}
+	err = json.Unmarshal(getkvbody, &values)
+	if err != nil {
+		beego.Error("解析service/mysql-1/leader信息失败", err)
+		return
+	}
+	beego.Info("解析service/mysql-1/leader信息成功")
+	fmt.Println(len(values))
+	fmt.Println("session:", values[0].Session)
+	if len(values) <= 0 {
+		beego.Error("service/mysql-1/leader没有数据")
+	}
+	beego.Info("service/mysql-1/leader有数据")
+	if values[0].Session != "" {
+		fmt.Println("service/mysql-leader中有session ID")
+		beego.Info("service/mysql-leader中有session ID")
+		return
+	}
 	emptykvurl := &url.URL{
 		Scheme: "http",
 		Host:   "192.168.2.71:8500",
@@ -35,12 +88,12 @@ func Empty() {
 		return
 	}
 	beego.Info("更新service/mysql-1/leader成功")
-
+	slave()
 }
 
 func SetConn() {
 	client := new(http.Client)
-	sessionjson := `{"LockDelay":"15s","Name":"mysql","Node":"consul-agent1","Checks":["serfHealth","service:mysql-1"]}`
+	sessionjson := `{"LockDelay":"15s","Name":"mysql","Node":"consul-agent2","Checks":["serfHealth","service:mysql-1"]}`
 	sessionurl := &url.URL{
 		Scheme: "http",
 		Host:   "192.168.2.71:8500",
@@ -85,7 +138,7 @@ func SetConn() {
 		Path:     "/v1/kv/service/mysql-1/leader",
 		RawQuery: rawquery,
 	}
-	kvjson := `{"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111"}`
+	kvjson := `{"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111"}`
 	kvreg, err := http.NewRequest("PUT", kvurl.String(), bytes.NewBufferString(kvjson))
 	if err != nil {
 		beego.Error("acquire NewRequest方法执行失败:", err)
@@ -109,4 +162,5 @@ func SetConn() {
 	}
 	beego.Info("读取 acquire 数据成功")
 	beego.Info("kv acquire:", string(kvbody))
+	
 }
