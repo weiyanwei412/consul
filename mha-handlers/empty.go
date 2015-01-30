@@ -10,6 +10,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"time"
 )
 
 type Session struct {
@@ -60,7 +61,8 @@ func Empty() {
 	}
 	beego.Info("解析service/mysql-1/leader信息成功")
 	fmt.Println(len(values))
-	fmt.Println("session:", values[0].Session)
+	fmt.Println("sessionssss", values[0].Session)
+	beego.Info("session:",values[0].Session)
 	if len(values) <= 0 {
 		beego.Error("service/mysql-1/leader没有数据")
 	}
@@ -68,6 +70,7 @@ func Empty() {
 	if values[0].Session != "" {
 		fmt.Println("service/mysql-leader中有session ID")
 		beego.Info("service/mysql-leader中有session ID")
+		time.Sleep(1000)
 		return
 	}
 	emptykvurl := &url.URL{
@@ -93,7 +96,7 @@ func Empty() {
 
 func SetConn() {
 	client := new(http.Client)
-	sessionjson := `{"LockDelay":"15s","Name":"mysql","Node":"consul-agent2","Checks":["serfHealth","service:mysql-1"]}`
+	sessionjson := `{"LockDelay":"15s","Name":"mysql","Node":"consul-agent1","Checks":["serfHealth","service:mysql-1"]}`
 	sessionurl := &url.URL{
 		Scheme: "http",
 		Host:   "192.168.2.71:8500",
@@ -130,7 +133,7 @@ func SetConn() {
 	}
 	beego.Info("解析session ID成功")
 	beego.Info("session ID:", session.ID)
-	//time.Sleep(10000000000)
+	time.Sleep(10000000000)
 	rawquery := "acquire=" + session.ID
 	kvurl := &url.URL{
 		Scheme:   "http",
@@ -138,7 +141,7 @@ func SetConn() {
 		Path:     "/v1/kv/service/mysql-1/leader",
 		RawQuery: rawquery,
 	}
-	kvjson := `{"Node":"consul-agent2","IP":"192.168.2.62","Port":3306,"username":"root","password":"111111"}`
+	kvjson := `{"Node":"consul-agent1","IP":"192.168.2.61","Port":3306,"username":"root","password":"111111"}`
 	kvreg, err := http.NewRequest("PUT", kvurl.String(), bytes.NewBufferString(kvjson))
 	if err != nil {
 		beego.Error("acquire NewRequest方法执行失败:", err)
@@ -162,5 +165,5 @@ func SetConn() {
 	}
 	beego.Info("读取 acquire 数据成功")
 	beego.Info("kv acquire:", string(kvbody))
-	
+
 }

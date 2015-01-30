@@ -12,6 +12,7 @@ func init() {
 func main() {
 	defer beego.BeeLogger.Close()
 	Empty()
+	beego.Info("=======================================================")
 //	slave()
 //	SetConn()
 }
