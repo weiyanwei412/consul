@@ -2,7 +2,7 @@ package main
 
 import (
 	"database/sql"
-//	"fmt"
+	//	"fmt"
 	"github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"
 	//"reflect"
@@ -29,7 +29,7 @@ func slave() {
 	beego.Info("关闭slave线程成功")
 	row, err := db.Query("show slave status")
 	if err != nil {
-		beego.Error("查询slave状态失败",err)
+		beego.Error("查询slave状态失败", err)
 		return
 	}
 	beego.Info("查询slave状态成功")
@@ -55,9 +55,9 @@ func slave() {
 	Master_Log_File := mapField2Data["Master_Log_File"]
 	Read_Master_Log_Pos := mapField2Data["Read_Master_Log_Pos"]
 	Slave_SQL_Running := mapField2Data["Slave_SQL_Running"]
-//	fmt.Printf("Master_Log_File=%s\n", Master_Log_File)
-//	fmt.Printf("Read_Master_Log_Pos=%s\n", Read_Master_Log_Pos)
-//	fmt.Printf("Slave_SQL_Running=%s\n", Slave_SQL_Running)
+	//	fmt.Printf("Master_Log_File=%s\n", Master_Log_File)
+	//	fmt.Printf("Read_Master_Log_Pos=%s\n", Read_Master_Log_Pos)
+	//	fmt.Printf("Slave_SQL_Running=%s\n", Slave_SQL_Running)
 	//fmt.Println(string(Slave_SQL_Running.([]uint8)))
 	if string(Slave_SQL_Running.([]uint8)) != "Yes" {
 		beego.Error("SQL的复制线程不正常!", err)
@@ -67,7 +67,7 @@ func slave() {
 	sqlstr := "select master_pos_wait(?,?)"
 	rowss, err := db.Query(sqlstr, Master_Log_File, Read_Master_Log_Pos)
 	if err != nil {
-		beego.Error("执行master_pos_wait函数失败",err)
+		beego.Error("执行master_pos_wait函数失败", err)
 		return
 	}
 	beego.Info("执行master_pos_wait函数成功")
@@ -78,7 +78,7 @@ func slave() {
 			beego.Error("error", err)
 			return
 		}
-//		fmt.Println("output", master_pos_wait)
+		//		fmt.Println("output", master_pos_wait)
 		if master_pos_wait < "0" && master_pos_wait == "null" {
 			beego.Error("切换数据库失败!", err)
 			return

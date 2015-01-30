@@ -5,11 +5,12 @@ import (
 	"fmt"
 	//"database/sql"
 	"encoding/json"
-	"github.com/astaxie/beego"
-	_ "github.com/go-sql-driver/mysql"
 	"io/ioutil"
 	"net/http"
 	"net/url"
+
+	"github.com/astaxie/beego"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 type Session struct {
@@ -51,7 +52,7 @@ func Empty() {
 		beego.Error("读取service/mysql-1/leader数据失败", err)
 		return
 	}
-	beego.Info("读取service.mysql-1/leader数据成功")
+	beego.Info("读取service.mysql-1/leader数据成功", string(getkvbody))
 	values := []Value{}
 	err = json.Unmarshal(getkvbody, &values)
 	if err != nil {
@@ -162,5 +163,5 @@ func SetConn() {
 	}
 	beego.Info("读取 acquire 数据成功")
 	beego.Info("kv acquire:", string(kvbody))
-	
+
 }
