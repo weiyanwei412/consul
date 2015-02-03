@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/astaxie/beego"
+	"time"
 )
 
 func init() {
@@ -11,5 +12,6 @@ func init() {
 
 func main() {
 	defer beego.BeeLogger.Close()
-	Empty()
+	defer time.Sleep(100 * time.Millisecond)
+	IsSession()
 }

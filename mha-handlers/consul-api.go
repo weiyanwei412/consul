@@ -27,18 +27,7 @@ type Value struct {
 	Session     string
 }
 
-type HealthValue struct {
-	Node        string
-	CheckID     string
-	Name        string
-	Status      string
-	Notes       string
-	Output      string
-	ServiceID   string
-	ServiceName string
-}
-
-func Empty() {
+func IsSession() {
 	client := new(http.Client)
 	getkvurl := &url.URL{
 		Scheme: "http",
@@ -63,7 +52,7 @@ func Empty() {
 		beego.Error("读取service/mysql-1/leader数据失败", err)
 		return
 	}
-	beego.Info("读取service.mysql-1/leader数据成功", string(getkvbody))
+	beego.Info("读取service/mysql-1/leader数据成功", string(getkvbody))
 	values := []Value{}
 	err = json.Unmarshal(getkvbody, &values)
 	if err != nil {
@@ -71,9 +60,6 @@ func Empty() {
 		return
 	}
 	beego.Info("解析service/mysql-1/leader信息成功")
-	fmt.Println(len(values))
-	fmt.Println("sessionssss", values[0].Session)
-	beego.Info("session:", values[0].Session)
 	if len(values) <= 0 {
 		beego.Error("service/mysql-1/leader没有数据")
 	}
@@ -85,25 +71,6 @@ func Empty() {
 		return
 	}
 	ServiceCheck()
-	emptykvurl := &url.URL{
-		Scheme: "http",
-		Host:   "192.168.2.71:8500",
-		Path:   "/v1/kv/service/mysql-1/leader",
-	}
-	emptyreg, err := http.NewRequest("PUT", emptykvurl.String(), nil)
-	if err != nil {
-		beego.Error("更新service/mysql-1/leader的NewRequest失败", err)
-		return
-	}
-	beego.Info("更新service/mysql-1/leader的NewRequest成功")
-	emptyreg.Header.Set("Content-Type", "application/json")
-	emptyresg, err := client.Do(emptyreg)
-	if emptyresg.StatusCode != 200 {
-		beego.Error("更新/service/mysql-1/leader失败", err)
-		return
-	}
-	beego.Info("更新service/mysql-1/leader成功")
-	slave()
 }
 
 func SetConn() {
@@ -181,6 +148,29 @@ func SetConn() {
 
 }
 
+func Empty() {
+	client := new(http.Client)
+	emptykvurl := &url.URL{
+                Scheme: "http",
+                Host:   "192.168.2.71:8500",
+                Path:   "/v1/kv/service/mysql-1/leader",
+        }
+        emptyreg, err := http.NewRequest("PUT", emptykvurl.String(), nil)
+        if err != nil {
+                beego.Error("更新service/mysql-1/leader的NewRequest失败", err)
+                return
+        }
+        beego.Info("更新service/mysql-1/leader的NewRequest成功")
+        emptyreg.Header.Set("Content-Type", "application/json")
+        emptyresg, err := client.Do(emptyreg)
+        if emptyresg.StatusCode != 200 {
+                beego.Error("更新/service/mysql-1/leader失败", err)
+                return
+        }
+        beego.Info("更新service/mysql-1/leader成功")
+        slave()
+}
+
 func ServiceCheck() {
 	client := new(http.Client)
 	healthmysqlurl := &url.URL{
@@ -218,11 +208,10 @@ func ServiceCheck() {
 		beego.Error("没有mysql-1服务")
 		return
 	}
-	beego.Info("本机的mysql-1的服务状态是", healthvalue[0].Node)
 	beego.Info("有mysql-1服务")
 	var islocal bool
 	for index := range healthvalue {
-		if healthvalue[index].Node == "consul-agent1" {
+		if healthvalue[index].Node == "consul-agent2" {
 			islocal = true
 			beego.Info("本机mysql-1服务正常")
 			break
@@ -232,5 +221,7 @@ func ServiceCheck() {
 	if !islocal {
 		beego.Info("本机的mysql-1服务不正常")
 		return
+	}else {
+		Empty()
 	}
 }
