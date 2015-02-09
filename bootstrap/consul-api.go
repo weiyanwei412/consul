@@ -27,7 +27,7 @@ func SetConn() {
 	//KV is used to return a handle to the K/V apis
 	kv := client.KV()
 	//Get is used to lookup a single key
-	qm, _, err := kv.Get("service/mysql-1/leader", nil)
+	qm, _, err := kv.Get("service/innosql/leader", nil)
 	if err != nil {
 		beego.Error("Get a key failure", err)
 		return
@@ -41,7 +41,7 @@ func SetConn() {
 	//Health returns a handle to the health endpoints
 	health := client.Health()
 	//Checks is used to return the checks associated with a service
-	healthvalue, _, err := health.Checks("mysql-1", nil)
+	healthvalue, _, err := health.Checks("innosql", nil)
 	if err != nil {
 		beego.Error("Return to service-related checks fail", err)
 		return
@@ -54,22 +54,22 @@ func SetConn() {
 	for index := range healthvalue {
 		if healthvalue[index].Node == hostname {
 			islocal = true
-			beego.Info("Native mysql-1 service is healthy")
+			beego.Info("Native innosql service is healthy")
 			break
 		}
 
 	}
 	if !islocal {
-		beego.Info("Native mysql-1 service unhealthy or the service does not exist")
+		beego.Info("Native innosql service unhealthy or the service does not exist")
 		return
 	} else {
 		//Session returns a handle to the session endpoints
 		session := client.Session()
 		sessionEntry := consulapi.SessionEntry{
 			LockDelay: 15 * time.Second,
-			Name:      "mysql",
+			Name:      "innosql",
 			Node:      hostname,
-			Checks:    []string{"serfHealth", "service:mysql-1"},
+			Checks:    []string{"serfHealth", "service:innosql"},
 		}
 		//Create makes a new session. Providing a session entry can customize the session. It can also be nil to use defaults.
 		sessionvalue, _, err := session.Create(&sessionEntry, nil)
@@ -80,7 +80,7 @@ func SetConn() {
 		acquirejson := `{"Node":"` + hostname + `","IP":"` + ip + `","Port":` + port + `,"username":"` + username + `","password":" ` + password + `"}`
 		value := []byte(acquirejson)
 		kvpair := consulapi.KVPair{
-			Key:     "service/mysql-1/leader",
+			Key:     "service/innosql/leader",
 			Value:   value,
 			Session: sessionvalue,
 		}
