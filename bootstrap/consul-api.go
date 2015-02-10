@@ -18,6 +18,7 @@ func SetConn() {
 	port := beego.AppConfig.String("port")
 	username := beego.AppConfig.String("username")
 	password := beego.AppConfig.String("password")
+	servicename := beego.AppConfig.String("servicename")
 	//NewClient returns a new client
 	client, err := consulapi.NewClient(config)
 	if err != nil {
@@ -27,7 +28,7 @@ func SetConn() {
 	//KV is used to return a handle to the K/V apis
 	kv := client.KV()
 	//Get is used to lookup a single key
-	qm, _, err := kv.Get("service/innosql/leader", nil)
+	qm, _, err := kv.Get("service/"+servicename+"/leader", nil)
 	if err != nil {
 		beego.Error("Get a key failure", err)
 		return
@@ -41,7 +42,7 @@ func SetConn() {
 	//Health returns a handle to the health endpoints
 	health := client.Health()
 	//Checks is used to return the checks associated with a service
-	healthvalue, _, err := health.Checks("innosql", nil)
+	healthvalue, _, err := health.Checks(servicename, nil)
 	if err != nil {
 		beego.Error("Return to service-related checks fail", err)
 		return
@@ -54,22 +55,22 @@ func SetConn() {
 	for index := range healthvalue {
 		if healthvalue[index].Node == hostname {
 			islocal = true
-			beego.Info("Native innosql service is healthy")
+			beego.Info("Native " + servicename + " service is healthy")
 			break
 		}
 
 	}
 	if !islocal {
-		beego.Info("Native innosql service unhealthy or the service does not exist")
+		beego.Info("Native " + servicename + " service unhealthy or the service does not exist")
 		return
 	} else {
 		//Session returns a handle to the session endpoints
 		session := client.Session()
 		sessionEntry := consulapi.SessionEntry{
 			LockDelay: 15 * time.Second,
-			Name:      "innosql",
+			Name:      servicename,
 			Node:      hostname,
-			Checks:    []string{"serfHealth", "service:innosql"},
+			Checks:    []string{"serfHealth", "service:" + servicename},
 		}
 		//Create makes a new session. Providing a session entry can customize the session. It can also be nil to use defaults.
 		sessionvalue, _, err := session.Create(&sessionEntry, nil)
@@ -80,7 +81,7 @@ func SetConn() {
 		acquirejson := `{"Node":"` + hostname + `","IP":"` + ip + `","Port":` + port + `,"username":"` + username + `","password":" ` + password + `"}`
 		value := []byte(acquirejson)
 		kvpair := consulapi.KVPair{
-			Key:     "service/innosql/leader",
+			Key:     "service/" + servicename + "/leader",
 			Value:   value,
 			Session: sessionvalue,
 		}

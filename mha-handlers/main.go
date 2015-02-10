@@ -13,5 +13,5 @@ func init() {
 func main() {
 	defer beego.BeeLogger.Close()
 	defer time.Sleep(100 * time.Millisecond)
-	IsSession()
+	SessionAndChecks()
 }
