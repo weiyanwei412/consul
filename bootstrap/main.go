@@ -6,7 +6,7 @@ import (
 )
 
 func init() {
-	beego.SetLogger("file", `{"filename":"/home/lindan/lindan/github/consul/bootstrap/logs/bootstrap.log"}`)
+	beego.SetLogger("file", `{"filename":"/root/bootstrap/logs/bootstrap.log"}`)
 	beego.SetLogFuncCall(true)
 }
 
