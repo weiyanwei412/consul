@@ -24,19 +24,21 @@ func SessionAndChecks() {
 	//KV is used to return a handle to the K/V apis
 	kv := client.KV()
 	//Get is used to lookup a single key
-	qm, _, err := kv.Get("service/"+servicename+"/leader", nil)
+	kvPair, _, err := kv.Get("service/"+servicename+"/leader", nil)
 	if err != nil {
 		beego.Error("Get a key failure", err)
 		return
 	}
-	if qm == nil {
-		beego.Error("no find service/" + servicename + "/leader fails")
+
+	if kvPair == nil {
+		beego.Error("service/" + servicename + "/leader not found, please create the key.")
 		return
 	}
+
 	//Are there external connection string provided
-	if qm.Session != "" {
+	if kvPair.Session != "" {
 		beego.Info("There are external connection string provided")
-		time.Sleep(1000)
+		time.Sleep(1 * time.Second)
 		return
 	}
 	//Health returns a handle to the health endpoints
@@ -74,26 +76,27 @@ func SessionAndChecks() {
 			beego.Error("update service/"+servicename+"/leader value failed", err)
 			return
 		}
-		slave()
+		ip := beego.AppConfig.String("ip")
+		port := beego.AppConfig.String("port")
+		username := beego.AppConfig.String("username")
+		password := beego.AppConfig.String("password")
+		slave(ip, port, username, password)
 	}
 }
 
-func SetConn() {
+func SetConn(ip, port, username, password string) {
 	config := &consulapi.Config{
 		Datacenter: beego.AppConfig.String("datacenter"),
 		Token:      beego.AppConfig.String("token"),
 		Address:    beego.AppConfig.String("service_ip") + ":" + beego.AppConfig.String("service_port"),
 	}
 	hostname := beego.AppConfig.String("hostname")
-	ip := beego.AppConfig.String("ip")
-	port := beego.AppConfig.String("port")
-	username := beego.AppConfig.String("username")
-	password := beego.AppConfig.String("password")
+
 	servicename := beego.AppConfig.String("servicename")
 	//NewClient returns a new client
 	client, err := consulapi.NewClient(config)
 	if err != nil {
-		beego.Error("Create a consul-api client fails", err)
+		beego.Error("Create a consul-api client failed. Error: ", err)
 		return
 	}
 	kv := client.KV()
@@ -108,7 +111,7 @@ func SetConn() {
 	//Create makes a new session. Providing a session entry can customize the session. It can also be nil to use defaults.
 	sessionvalue, _, err := session.Create(&sessionEntry, nil)
 	if err != nil {
-		beego.Error("Session creation failed", err)
+		beego.Error("Session creation failed. Error: ", err)
 		return
 	}
 	acquirejson := `{"Node":"` + hostname + `","IP":"` + ip + `","Port":` + port + `,"username":"` + username + `","password":" ` + password + `"}`
@@ -119,9 +122,16 @@ func SetConn() {
 		Session: sessionvalue,
 	}
 	//Acquire is used for a lock acquisiiton operation. The Key, Flags, Value and Session are respected. Returns true on success or false on failures.
-	_, _, err = kv.Acquire(&kvpair, nil)
+	ok, _, err := kv.Acquire(&kvpair, nil)
 	if err != nil {
-		beego.Error("Set the connection string master fails", err)
+		beego.Error("Set the connection string master failed. Error: ", err)
 		return
+	}
+	if !ok {
+		time.Sleep(5 * time.Second)
+		beego.Warn("kv acquire failed.")
+		return
+	} else {
+		beego.Info("kv acquire successed.")
 	}
 }

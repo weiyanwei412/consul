@@ -6,7 +6,7 @@ import (
 )
 
 func init() {
-	beego.SetLogger("file", `{"filename":"/root/mha-handlers/logs/mha-handlers.log"}`)
+	beego.SetLogger("file", `{"filename":"logs/mha-handlers.log"}`)
 	beego.SetLogFuncCall(true)
 }
 

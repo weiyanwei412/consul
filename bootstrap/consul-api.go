@@ -28,13 +28,19 @@ func SetConn() {
 	//KV is used to return a handle to the K/V apis
 	kv := client.KV()
 	//Get is used to lookup a single key
-	qm, _, err := kv.Get("service/"+servicename+"/leader", nil)
+	kvPair, _, err := kv.Get("service/"+servicename+"/leader", nil)
 	if err != nil {
 		beego.Error("Get a key failure", err)
 		return
 	}
+
+	if kvPair == nil {
+		beego.Error("service/" + servicename + "/leader not found, please create the key.")
+		return
+	}
+
 	//Are there external connection string provided
-	if qm.Session != "" {
+	if kvPair.Session != "" {
 		beego.Info("There are external connection string provided")
 		time.Sleep(1000)
 		return
@@ -86,9 +92,13 @@ func SetConn() {
 			Session: sessionvalue,
 		}
 		//Acquire is used for a lock acquisiiton operation. The Key, Flags, Value and Session are respected. Returns true on success or false on failures.
-		_, _, err = kv.Acquire(&kvpair, nil)
+		ok, _, err := kv.Acquire(&kvpair, nil)
 		if err != nil {
-			beego.Error("Set the connection string master fails", err)
+			beego.Error("Set the connection string master failed. Error: ", err)
+			return
+		}
+		if !ok {
+			beego.Info("kv acquire failed.")
 			return
 		}
 	}
