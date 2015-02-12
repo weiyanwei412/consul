@@ -322,4 +322,8 @@ consul watch -http-addr=192.168.2.61:8500 -type key -key service/innosql/leader 
 ### 8. 验证环境是否搭建成功
 
 1. 手动停止master上的mysql实例，然后可以在watch命令的执行过程中或mha-handlers.log查看slave争填service/innosql/leader这个键的值的过程。
-2. 
+2. 使用以下命令查看最终的值是否修改成功。  
+将以下命令中的CONSUL_SERVER_IP替换为任意一台consul server的IP, 如 192.168.2.71。
+```
+curl -X GET http://CONSUL_SERVER_IP:8500/v1/kv/service/innosql/leader
+```
