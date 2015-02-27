@@ -122,6 +122,7 @@ func SetConn(ip, port, username, password string) {
 		Session: sessionvalue,
 	}
 	//Acquire is used for a lock acquisiiton operation. The Key, Flags, Value and Session are respected. Returns true on success or false on failures.
+	time.Sleep(15 * time.Second)
 	ok, _, err := kv.Acquire(&kvpair, nil)
 	if err != nil {
 		beego.Error("Set the connection string master failed. Error: ", err)
