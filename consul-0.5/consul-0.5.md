@@ -2,7 +2,7 @@
 	
 	环境为三台server二台agent
 
-### 1.进入https://atlas.hashicorp.com/
+### 1.进入https://atlas.hashicorp.com/account/new
 
 	创建Atlas账号:lindaneye
 	
