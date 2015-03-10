@@ -1,13 +1,13 @@
-page_title: Remote API v0.4.1
+page_title: Remote API v0.5.0
 page_description: API Documentation for Consul
 
-# Consul Remote API v0.4.1
+# Consul Remote API v0.5.0
 
 # 1. Endpoints
 
-##	1.1	KV	
+## 1.1	KV	
 
-###1.2
+### 1.2
 
 获得所有机器的KEY/VALUE DATA
 
@@ -38,7 +38,7 @@ page_description: API Documentation for Consul
     	}
 	]
 
-###1.3
+### 1.3
 插入一个KEY/VALUE DATA
 
 	PUT /v1/kv/<key>
@@ -47,7 +47,7 @@ page_description: API Documentation for Consul
 
 	curl -X PUT -d 'test' http://192.168.114.67:8500/v1/kv/web/key1
 
-###1.4
+### 1.4
 查询web/key1的信息
 
 	GET /v1/kv/<key>
@@ -69,7 +69,7 @@ page_description: API Documentation for Consul
     	}
 	]
 
-###1.5
+### 1.5
 删除web/sub及所有子串
 
 	DELETE /v1/kv/web?recurse
@@ -77,7 +77,7 @@ page_description: API Documentation for Consul
 **Example request**:
 	curl -X DELETE http://localhost:8500/v1/kv/web?recurse
 
-###1.6
+### 1.6
 修改web/key的值
 
 	PUT /v1/kv/<key>?cas=231
@@ -86,7 +86,7 @@ page_description: API Documentation for Consul
 
 	curl -X PUT -d 'newval' http://192.168.114.67:8500/v1/kv/web/key1?cas=231
 
-###1.7
+### 1.7
 查询所有的键，以list的方式显示
 	GET /v1/kv/?keys
 
@@ -101,7 +101,7 @@ page_description: API Documentation for Consul
     	"web/key2"
 	]
 
-###1.8	Parameters:
+### 1.8	Parameters:
 -   **?dc=**	-	提供数据中心.
 -   **?recurse** - 将返回给定前缀的所有信息
 -   **?keys** - 以list的方式显示获得所有键
@@ -119,9 +119,9 @@ Status Codes:
 
 
 
-##2.1	Agent
+## 2.1	Agent
 
-###2.2
+### 2.2
 
 返回本地所有的检查
 
@@ -146,7 +146,7 @@ Status Codes:
     	}
 	}
 
-###2.3
+### 2.3
 
 返回本地所有服务注册
 
@@ -169,7 +169,7 @@ Status Codes:
     	}
 	}
 
-###2.4
+### 2.4
 
 返回集群中的所有成员
 
@@ -267,7 +267,7 @@ Status Codes:
     	}
 	]
 
-###2.5
+### 2.5
 
 返回本地代理和成员信息的配置	
 
@@ -366,7 +366,7 @@ Status Codes:
     	}
 	]
 
-###2.6
+### 2.6
 
 将本机加入集群
 	GET /v1/agent/join/<address>
@@ -375,7 +375,7 @@ Status Codes:
 
 	http://192.168.114.65:8500/v1/agent/join/192.168.114.64
 
-###2.7
+### 2.7
 
 使节点为离开状态
 
@@ -385,7 +385,7 @@ Status Codes:
 
 	http://192.168.114.64:8500/v1/agent/force-leave/node5
 
-###2.8
+### 2.8
 
 动态注册检查配置
 
@@ -401,7 +401,7 @@ Status Codes:
   		"Interval": "10s"
 	}
 
-###2.9
+### 2.9
 
 动态注销检查配置
 
@@ -411,7 +411,7 @@ Status Codes:
 
 	http://192.168.114.64:8500/v1/agent/check/deregister/mysql-1
 
-###2.10
+### 2.10
 
 将检查状态设置成passing   注册检查时需要设置TTL
 
@@ -421,7 +421,7 @@ Status Codes:
 
 	http://192.168.114.64:8500/v1/agent/check/pass/mysql-1
 
-###2.11
+### 2.11
 
 将服务状态设置成warning
 
@@ -431,7 +431,7 @@ Status Codes:
 
 	http://192.168.114.64:8500/v1/agent/check/warn/mysql-1
 
-###2.12
+### 2.12
 
 将服务状态设置成critical
 
@@ -441,7 +441,7 @@ Status Codes:
 
 	http://192.168.114.64:8500/v1/agent/check/fail/mysql-1
 
-###2.13
+### 2.13
 
 动态注册服务
 
@@ -463,7 +463,7 @@ Status Codes:
   		}
 	}
 
-###2.14
+### 2.14
 
 动态注销服务
 	GET v1/agent/service/deregister/<serviceID>
@@ -471,9 +471,28 @@ Status Codes:
 **Example request**:
 
 	http://192.168.114.64:8500/v1/agent/service/deregister/mysql-1
+	
+### 2.15
 
+切换节点维护模式
+	PUT /v1/agent/maintenance
+	
+**Example request**:
 
-##3.1	Catalog
+	http://192.168.2.61:8500/v1/agent/maintenance?enable=true
+	http://192.168.2.61:8500/v1/agent/maintenance?enable=false
+	
+### 2.16 	
+
+切换节点服务维护模式
+	PUT /v1/agent/service/maintenance/<serviceID>
+	
+**Example request**:
+
+	http://192.168.2.61:8500/v1/agent/service/maintenance/<serviceID>?enable=true
+	http://192.168.2.61:8500/v1/agent/service/maintenance/<serviceID>?enable=false
+	
+## 3.1	Catalog
 
 ###3.2
 
@@ -509,7 +528,7 @@ Status Codes:
   		}
 	}
 
-###3.3
+### 3.3
 
 动态注销服务和检查
 
@@ -525,7 +544,7 @@ Status Codes:
   		"ServiceID": "mysql-1"
 	}
 
-###3.4
+### 3.4
 
 返回所有数据中心
 
@@ -542,7 +561,7 @@ Status Codes:
     	"dc1"
 	]
 
-###3.5
+### 3.5
 
 返回集群中的节点
 
@@ -574,7 +593,7 @@ Status Codes:
     	}
 	]
 
-###3.6
+### 3.6
 
 查询注册了的服务
 
@@ -594,7 +613,7 @@ Status Codes:
     	]
 	}
 
-###3.7
+### 3.7
 
 返回指定服务的信息
 
@@ -620,7 +639,7 @@ Status Codes:
     	}
 	]
 
-###3.8
+### 3.8
 
 返回指定节点的具体信息
 
@@ -651,9 +670,9 @@ Status Codes:
     	}
 	}
 
-##4.1	Health
+## 4.1	Health
 
-###4.2
+### 4.2
 
 查询节点的健康信息
 
@@ -689,7 +708,7 @@ Status Codes:
     	}
 	]
 
-###4.3
+### 4.3
 
 返回指定服务的检查信息
 
@@ -715,7 +734,7 @@ Status Codes:
     	}
 	]
 
-###4.4
+### 4.4
 
 返回服务的健康信息
 
@@ -778,7 +797,7 @@ Status Codes:
     	}
 	]
 
-###4.5
+### 4.5
 
 返回给定状态的检查
 
@@ -844,9 +863,9 @@ Status Codes:
     	}
 	]
 
-##5.1	Session
+## 5.1	Session
 
-###5.2
+### 5.2
 
 创建一个新的会话
 
@@ -870,7 +889,7 @@ Status Codes:
     	"ID": "d7d177c6-5c36-59f9-410d-d9e78a53256d"
 	}
 
-###5.3
+### 5.3
 
 注销一个给定的会话
 
@@ -881,7 +900,7 @@ Status Codes:
 
 	http://192.168.114.64:8500/v1/session/destroy/4d2c59bf-c381-38ae-5b01-d843efe85307
 
-##5.4
+### 5.4
 
 查询某个session信息
 
@@ -907,7 +926,7 @@ Status Codes:
     	}
 	]	
 
-##5.5
+### 5.5
 
 返回某个节点的session
 
@@ -934,7 +953,7 @@ Status Codes:
     	}
 	]
 
-##5.6
+### 5.6
 
 得到所有的session
 	GET /v1/session/list
@@ -957,10 +976,46 @@ Status Codes:
         	"LockDelay": 15000000000
     	}
 	]
+	
+### 5.7
 
-##6.1	ACL
+更新给定session的TTL时间
+	PUT /v1/session/renew/<sessionID>
+	
+**Example request**:
 
-###6.2
+	http://192.168.2.61:8500/v1/session/renew/<sessionID>
+	{
+ 		 "LockDelay": "15s",
+ 		 "Name": "mysql",
+  		"Node": "consul-agent1",
+  		"Checks": [
+   			 "serfHealth","service:mysql-1"
+  		],
+		  "TTL":"30s"
+	}
+	
+**Example response**:
+
+	[
+		{
+			"CreateIndex": 1517,
+			"ID": "4d149f5f-7d0a-a9f4-9cd6-4ec0ffa63325",
+			"Name": "mysql",
+			"Node": "consul-agent1",
+			"Checks": [
+				"serfHealth",
+				"service:mysql-1"
+			],
+			"LockDelay": 15000000000,
+			"Behavior": "release",
+			"TTL": "15s"
+		}
+	]
+
+## 6.1	ACL
+
+### 6.2
 
 创建一个新令牌
 
@@ -984,7 +1039,7 @@ Status Codes:
     	"ID": "907f9f17-4814-77a3-f4d8-41ed26c33ca6"
 	}
 
-###6.3
+### 6.3
 
 更新一个列表
 
@@ -1008,7 +1063,7 @@ Status Codes:
     	"ID": "567b1eb3-2e7d-ede5-9ad1-29619321fd76"
 	}
 
-###6.4
+### 6.4
 
 销毁一个列表
 	
@@ -1024,7 +1079,7 @@ Status Codes:
 	
 	true
 
-###6.5
+### 6.5
 
 列出当前所有的ACL
 
@@ -1079,7 +1134,7 @@ Status Codes:
     	}
 	]
 
-###6.6
+### 6.6
 
 查看某条ACL信息
 
@@ -1102,7 +1157,7 @@ Status Codes:
     	}
 	]
 
-###6.7
+### 6.7
 
 克隆ACL信息
 
@@ -1118,9 +1173,9 @@ Status Codes:
     	"ID": "0e23123a-c90e-229f-8538-ea58273c4a36"
 	}
 
-##7.1	event
+## 7.1	event
 
-###7.2
+### 7.2
 
 创建一个新的用户事件
 
@@ -1143,7 +1198,7 @@ Status Codes:
     	"LTime": 0
 	}
 
-###7.3
+### 7.3
 
 得到最近发生的事件列表
 
@@ -1209,9 +1264,9 @@ Status Codes:
 	]
 	
 
-##	8.1	Status
+## 8.1	Status
 
-###8.2
+### 8.2
 
 返回当前的leader节点
 
@@ -1225,7 +1280,7 @@ Status Codes:
 
 	"192.168.114.67:8300"
 
-###8.3
+### 8.3
 
 返回同级的地址和端口号
 
