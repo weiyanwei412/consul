@@ -1,0 +1,647 @@
+
+2015/04/10 15:38:09 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:09 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:09 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:09 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:09 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:09 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:09 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:09 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:09 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:09 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:09 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:09 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:09 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:09 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:09 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:09 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:09 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:09 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:09 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:09 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:09 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:09 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:09 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:09 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:09 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:09 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:09 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:09 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:09 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:09 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:09 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:09 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:09 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:09 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:09 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:09 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:09 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:09 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:09 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:09 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:09 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:09 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:09 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:09 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:09 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:09 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:09 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:09 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:09 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:09 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:09 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:09 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:09 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:09 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:09 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:09 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:09 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:09 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:09 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:10 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:10 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:10 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:10 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:10 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:10 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:10 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:10 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:10 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:10 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:10 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:10 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:10 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:10 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:10 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:10 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:10 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:10 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:10 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:10 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:10 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:10 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:10 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:10 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:10 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:10 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:10 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:10 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:10 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:10 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:10 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:10 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:10 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:10 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:10 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:10 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:10 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:10 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:10 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:10 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:10 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:10 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:10 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:10 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:10 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:10 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:10 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:10 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:10 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:10 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:10 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:10 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:10 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:10 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:10 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:10 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:10 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:10 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:10 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:10 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:10 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:10 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:10 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:10 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:10 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:10 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:10 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:10 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:10 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:10 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:10 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:10 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:10 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:10 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:10 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:10 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:10 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:10 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:10 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:10 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:10 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:10 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:10 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:10 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:10 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:10 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:10 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:10 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:10 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:10 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:10 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:10 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:10 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:10 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:10 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:10 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:11 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:11 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:11 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:11 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:11 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:11 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:11 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:11 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:11 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:11 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:11 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:11 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:11 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:11 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:11 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:11 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:11 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:11 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:11 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:11 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:11 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:11 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:11 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:11 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:11 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:11 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:11 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:11 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:11 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:11 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:11 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:11 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:13 [main.go:25] [I] version 0.4.0 
+2015/04/10 15:38:17 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:17 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:17 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:17 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:17 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:17 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:17 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:17 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:17 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:17 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:17 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:17 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:17 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:17 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:17 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:17 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:17 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:17 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:17 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:17 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:17 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:17 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:17 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:17 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:17 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:17 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:17 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:17 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:17 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:17 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:17 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:17 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:17 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:17 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:17 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:17 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:17 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:17 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:17 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:17 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:17 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:17 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:17 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:17 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:17 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:17 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:17 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:17 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:17 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:17 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:17 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:17 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:17 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:17 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:17 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:17 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:17 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:17 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:17 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:17 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:17 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:17 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:17 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:17 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:17 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:17 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:17 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:17 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:17 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:17 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:17 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:17 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:17 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:17 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:17 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:17 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:17 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:17 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:17 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:17 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:17 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:17 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:17 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:17 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:17 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:17 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:17 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:17 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:17 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:17 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:17 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:17 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:17 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:17 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:17 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:17 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:17 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:17 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:17 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:17 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:17 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:17 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:17 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:17 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:17 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:17 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:18 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:18 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:18 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:18 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:18 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:18 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:18 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:18 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:18 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:18 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:18 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:18 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:18 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:18 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:18 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:18 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:18 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:18 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:18 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:18 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:18 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:18 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:18 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:18 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:18 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:18 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:18 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:18 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:18 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:18 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:18 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:18 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:18 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:18 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:18 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:18 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:18 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:18 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:18 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:18 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:18 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:18 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:18 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:18 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:18 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:18 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:18 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:18 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:18 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:18 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:18 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:18 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:18 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:18 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:18 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:18 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:18 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:18 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:18 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:18 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:18 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:18 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:18 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:18 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:18 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:18 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:18 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:18 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:18 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:18 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:18 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:18 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:18 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:18 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:18 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:18 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:18 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:18 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:18 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:18 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:18 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:18 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:18 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:18 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:19 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:19 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:19 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:19 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:19 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:19 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:19 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:19 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:19 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:19 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:19 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:19 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:19 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:19 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:19 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:19 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:19 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:19 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:19 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:19 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:19 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:19 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:19 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:19 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:19 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:19 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:19 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:19 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:19 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:19 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:19 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:19 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:19 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 15:38:19 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 15:38:19 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 15:38:19 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 15:38:19 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 15:38:19 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 15:38:19 [crud.go:95] [I] Create Get request success! 
+2015/04/10 15:38:19 [crud.go:103] [I] Send Get request success! 
+2015/04/10 15:38:19 [crud.go:110] [I] Read leader data success! 
+2015/04/10 15:38:19 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 15:38:19 [crud.go:125] [I] open database connection string success! 
+2015/04/10 15:38:19 [crud.go:131] [I] ping() database success! 
+2015/04/10 15:38:19 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 15:38:19 [crud.go:164] [I] Insert test value success! 
+2015/04/10 15:38:19 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 15:38:19 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 15:38:24 [main.go:25] [I] version 0.4.0 
+2015/04/10 17:15:05 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:05 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:05 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:05 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:05 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:05 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:05 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:05 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:05 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:05 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:05 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:05 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:05 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:05 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:05 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:05 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:05 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:05 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:05 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:05 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:05 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:05 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:05 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:05 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:05 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:05 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:05 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:05 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:05 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:05 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:05 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:05 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:05 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:05 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:05 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:05 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:05 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:05 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:05 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:05 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:05 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:05 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:05 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:05 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:05 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:05 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:05 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:05 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:05 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:05 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:05 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:05 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:05 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:05 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:05 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:05 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:05 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:05 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:05 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:05 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:05 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:05 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:05 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:05 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:05 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:05 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:05 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:05 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:05 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:05 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:05 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:05 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:05 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:05 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:05 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:05 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:05 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:05 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:05 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:05 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:05 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:05 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:05 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:05 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:05 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:05 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:05 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:05 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:05 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:05 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:05 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:05 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:05 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:05 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:05 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:05 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:05 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:05 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:05 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:05 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:05 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:05 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:05 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:05 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:05 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:05 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:05 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:06 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:06 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:06 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:06 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:06 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:06 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:06 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:06 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:06 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:06 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:06 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:06 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:06 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:06 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:06 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:06 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:06 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:06 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:06 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:06 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:06 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:06 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:06 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:06 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:06 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:06 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:06 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:06 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:06 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:06 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:06 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:06 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:06 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:06 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:06 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:06 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:06 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:06 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:06 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:06 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:06 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:06 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:06 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:06 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:06 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:06 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:06 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:06 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:06 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:06 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:06 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:06 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:06 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:06 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:06 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:06 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:06 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:06 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:06 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:06 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:06 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:06 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:06 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:06 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:06 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:06 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:06 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:06 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:06 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:06 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:06 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:06 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:06 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:06 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:06 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:06 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:06 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:06 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:06 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:06 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:06 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:06 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:06 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:06 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:06 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:06 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:06 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:06 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:06 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:06 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:06 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:06 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:06 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:06 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:06 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:06 [crud.go:143] [I] Inquiry data success! 
+2015/04/10 17:15:07 [crud.go:164] [I] Insert test value success! 
+2015/04/10 17:15:07 [crud.go:171] [I] Inquiry the last line name success! 
+2015/04/10 17:15:07 [crud.go:188] [I] Update the last line data success! 
+2015/04/10 17:15:07 [crud.go:194] [I] Submit data success.End of things! 
+2015/04/10 17:15:07 [crud.go:72] [I] Connect to the database success! 
+2015/04/10 17:15:07 [crud.go:38] [I]  Create consul-api client success! 
+2015/04/10 17:15:07 [crud.go:51] [I] Get service/mysql-1/leader key success! 
+2015/04/10 17:15:07 [crud.go:54] [I] service/mysql-1/leader Connection string  set up,Leader presence! 
+2015/04/10 17:15:07 [crud.go:56] [I] service/mysql-1/leader Connection string is not empty,Leader presence! 
+2015/04/10 17:15:07 [crud.go:95] [I] Create Get request success! 
+2015/04/10 17:15:07 [crud.go:103] [I] Send Get request success! 
+2015/04/10 17:15:07 [crud.go:110] [I] Read leader data success! 
+2015/04/10 17:15:07 [crud.go:118] [I] Resolve leader data success! 
+2015/04/10 17:15:07 [crud.go:125] [I] open database connection string success! 
+2015/04/10 17:15:07 [crud.go:131] [I] ping() database success! 
+2015/04/10 17:15:07 [crud.go:143] [I] Inquiry data success! 

@@ -1,4 +1,0 @@
-2015/02/10 11:18:26 [consul-api.go:38] [I] There are external connection string provided 
-2015/02/10 11:18:53 [consul-api.go:58] [I] Native mysql-1 service is healthy 
-2015/02/10 11:18:54 [slave.go:18] [E] ping innosql fails dial tcp 127.0.0.1:3306: connection refused 
-2015/02/10 11:19:20 [consul-api.go:58] [I] Native mysql-1 service is healthy 
