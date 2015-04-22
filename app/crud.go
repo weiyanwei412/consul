@@ -1,19 +1,23 @@
 package main
 
 import (
-	"encoding/json"
+//	"encoding/json"
 	"fmt"
-	"io/ioutil"
-	"net/http"
-	"net/url"
-	"strconv"
-	"time"
+	"os"
+	"bufio"
+	"io"
+//	"io/ioutil"
+//	"net/http"
+//	"net/url"
+//	"strconv"
+//	"time"
 
-	"database/sql"
-	consulapi "github.com/armon/consul-api"
+//	"database/sql"
+//	consulapi "github.com/armon/consul-api"
 	"github.com/astaxie/beego"
-	_ "github.com/go-sql-driver/mysql"
+//	_ "github.com/go-sql-driver/mysql"
 )
+
 
 type Kv struct {
 	Node     string
@@ -23,7 +27,7 @@ type Kv struct {
 	Password string
 }
 
-func GetLeader() error {
+/*func GetLeader() error {
 	config := &consulapi.Config{
 		Datacenter: beego.AppConfig.String("datacenter"),
 		Token:      beego.AppConfig.String("token"),
@@ -72,10 +76,10 @@ func GetLeader() error {
 	beego.Info("Connect to the database success!")
 	return nil
 
-}
+}*/
 
-func Conn() error {
-	server_ip := beego.AppConfig.String("server_ip")
+func Conn()  {
+/*	server_ip := beego.AppConfig.String("server_ip")
 	server_port := beego.AppConfig.String("server_port")
 	table_name := beego.AppConfig.String("table_name")
 	servicename := beego.AppConfig.String("servicename")
@@ -116,8 +120,15 @@ func Conn() error {
 		return err
 	}
 	beego.Info("Resolve leader data success!")
-	//连接mysql数据库
-	db, err := sql.Open("mysql", kv.Username+":"+kv.Password+"@tcp("+kv.Ip+":"+strconv.Itoa(kv.Port)+")/"+database+"?charset=utf8")
+	//连接mysql数据库*/
+	//db, err := sql.Open("mysql", kv.Username+":"+kv.Password+"@tcp("+kv.Ip+":"+strconv.Itoa(kv.Port)+")/"+database+"?charset=utf8")
+/*	ip := beego.AppConfig.String("ip")
+	port := beego.AppConfig.String("port")
+	username := beego.AppConfig.String("username")
+	password :=  beego.AppConfig.String("password")
+	database := beego.AppConfig.String("database")
+	table_name := beego.AppConfig.String("table_name")
+	db, err := sql.Open("mysql",username:password@tcp(ip:port)/database?charset=utf8)
 	if err != nil {
 		beego.Error("open database connection string failure!", err)
 		panic(err.Error())
@@ -133,9 +144,22 @@ func Conn() error {
 	tx, err := db.Begin()
 	if err != nil {
 		return err
-	}
+	}*/
+	affairs := beego.AppConfig.String("affairs")
+	f, err := os.Open(affairs)  
+    	defer f.Close()  
+    	if nil == err {  
+        		buff := bufio.NewReader(f)  
+        		for {  
+           			line, err := buff.ReadString('\n')  
+           			if err != nil || io.EOF == err{  
+                			break  
+            			 }
+            			fmt.Println(line)  
+      		 }  
+  	 }
 	//sql := "select * from" + table_name
-	raw, err := db.Query("select * from " + table_name)
+/*	raw, err := db.Query("select * from " + table_name)
 	if err != nil {
 		beego.Error("Inquiry data failure!", err)
 		return err
@@ -192,5 +216,5 @@ func Conn() error {
 		return err
 	}
 	beego.Info("Submit data success.End of things!")
-	return nil
+	return nil*/
 }

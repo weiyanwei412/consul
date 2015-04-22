@@ -51,7 +51,7 @@ func SessionAndChecks() {
 		beego.Error("Carried out health check /v1/health/checks/"+servicename+" failure!", err)
 		return
 	}
-	beego.Error("Carried out health check /v1/health/checks/" + servicename + "success!")
+	beego.Info("Carried out health check /v1/health/checks/" + servicename + " success!")
 	if len(healthvalue) <= 0 {
 		beego.Info("No " + servicename + "service!")
 		return
@@ -120,8 +120,16 @@ func SetConn(ip, port, username, password string) {
 		return
 	}
 	beego.Info("Session create success!")
-	acquirejson := `{"Node":"` + hostname + `","Ip":"` + ip + `","Port":` + port + `,"Username":"` + username + `","Password":"` + password + `"}`
-
+	format := beego.AppConfig.String("format")
+	var acquirejson string
+	if format == "json" {
+		acquirejson = `{"Node":"` + hostname + `","Ip":"` + ip + `","Port":` + port + `,"Username":"` + username + `","Password":"` + password + `"}`
+	} else if format == "hap" {
+		acquirejson = "server" + " " + hostname + " " + ip + ":" + port
+	} else {
+		beego.Error("format error")
+		return
+	}
 	value := []byte(acquirejson)
 	kvpair := consulapi.KVPair{
 		Key:     "service/" + servicename + "/leader",

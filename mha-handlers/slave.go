@@ -46,7 +46,6 @@ func slave(ip, port, username, password string) {
 			beego.Error("scan() traversal slave status failure!", err)
 			return
 		}
-		//beego.Info("scan() traversal slave status success!")
 	}
 	mapField2Data := make(map[string]interface{}, len(cols))
 	for k, col := range data {
@@ -75,18 +74,17 @@ func slave(ip, port, username, password string) {
 			beego.Error("scan() traversal master_pos_wait data failure!", err)
 			return
 		}
-		//	beego.Info("scan() traversal master_pos_wait data success!")
 		if master_pos_wait < "0" && master_pos_wait == "null" {
 			beego.Error("Switching database failure!", err)
 			return
 		}
 		beego.Info("Switching database success!")
-		_, err := db.Query("set global rpl_semi_sync__master_keepsyncrepl=0")
+		_, err := db.Query("set global rpl_semi_sync_master_keepsyncrepl=0")
 		if err != nil {
-			beego.Error("Set rpl_semi_sync__master_keepsyncrepl=0 failure!")
+			beego.Error("Set rpl_semi_sync_master_keepsyncrepl=0 failure!")
 			return
 		}
-		beego.Info("Set rpl_semi_sync__master_keepsyncrepl=0 success!")
+		beego.Info("Set rpl_semi_sync_master_keepsyncrepl=0 success!")
 		_, err = db.Query("set global rpl_semi_sync_master_trysyncrepl=0")
 		if err != nil {
 			beego.Error("Set rpl_semi_sync_master_trysyncrepl=0 failure!")

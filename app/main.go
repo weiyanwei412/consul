@@ -22,16 +22,17 @@ func main() {
 		//                      break
 		//              }
 		if arg == "-v" || arg == "--version" {
-			beego.Info("version 0.4.0")
+			beego.Info("version 0.5.0")
 			return
 		}
 	}
 
-	for {
+/*	for {
 		err := GetLeader()
 		if err != nil {
 			beego.Error("Failure to obtain master information:", err)
 			break
 		}
-	}
+	}*/
+	Conn()
 }

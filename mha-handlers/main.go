@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/astaxie/beego"
-	"time"
 	"os"
+	"time"
 )
 
 func init() {
@@ -16,13 +16,10 @@ func main() {
 	defer time.Sleep(100 * time.Millisecond)
 	args := os.Args[1:]
 	for _, arg := range args {
-//		if arg == "--" {
-//			break
-//		}
 		if arg == "-v" || arg == "--version" {
-			beego.Info("version 0.4.0")
-			return 
-		}else{
+			beego.Info("version 0.5.0")
+			return
+		} else {
 			return
 		}
 	}
