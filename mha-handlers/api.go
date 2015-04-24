@@ -60,7 +60,7 @@ func SessionAndChecks() {
 	for index := range healthvalue {
 		if healthvalue[index].Node == hostname {
 			islocal = true
-			beego.Info("Native " + servicename + " service is healthy!")
+			beego.Info("Native " + servicename + " service is !")
 			break
 		}
 
@@ -79,7 +79,7 @@ func SessionAndChecks() {
 			beego.Error("Update service/"+servicename+"/leader value failure!", err)
 			return
 		}
-		beego.Info("Upata service/" + servicename + "/leader value success!")
+		beego.Info("Upate service/" + servicename + "/leader value success!")
 		ip := beego.AppConfig.String("ip")
 		port := beego.AppConfig.String("port")
 		username := beego.AppConfig.String("username")

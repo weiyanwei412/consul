@@ -17,7 +17,7 @@ func main() {
 	args := os.Args[1:]
 	for _, arg := range args {
 		if arg == "-v" || arg == "--version" {
-			beego.Info("version 0.2.0")
+			beego.Info("version 0.3.0")
 			return
 		} else {
 			return

@@ -1,0 +1,22 @@
+2015/04/16 16:21:35 [api.go:24] [I]  Create consul-api client success! 
+2015/04/16 16:22:05 [api.go:30] [E] Get service/innosql/leader key failure! Get http://192.168.0.104:8500/v1/kv/service/innosql/leader: dial tcp 192.168.0.104:8500: i/o timeout 
+2015/04/16 16:42:30 [api.go:24] [I]  Create consul-api client success! 
+2015/04/16 16:42:30 [api.go:33] [I] Get service/innosql/leader key success! 
+2015/04/16 16:42:30 [api.go:41] [I] service/innosql/leader Connection string  set up,Leader presence! 
+2015/04/16 16:43:05 [api.go:24] [I]  Create consul-api client success! 
+2015/04/16 16:43:05 [api.go:33] [I] Get service/innosql/leader key success! 
+2015/04/16 16:43:05 [api.go:45] [I] service/innosql/leader Connection string not set,Leader does not exist! 
+2015/04/16 16:43:05 [api.go:54] [E] Carried out health check /v1/health/checks/innosqlsuccess! 
+2015/04/16 16:43:05 [api.go:63] [I] Native innosql service is healthy! 
+2015/04/16 16:43:05 [api.go:82] [I] Upata service/innosql/leader value success! 
+2015/04/16 16:43:05 [slave.go:17] [I] Connection to the database success! 
+2015/04/16 16:43:05 [slave.go:21] [E] ping() database  failure! dial tcp 127.0.0.1:3306: connection refused 
+2015/04/16 16:51:48 [api.go:24] [I]  Create consul-api client success! 
+2015/04/16 16:51:48 [api.go:33] [I] Get service/innosql/leader key success! 
+2015/04/16 16:51:48 [api.go:45] [I] service/innosql/leader Connection string not set,Leader does not exist! 
+2015/04/16 16:51:48 [api.go:54] [E] Carried out health check /v1/health/checks/innosqlsuccess! 
+2015/04/16 16:51:48 [api.go:63] [I] Native innosql service is healthy! 
+2015/04/16 16:51:48 [api.go:82] [I] Upata service/innosql/leader value success! 
+2015/04/16 16:51:48 [slave.go:17] [I] Connection to the database success! 
+2015/04/16 16:51:48 [slave.go:21] [E] ping() database  failure! dial tcp 127.0.0.1:3306: connection refused 
+2015/04/22 18:29:11 [api.go:25] [I]  Create consul-api client success! 

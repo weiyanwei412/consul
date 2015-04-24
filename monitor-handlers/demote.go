@@ -26,15 +26,15 @@ func CheckService() {
 	health := client.Health()
 	healthpair, _, err := health.Service(servicename, tag, false, nil)
 	if err != nil {
-		beego.Error("Health check execution nodes and services /v1/health/service/"+servicename+"?tag="+tag+"failure!", err)
+		beego.Error("Health check execution nodes and services /v1/health/service/"+servicename+"?tag="+tag+"  failure!", err)
 		return
 	}
-	beego.Info("Health check execution nodes and services /v1/health/service/" + servicename + "?tag=" + tag + "success!")
+	beego.Info("Health check execution nodes and services /v1/health/service/" + servicename + "?tag=" + tag + "  success!")
 	if len(healthpair) <= 0 {
-		beego.Error("tag=" + tag + "of" + servicename + "service does not exist")
+		beego.Error("tag=" + tag + "of" + servicename + "  service does not exist")
 		return
 	}
-	beego.Info("tag=" + tag + "of" + servicename + "service exist")
+	beego.Info("tag=" + tag + "of" + servicename + "  service exist")
 	var isunhealthy bool
 	for index := range healthpair {
 		for checkindex := range healthpair[index].Checks {
@@ -45,10 +45,10 @@ func CheckService() {
 		}
 	}
 	if !isunhealthy {
-		beego.Info(tag + "on" + servicename + "service" + "health!")
+		beego.Info(tag + "on" + servicename + "  service  health!")
 		return
 	} else {
-		beego.Info(tag + "on" + servicename + "service" + "Unhealth!")
+		beego.Info(tag + "on" + servicename + "  service Unhealth!")
 		ip := beego.AppConfig.String("ip")
 		port := beego.AppConfig.String("port")
 		username := beego.AppConfig.String("username")
