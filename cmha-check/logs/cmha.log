@@ -1,0 +1,23 @@
+2015/04/27 17:09:26 [main.go:25] [I] version 0.1.0 
+2015/04/28 11:11:40 [cluster.go:21] [I]  Create consul-api client success! 
+2015/04/28 11:14:40 [cluster.go:22] [I]  Create consul-api client success! 
+2015/04/28 11:14:43 [cluster.go:22] [I]  Create consul-api client success! 
+2015/04/28 11:14:44 [cluster.go:22] [I]  Create consul-api client success! 
+2015/04/28 11:15:04 [cluster.go:22] [I]  Create consul-api client success! 
+2015/04/28 11:15:35 [cluster.go:22] [I]  Create consul-api client success! 
+2015/04/28 11:18:07 [cluster.go:22] [I]  Create consul-api client success! 
+2015/04/28 11:18:09 [cluster.go:22] [I]  Create consul-api client success! 
+2015/04/28 11:23:51 [cluster.go:21] [I]  Create consul-api client success! 
+2015/04/28 11:24:55 [cluster.go:21] [I]  Create consul-api client success! 
+2015/04/28 11:27:58 [cluster.go:21] [I]  Create consul-api client success! 
+2015/04/28 11:27:59 [cluster.go:21] [I]  Create consul-api client success! 
+2015/04/28 11:32:44 [cluster.go:22] [I]  Create consul-api client success! 
+2015/04/28 11:33:39 [cluster.go:22] [I]  Create consul-api client success! 
+2015/04/28 11:44:22 [cluster.go:23] [I]  Create consul-api client success! 
+2015/04/28 11:45:13 [cluster.go:23] [I]  Create consul-api client success! 
+2015/04/28 11:45:14 [cluster.go:23] [I]  Create consul-api client success! 
+2015/04/28 11:46:29 [cluster.go:23] [I]  Create consul-api client success! 
+2015/04/28 11:54:59 [cluster.go:23] [I]  Create consul-api client success! 
+2015/04/28 12:01:45 [cluster.go:23] [I]  Create consul-api client success! 
+2015/04/28 12:08:30 [cluster.go:23] [I]  Create consul-api client success! 
+2015/04/28 13:55:34 [cluster.go:24] [I]  Create consul-api client success! 

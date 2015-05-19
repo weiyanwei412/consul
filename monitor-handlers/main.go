@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	beego.SetLogger("file", `{"filename":"logs/monitor-slave-handlers.log"}`)
+	beego.SetLogger("file", `{"filename":"logs/monitor-handlers.log"}`)
 	beego.SetLogFuncCall(true)
 }
 
@@ -17,7 +17,7 @@ func main() {
 	args := os.Args[1:]
 	for _, arg := range args {
 		if arg == "-v" || arg == "--version" {
-			beego.Info("version 0.3.0")
+			beego.Info("version 0.6.0")
 			return
 		} else {
 			return

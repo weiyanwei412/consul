@@ -78,7 +78,7 @@ func Conn() *sql.DB {
 		panic(err.Error())
 	}
 	beego.Info("open database connection string success!")
-	//db.SetMaxOpenConns(2000)
-	//db.SetMaxIdleConns(1000)
+	db.SetMaxOpenConns(8)
+	db.SetMaxIdleConns(4)
 	return db
 }

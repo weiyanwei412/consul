@@ -26,3 +26,19 @@
 2015/04/16 14:02:52 [main.go:23] [I] version 0.1.0 
 2015/04/24 17:29:12 [main.go:20] [I] version 0.2.0 
 2015/04/24 17:29:44 [main.go:20] [I] version 0.3.0 
+2015/04/29 18:02:01 [demote.go:24] [I]  Create consul-api client success! 
+2015/04/29 18:02:01 [demote.go:33] [I] Health check execution nodes and services /v1/health/service/innosql?tag=slave  success! 
+2015/04/29 18:02:01 [demote.go:38] [I] tag=slaveofinnosql  service exist 
+2015/04/29 18:03:01 [set.go:50] [I] Connection to the database success! 
+2015/04/29 18:03:01 [set.go:54] [E] ping() database  failure! dial tcp 127.0.0.1:3306: connection refused 
+2015/04/30 09:56:38 [demote.go:24] [I]  Create consul-api client success! 
+2015/04/30 09:56:38 [demote.go:33] [I] Health check execution nodes and services /v1/health/service/innosql?tag=slave  success! 
+2015/04/30 09:56:38 [demote.go:38] [I] tag=slaveofinnosql  service exist 
+2015/04/30 09:57:38 [set.go:50] [I] Connection to the database success! 
+2015/04/30 09:57:38 [set.go:54] [E] ping() database  failure! dial tcp 127.0.0.1:3306: connection refused 
+2015/04/30 10:38:19 [demote.go:24] [I]  Create consul-api client success! 
+2015/04/30 10:38:19 [demote.go:33] [I] Health check execution nodes and services /v1/health/service/innosql?tag=slave  success! 
+2015/04/30 10:38:19 [demote.go:38] [I] tag=slaveofinnosql  service exist 
+2015/04/30 10:42:50 [main.go:20] [I] version 0.4.0 
+2015/04/30 10:43:46 [main.go:20] [I] version 0.5.0 
+2015/04/30 16:15:13 [main.go:20] [I] version 0.5.0 

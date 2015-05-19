@@ -1,0 +1,28 @@
+2015/04/15 20:46:15 [demote.go:23] [I]  Create consul-api client success! 
+2015/04/15 20:46:15 [demote.go:49] [E] slave上的innosql服务Unhealth! 
+2015/04/15 20:46:15 [set.go:16] [I] Connection to the database success! 
+2015/04/15 20:46:15 [set.go:23] [I] ping() database success! 
+2015/04/15 20:46:15 [set.go:29] [I] Set rpl_semi_sync_master_keepsyncrepl=0 success! 
+2015/04/15 20:46:15 [set.go:35] [I] Set rpl_semi_sync_master_trysyncrepl=0 success! 
+2015/04/15 20:47:15 [demote.go:23] [I]  Create consul-api client success! 
+2015/04/15 20:47:15 [demote.go:46] [I] slave上的innosql服务health! 
+2015/04/15 20:50:17 [demote.go:23] [I]  Create consul-api client success! 
+2015/04/15 20:50:17 [demote.go:49] [E] slave上的innosql服务Unhealth! 
+2015/04/15 20:50:17 [set.go:16] [I] Connection to the database success! 
+2015/04/15 20:50:17 [set.go:23] [I] ping() database success! 
+2015/04/15 20:50:17 [set.go:29] [I] Set rpl_semi_sync_master_keepsyncrepl=0 success! 
+2015/04/15 20:50:17 [set.go:35] [I] Set rpl_semi_sync_master_trysyncrepl=0 success! 
+2015/04/15 20:50:51 [demote.go:23] [I]  Create consul-api client success! 
+2015/04/15 20:50:51 [demote.go:46] [I] slave上的innosql服务health! 
+2015/04/15 20:51:54 [demote.go:23] [I]  Create consul-api client success! 
+2015/04/15 20:51:54 [demote.go:49] [E] slave上的innosql服务Unhealth! 
+2015/04/15 20:51:54 [set.go:16] [I] Connection to the database success! 
+2015/04/15 20:51:54 [set.go:23] [I] ping() database success! 
+2015/04/15 20:51:54 [set.go:29] [I] Set rpl_semi_sync_master_keepsyncrepl=0 success! 
+2015/04/15 20:51:54 [set.go:35] [I] Set rpl_semi_sync_master_trysyncrepl=0 success! 
+2015/04/15 20:52:28 [demote.go:23] [I]  Create consul-api client success! 
+2015/04/15 20:52:28 [demote.go:46] [I] slave上的innosql服务health! 
+2015/04/15 21:06:18 [main.go:23] [I] version 0.1.0 
+2015/04/16 14:02:52 [main.go:23] [I] version 0.1.0 
+2015/04/24 17:29:12 [main.go:20] [I] version 0.2.0 
+2015/04/24 17:29:44 [main.go:20] [I] version 0.3.0 
